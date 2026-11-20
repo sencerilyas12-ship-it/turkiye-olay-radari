@@ -1,24 +1,34 @@
 
-name: Türkiye Olay Radarı
+name: MİHVER
 
 on:
   push:
-    branches: ["main"]
+    branches:
+      - main
+
   schedule:
     - cron: "0 */6 * * *"
+
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: mihver-haber-toplama
+  cancel-in-progress: false
+
 jobs:
   build:
+    name: MİHVER Haber ve Kaynak Güncelleme
     runs-on: ubuntu-latest
-    timeout-minutes: 360
+    timeout-minutes: 30
 
     steps:
-      - name: Kodu indir
+      - name: MİHVER kodlarını indir
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Python kur
         uses: actions/setup-python@v5
@@ -31,14 +41,17 @@ jobs:
       - name: Haberleri topla
         run: python haber_toplama.py
 
-      - name: Sonuçları GitHub'a kaydet
+      - name: MİHVER verilerini GitHub'a kaydet
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add kaynaklar.json haberler.json
+
           if ! git diff --cached --quiet; then
-            git commit -m "Kaynak ve haber verilerini güncelle"
-            git push
+            git commit -m "MİHVER kaynak ve haber verilerini güncelledi"
+            git pull --rebase origin main
+            git push origin HEAD:main
           else
-            echo "Yeni veri bulunmadı."
+            echo "Yeni veri bulunamadı."
           fi
