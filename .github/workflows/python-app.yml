@@ -35,7 +35,11 @@ jobs:
         run: |
           python -m py_compile \
             kesif_motoru.py \
-            kaynak_dogrulama.py
+            kaynak_dogrulama.py \
+            kaynak_envanter_kontrol.py
+
+      - name: Kaynak envanterini kontrol et
+        run: python kaynak_envanter_kontrol.py
 
       - name: Yeni kaynakları keşfet
         run: python kesif_motoru.py
@@ -47,7 +51,7 @@ jobs:
         run: |
           git fetch origin main
           if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
-            echo "GitHub verisi değişti. Kayıt güvenliği için işlem durduruldu."
+            echo "GitHub verisi değişti. Güvenli kayıt için işlem durduruldu."
             exit 1
           fi
 
@@ -56,11 +60,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add kaynaklar.json dogrulama_durumu.json kaynak_dogrulama_raporu.json
+          git add kaynaklar.json
+          git add dogrulama_durumu.json
+          git add kaynak_dogrulama_raporu.json
+          git add kaynak_envanter_kontrol_raporu.json
 
           if git diff --cached --quiet; then
             echo "Kaynaklarda yeni değişiklik yok."
           else
-            git commit -m "MIHVER kaynakları güncellendi"
+            git commit -m "MIHVER kaynak envanteri ve doğrulama güncellendi"
             git push origin HEAD:main
           fi
