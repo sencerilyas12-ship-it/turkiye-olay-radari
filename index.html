@@ -1,116 +1,223 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Türkiye Olay Radarı</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      padding: 20px;
-      background: #101827;
-      color: #f1f5f9;
-      font-family: Arial, sans-serif;
-    }
-    header {
-      padding: 22px;
-      background: #1e293b;
-      border-radius: 14px;
-      margin-bottom: 20px;
-    }
-    h1 { margin: 0 0 8px; font-size: 25px; }
-    .muted { color: #aab7c8; font-size: 14px; }
-    .panel {
-      background: #1e293b;
-      padding: 18px;
-      border-radius: 14px;
-      margin-bottom: 16px;
-    }
-    h2 { font-size: 18px; margin-top: 0; }
-    .status {
-      display: inline-block;
-      background: #334155;
-      color: #cbd5e1;
-      padding: 7px 10px;
-      border-radius: 8px;
-      font-size: 13px;
-    }
-    .filters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    .filters span {
-      background: #334155;
-      padding: 9px 11px;
-      border-radius: 8px;
-      font-size: 13px;
-    }
-    input {
-      width: 100%;
-      padding: 13px;
-      border: 1px solid #475569;
-      border-radius: 9px;
-      background: #0f172a;
-      color: white;
-      font-size: 15px;
-    }
-    .notice {
-      border-left: 3px solid #64748b;
-      padding-left: 12px;
-      color: #cbd5e1;
-      line-height: 1.6;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Türkiye Olay Radarı</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#10151e;color:#edf2f7;font-family:Arial,sans-serif}
+header{background:#192332;padding:22px 16px;border-bottom:1px solid #344154}
+h1{margin:0 0 8px;font-size:25px}
+header p{margin:0;color:#aab7c8;font-size:14px}
+main{max-width:1100px;margin:auto;padding:18px}
+.panel{background:#192332;border:1px solid #344154;border-radius:12px;padding:16px;margin-bottom:16px}
+h2{font-size:18px;margin:0 0 14px}
+input,select{width:100%;padding:13px;margin:6px 0;background:#101a29;border:1px solid #45546b;border-radius:8px;color:white;font-size:15px}
+button{padding:10px 13px;border:1px solid #45546b;background:#26364c;color:white;border-radius:8px;margin:4px;cursor:pointer}
+button.active{background:#176bba;border-color:#176bba}
+.categories{display:flex;flex-wrap:wrap;gap:5px}
+#status{color:#aab7c8;font-size:13px;margin:10px 0}
+.news{padding:15px 0;border-bottom:1px solid #344154}
+.news:last-child{border:0}
+.news h3{font-size:17px;line-height:1.4;margin:8px 0}
+.news a{color:#72b8ff;text-decoration:none}
+.meta{font-size:12px;color:#aab7c8;line-height:1.8}
+.tag{display:inline-block;background:#263c55;color:#a9d5ff;padding:5px 8px;border-radius:5px;font-size:12px}
+.empty{color:#aab7c8;padding:25px 0;text-align:center}
+#more{width:100%;margin-top:15px}
+footer{text-align:center;color:#7f8da0;font-size:12px;padding:25px}
+</style>
 </head>
 <body>
-  <header>
-    <h1>Türkiye Olay Radarı</h1>
-    <div class="muted">81 il • Yerel haberler • Adli gelişmeler</div>
-    <p><span class="status">Özel yönetim paneli</span></p>
-  </header>
 
-  <section class="panel">
-    <h2>Haber Ara</h2>
-    <input type="search" placeholder="Haber, olay, il veya ilçe ara...">
-  </section>
+<header>
+<h1>Türkiye Olay Radarı</h1>
+<p>81 il · Yerel haberler · Adli gelişmeler</p>
+<p style="margin-top:10px">Özel yönetim paneli</p>
+</header>
 
-  <section class="panel">
-    <h2>Takip Edilen Kategoriler</h2>
-    <div class="filters">
-      <span>Cinayet ve şüpheli ölüm</span>
-      <span>Kadın cinayetleri</span>
-      <span>Cinsel saldırı ve istismar</span>
-      <span>Çocuk istismarı</span>
-      <span>Büyük çaplı dolandırıcılık</span>
-      <span>Kamu skandalları</span>
-      <span>Vatandaş mağduriyetleri</span>
-      <span>Yolsuzluk ve usulsüzlük</span>
-      <span>Adli soruşturmalar</span>
-      <span>Duruşmalar ve kararlar</span>
-    </div>
-  </section>
+<main>
+<section class="panel">
+<h2>Haber Ara</h2>
+<input id="search" type="search" placeholder="Haber, olay, il veya kaynak ara...">
+<select id="city">
+<option value="">Bütün iller</option>
+</select>
+<select id="category">
+<option value="">Bütün kategoriler</option>
+</select>
+<div id="status">Haberler yükleniyor...</div>
+</section>
 
-  <section class="panel">
-    <h2>Canlı Haber Akışı</h2>
-    <p class="notice">
-      Henüz haber kaynağı bağlanmadı. Kaynak takip sistemi kurulduğunda
-      tespit edilen haberler bu alanda listelenecek.
-    </p>
-  </section>
+<section class="panel">
+<h2>Takip Edilen Kategoriler</h2>
+<div class="categories" id="categoryButtons"></div>
+</section>
 
-  <section class="panel">
-    <h2>Türkiye Kaynak Takibi</h2>
-    <p class="notice">
-      81 ildeki yerel haber siteleri, gazeteler ve kamuya açık adliye
-      duyuruları burada takip edilecek.
-    </p>
-  </section>
+<section class="panel">
+<h2>Canlı Haber Akışı</h2>
+<div id="newsList"><div class="empty">Haberler yükleniyor...</div></div>
+<button id="more" hidden>Daha fazla haber göster</button>
+</section>
+</main>
 
-  <section class="panel">
-    <h2>Sistem Durumu</h2>
-    <p class="muted">Panel arayüzü oluşturuluyor. Otomatik tarama henüz aktif değil.</p>
-  </section>
+<footer>
+Türkiye Olay Radarı · Otomatik haber akışı
+<br>Haberler kaynak yayınlarından alınır. İddialar kesinleşmiş hüküm anlamına gelmez.
+</footer>
+
+<script>
+const categories = [
+"Cinayet ve şüpheli ölüm",
+"Kadın cinayetleri",
+"Cinsel saldırı ve istismar",
+"Çocuk istismarı",
+"Büyük çaplı dolandırıcılık",
+"Kamu skandalları",
+"Vatandaş mağduriyetleri",
+"Yolsuzluk ve usulsüzlük",
+"Adli soruşturmalar",
+"Duruşmalar ve kararlar"
+];
+
+let allNews = [];
+let filteredNews = [];
+let shown = 30;
+let selectedCategory = "";
+
+const search = document.getElementById("search");
+const city = document.getElementById("city");
+const category = document.getElementById("category");
+const newsList = document.getElementById("newsList");
+const statusBox = document.getElementById("status");
+const more = document.getElementById("more");
+
+categories.forEach(name => {
+  category.add(new Option(name,name));
+  const button = document.createElement("button");
+  button.textContent = name;
+  button.addEventListener("click", () => {
+    selectedCategory = selectedCategory === name ? "" : name;
+    category.value = selectedCategory;
+    updateButtons();
+    filterNews();
+  });
+  document.getElementById("categoryButtons").appendChild(button);
+});
+
+function updateButtons(){
+  [...document.querySelectorAll("#categoryButtons button")].forEach(b => {
+    b.classList.toggle("active",b.textContent === selectedCategory);
+  });
+}
+
+async function loadNews(){
+  try{
+    const response = await fetch("./haberler.json?t=" + Date.now());
+    if(!response.ok) throw new Error("haberler.json bulunamadı");
+    const data = await response.json();
+    if(!Array.isArray(data)) throw new Error("Haber dosyasının biçimi geçersiz");
+
+    allNews = data;
+    const cities = [...new Set(allNews.map(x => x.il).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"tr"));
+    cities.forEach(name => city.add(new Option(name,name)));
+
+    statusBox.textContent = allNews.length.toLocaleString("tr-TR") + " haber yüklendi.";
+    filterNews();
+  }catch(error){
+    statusBox.textContent = "Haberler yüklenemedi: " + error.message;
+    newsList.innerHTML = '<div class="empty">Haber dosyasına erişilemedi. Biraz sonra tekrar deneyin.</div>';
+  }
+}
+
+function filterNews(){
+  const term = search.value.toLocaleLowerCase("tr").trim();
+  const selectedCity = city.value;
+  const selectedCat = category.value;
+
+  filteredNews = allNews.filter(item => {
+    const text = [
+      item.baslik,item.il,item.kategori,item.kaynak
+    ].join(" ").toLocaleLowerCase("tr");
+
+    return (!term || text.includes(term)) &&
+      (!selectedCity || item.il === selectedCity) &&
+      (!selectedCat || item.kategori === selectedCat);
+  });
+
+  shown = 30;
+  renderNews();
+}
+
+function renderNews(){
+  const items = filteredNews.slice(0,shown);
+
+  statusBox.textContent =
+    filteredNews.length.toLocaleString("tr-TR") +
+    " haber bulundu · Toplam " +
+    allNews.length.toLocaleString("tr-TR") + " haber";
+
+  if(!items.length){
+    newsList.innerHTML = '<div class="empty">Bu aramaya uygun haber bulunamadı.</div>';
+    more.hidden = true;
+    return;
+  }
+
+  newsList.innerHTML = items.map(item => {
+    const title = escapeHTML(item.baslik || "Başlıksız haber");
+    const source = escapeHTML(item.kaynak || "Kaynak belirtilmemiş");
+    const il = escapeHTML(item.il || "İl belirtilmemiş");
+    const cat = escapeHTML(item.kategori || "Kategorisiz");
+    const date = escapeHTML(formatDate(item.tarih));
+    const url = safeURL(item.link);
+
+    return `
+      <article class="news">
+        <span class="tag">${cat}</span>
+        <h3>${url ? `<a href="${url}" target="_blank" rel="noopener noreferrer">${title}</a>` : title}</h3>
+        <div class="meta">${il} · ${source}<br>${date}</div>
+      </article>`;
+  }).join("");
+
+  more.hidden = shown >= filteredNews.length;
+}
+
+function escapeHTML(value){
+  return String(value).replace(/[&<>"']/g, c => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+  }[c]));
+}
+
+function safeURL(value){
+  try{
+    const u = new URL(value);
+    return ["http:","https:"].includes(u.protocol) ? escapeHTML(u.href) : "";
+  }catch{return "";}
+}
+
+function formatDate(value){
+  if(!value) return "Tarih belirtilmemiş";
+  const d = new Date(value);
+  if(Number.isNaN(d.getTime())) return value;
+  return d.toLocaleString("tr-TR");
+}
+
+search.addEventListener("input",filterNews);
+city.addEventListener("change",filterNews);
+category.addEventListener("change",()=>{
+  selectedCategory = category.value;
+  updateButtons();
+  filterNews();
+});
+
+more.addEventListener("click",()=>{
+  shown += 30;
+  renderNews();
+});
+
+loadNews();
+</script>
 </body>
 </html>
