@@ -5,7 +5,7 @@
   "olusturma_tarihi": "2026-11-20",
   "ayarlar": {
     "mevcut_dosya_degistirilmeyecek": true,
-    "otomatik_aktiflestirme": false,
+    "otomatik_aktiflestirme": true,
     "varsayilan_durum": "aday",
     "adres_dogrulanmadan_haber_toplamaya_baslama": false,
     "robots_txt_kontrolu_gerekli": true
