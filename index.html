@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Türkiye Olay Radarı</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #101827;
+      color: #f1f5f9;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      padding: 22px;
+      background: #1e293b;
+      border-radius: 14px;
+      margin-bottom: 20px;
+    }
+    h1 { margin: 0 0 8px; font-size: 25px; }
+    .muted { color: #aab7c8; font-size: 14px; }
+    .panel {
+      background: #1e293b;
+      padding: 18px;
+      border-radius: 14px;
+      margin-bottom: 16px;
+    }
+    h2 { font-size: 18px; margin-top: 0; }
+    .status {
+      display: inline-block;
+      background: #334155;
+      color: #cbd5e1;
+      padding: 7px 10px;
+      border-radius: 8px;
+      font-size: 13px;
+    }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .filters span {
+      background: #334155;
+      padding: 9px 11px;
+      border-radius: 8px;
+      font-size: 13px;
+    }
+    input {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #475569;
+      border-radius: 9px;
+      background: #0f172a;
+      color: white;
+      font-size: 15px;
+    }
+    .notice {
+      border-left: 3px solid #64748b;
+      padding-left: 12px;
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Türkiye Olay Radarı</h1>
+    <div class="muted">81 il • Yerel haberler • Adli gelişmeler</div>
+    <p><span class="status">Özel yönetim paneli</span></p>
+  </header>
+
+  <section class="panel">
+    <h2>Haber Ara</h2>
+    <input type="search" placeholder="Haber, olay, il veya ilçe ara...">
+  </section>
+
+  <section class="panel">
+    <h2>Takip Edilen Kategoriler</h2>
+    <div class="filters">
+      <span>Cinayet ve şüpheli ölüm</span>
+      <span>Kadın cinayetleri</span>
+      <span>Cinsel saldırı ve istismar</span>
+      <span>Çocuk istismarı</span>
+      <span>Büyük çaplı dolandırıcılık</span>
+      <span>Kamu skandalları</span>
+      <span>Vatandaş mağduriyetleri</span>
+      <span>Yolsuzluk ve usulsüzlük</span>
+      <span>Adli soruşturmalar</span>
+      <span>Duruşmalar ve kararlar</span>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Canlı Haber Akışı</h2>
+    <p class="notice">
+      Henüz haber kaynağı bağlanmadı. Kaynak takip sistemi kurulduğunda
+      tespit edilen haberler bu alanda listelenecek.
+    </p>
+  </section>
+
+  <section class="panel">
+    <h2>Türkiye Kaynak Takibi</h2>
+    <p class="notice">
+      81 ildeki yerel haber siteleri, gazeteler ve kamuya açık adliye
+      duyuruları burada takip edilecek.
+    </p>
+  </section>
+
+  <section class="panel">
+    <h2>Sistem Durumu</h2>
+    <p class="muted">Panel arayüzü oluşturuluyor. Otomatik tarama henüz aktif değil.</p>
+  </section>
+</body>
+</html>
