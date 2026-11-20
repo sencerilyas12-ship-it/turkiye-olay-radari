@@ -5320,6 +5320,141 @@
       "tur": "Google Haberler RSS",
       "durum": "aday",
       "arama": "yerel haber"
+    },
+    {
+      "il": "Kastamonu",
+      "ad": "Kastamonu Gündem Gazetesi",
+      "url": "https://www.kastamonugundemgazetesi.com",
+      "alan": "www.kastamonugundemgazetesi.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Kastamonu",
+      "ad": "Hey Haber",
+      "url": "https://heyhaber.com",
+      "alan": "heyhaber.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Kayseri",
+      "ad": "Kayseri Gerçek Haber",
+      "url": "https://kayserigercekhaber.com",
+      "alan": "kayserigercekhaber.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Kayseri",
+      "ad": "Kayseri Gündem",
+      "url": "https://www.kayserigundem.com.tr",
+      "alan": "www.kayserigundem.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Kayseri",
+      "ad": "NationalTurk",
+      "url": "https://www.nationalturk.com",
+      "alan": "www.nationalturk.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Muğla",
+      "ad": "mugladevrim.com.tr",
+      "url": "https://mugladevrim.com.tr",
+      "alan": "mugladevrim.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Muğla",
+      "ad": "Mabolla Medya",
+      "url": "https://mabollamedya.com",
+      "alan": "mabollamedya.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Muğla",
+      "ad": "Muğla Postası",
+      "url": "https://www.muglapostasi.com.tr",
+      "alan": "www.muglapostasi.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Muğla",
+      "ad": "Marmaris Manşet",
+      "url": "https://marmarismanset.com",
+      "alan": "marmarismanset.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Muğla",
+      "ad": "Haber48",
+      "url": "https://www.haber48.com.tr",
+      "alan": "www.haber48.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Karaman",
+      "ad": "mansetalanya.com",
+      "url": "https://www.mansetalanya.com",
+      "alan": "www.mansetalanya.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Karaman",
+      "ad": "Büyük Alanya TV",
+      "url": "https://www.buyukalanya.com",
+      "alan": "www.buyukalanya.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Karaman",
+      "ad": "7-24 Esenler Haber",
+      "url": "https://7-24esenlerhaber.com",
+      "alan": "7-24esenlerhaber.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Batman",
+      "ad": "malabadigazetesi.com",
+      "url": "https://www.malabadigazetesi.com",
+      "alan": "www.malabadigazetesi.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Batman",
+      "ad": "Batman Burada",
+      "url": "https://www.batmanburada.com.tr",
+      "alan": "www.batmanburada.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
     }
   ]
 }
