@@ -5086,6 +5086,114 @@
       "tur": "Google Haberler RSS",
       "durum": "aday",
       "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Ankara",
+      "ad": "Sendika.Org",
+      "url": "https://www.sendika.org",
+      "alan": "www.sendika.org",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Burdur",
+      "ad": "Çağdaş Burdur",
+      "url": "https://www.cagdasburdur.com",
+      "alan": "www.cagdasburdur.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Burdur",
+      "ad": "SES15",
+      "url": "https://www.ses15.com.tr",
+      "alan": "www.ses15.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Edirne",
+      "ad": "Edirne'nin Sesi",
+      "url": "https://www.edirneninsesi.com.tr",
+      "alan": "www.edirneninsesi.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Edirne",
+      "ad": "Edirne Gazetesi",
+      "url": "https://www.edirnegazetesi.com.tr",
+      "alan": "www.edirnegazetesi.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Edirne",
+      "ad": "Edirne Olay Gazetesi",
+      "url": "https://edirneolay.com",
+      "alan": "edirneolay.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Edirne",
+      "ad": "Medyafaresi",
+      "url": "https://www.medyafaresi.com",
+      "alan": "www.medyafaresi.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Eskişehir",
+      "ad": "Esgazete",
+      "url": "https://www.esgazete.com",
+      "alan": "www.esgazete.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Kastamonu",
+      "ad": "Açıksöz Gazetesi",
+      "url": "https://www.aciksoz.com.tr",
+      "alan": "www.aciksoz.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Sakarya",
+      "ad": "Sakarya Yenigün Gazetesi",
+      "url": "https://sakaryayenigun.com.tr",
+      "alan": "sakaryayenigun.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Samsun",
+      "ad": "Gerçek Taraf",
+      "url": "https://www.gercektaraf.com.tr",
+      "alan": "www.gercektaraf.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Şanlıurfa",
+      "ad": "Urfanatik",
+      "url": "https://www.urfanatik.com",
+      "alan": "www.urfanatik.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
     }
   ]
 }
