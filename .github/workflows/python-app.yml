@@ -1,5 +1,5 @@
 
-name: Python application
+name: Türkiye Olay Radarı
 
 on:
   push:
@@ -14,6 +14,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 360
 
     steps:
       - name: Kodu indir
@@ -24,17 +25,20 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Kaynak keşif dosyasını çalıştır
+      - name: Kaynakları keşfet
         run: python kesif_motoru.py
 
-      - name: Kaynak listesini GitHub'a kaydet
+      - name: Haberleri topla
+        run: python haber_toplama.py
+
+      - name: Sonuçları GitHub'a kaydet
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add kaynaklar.json
+          git add kaynaklar.json haberler.json
           if ! git diff --cached --quiet; then
-            git commit -m "Kaynak listesini güncelle"
+            git commit -m "Kaynak ve haber verilerini güncelle"
             git push
           else
-            echo "Yeni kaynak bulunmadı."
+            echo "Yeni veri bulunmadı."
           fi
