@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -24,8 +24,17 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Gereken paketi kur
-        run: python -m pip install requests
-
       - name: Kaynak keşif dosyasını çalıştır
         run: python kesif_motoru.py
+
+      - name: Kaynak listesini GitHub'a kaydet
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add kaynaklar.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Kaynak listesini güncelle"
+            git push
+          else
+            echo "Yeni kaynak bulunmadı."
+          fi
