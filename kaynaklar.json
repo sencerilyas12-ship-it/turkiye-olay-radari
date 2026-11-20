@@ -4357,6 +4357,258 @@
       "tur": "Google Haberler RSS",
       "durum": "aday",
       "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Çanakkale",
+      "ad": "Ayyıldız Gazetesi",
+      "url": "https://ayyildizgazetesi.net",
+      "alan": "ayyildizgazetesi.net",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Çorum",
+      "ad": "Habername.com",
+      "url": "https://www.habername.com",
+      "alan": "www.habername.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Çorum",
+      "ad": "Kesin Karar",
+      "url": "https://www.kesinkarar.com",
+      "alan": "www.kesinkarar.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Çorum",
+      "ad": "Patronlar Dünyası",
+      "url": "https://www.patronlardunyasi.com",
+      "alan": "www.patronlardunyasi.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Edirne",
+      "ad": "Edirne TV",
+      "url": "https://www.edirnetv.com",
+      "alan": "www.edirnetv.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Gaziantep",
+      "ad": "Olay Medya",
+      "url": "https://www.olaymedya.com",
+      "alan": "www.olaymedya.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "İstanbul",
+      "ad": "SuperHaber",
+      "url": "https://www.superhaber.com",
+      "alan": "www.superhaber.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "İstanbul",
+      "ad": "Kanal 3 Tv",
+      "url": "https://www.kanal3.com.tr",
+      "alan": "www.kanal3.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "İstanbul",
+      "ad": "Maraş Gündem",
+      "url": "https://www.marasgundem.com.tr",
+      "alan": "www.marasgundem.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "İzmir",
+      "ad": "Mynet Finans",
+      "url": "https://finans.mynet.com",
+      "alan": "finans.mynet.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Kocaeli",
+      "ad": "Kocaeli Kent Gazetesi",
+      "url": "https://kocaelikentgazetesi.com",
+      "alan": "kocaelikentgazetesi.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Malatya",
+      "ad": "Yeni Malatya Haber",
+      "url": "https://www.yenimalatya.com.tr",
+      "alan": "www.yenimalatya.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Nevşehir",
+      "ad": "lalehaber.com",
+      "url": "https://www.lalehaber.com",
+      "alan": "www.lalehaber.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Rize",
+      "ad": "GazeteRize",
+      "url": "https://www.gazeterize.com",
+      "alan": "www.gazeterize.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Rize",
+      "ad": "2 Mart Gazetesi",
+      "url": "https://2mart.com.tr",
+      "alan": "2mart.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Rize",
+      "ad": "HABER RİZE",
+      "url": "https://www.haberrize.com.tr",
+      "alan": "www.haberrize.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Rize",
+      "ad": "TV5 Haber",
+      "url": "https://www.tv5.com.tr",
+      "alan": "www.tv5.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Rize",
+      "ad": "Bağımsız Kocaeli Gazetesi",
+      "url": "https://www.bagimsizkocaeli.com.tr",
+      "alan": "www.bagimsizkocaeli.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Rize",
+      "ad": "Rizedeyiz",
+      "url": "https://www.rizedeyiz.com",
+      "alan": "www.rizedeyiz.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Rize",
+      "ad": "Rize Takip",
+      "url": "https://www.rizetakip.com",
+      "alan": "www.rizetakip.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Rize",
+      "ad": "Çay TV Haber",
+      "url": "https://www.caytvhaber.com",
+      "alan": "www.caytvhaber.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Şanlıurfa",
+      "ad": "Urfa News",
+      "url": "https://www.urfanews.com",
+      "alan": "www.urfanews.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Şanlıurfa",
+      "ad": "UrfaSesVer",
+      "url": "https://www.urfasesver.com",
+      "alan": "www.urfasesver.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Şanlıurfa",
+      "ad": "erganigazetesi.com.tr",
+      "url": "https://erganigazetesi.com.tr",
+      "alan": "erganigazetesi.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Şanlıurfa",
+      "ad": "Urfa Değişim",
+      "url": "https://www.urfadegisim.com.tr",
+      "alan": "www.urfadegisim.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Şanlıurfa",
+      "ad": "Urfastar",
+      "url": "https://www.urfastar.com",
+      "alan": "www.urfastar.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Şanlıurfa",
+      "ad": "Mynet",
+      "url": "https://haber.mynet.com",
+      "alan": "haber.mynet.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Yozgat",
+      "ad": "yeniufukgazetesi.com.tr",
+      "url": "https://yeniufukgazetesi.com.tr",
+      "alan": "yeniufukgazetesi.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
     }
   ]
 }
