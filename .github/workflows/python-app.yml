@@ -1,24 +1,21 @@
 
-name: MIHVER Haber ve Kaynak Sistemi
+name: MIHVER Kaynak Yönetimi
 
 on:
   workflow_dispatch:
   schedule:
     - cron: "0 */6 * * *"
-  push:
-    branches:
-      - main
 
 permissions:
   contents: write
 
 concurrency:
-  group: mihver-haber-toplama
+  group: mihver-kaynak-yonetimi
   cancel-in-progress: false
 
 jobs:
-  build:
-    name: MIHVER Kaynak ve Haber Güncelleme
+  kaynaklar:
+    name: Kaynak Keşfi ve Doğrulama
     runs-on: ubuntu-latest
     timeout-minutes: 45
 
@@ -26,6 +23,7 @@ jobs:
       - name: Depoyu indir
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Python kur
@@ -33,38 +31,28 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: En güncel GitHub verisini al
-        run: |
-          git fetch origin main
-          git pull --ff-only origin main
-
-      - name: Python dosyalarını kontrol et
+      - name: Kodları kontrol et
         run: |
           python -m py_compile \
             kesif_motoru.py \
-            kaynak_havuzu_olustur.py \
-            kaynak_dogrulama.py \
-            haber_toplama.py
+            kaynak_dogrulama.py
 
-      - name: Kaynakları keşfet
+      - name: Yeni kaynakları keşfet
         run: python kesif_motoru.py
 
       - name: Kaynakları doğrula
         run: python kaynak_dogrulama.py
 
-      - name: Haberleri topla
-        run: python haber_toplama.py
-
-      - name: Verileri GitHub'a kaydet
+      - name: Değişiklikleri kaydet
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add kaynaklar.json haberler.json tarama_durumu.json dogrulama_durumu.json kaynak_dogrulama_raporu.json
+          git add kaynaklar.json dogrulama_durumu.json kaynak_dogrulama_raporu.json
 
           if git diff --cached --quiet; then
-            echo "Yeni veri bulunamadı."
+            echo "Kaynaklarda yeni değişiklik yok."
           else
-            git commit -m "MIHVER haber ve kaynak verileri güncellendi"
+            git commit -m "MIHVER kaynakları güncellendi"
             git push origin HEAD:main
           fi
