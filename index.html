@@ -4,154 +4,194 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>MİHVER – Türkiye Olay ve Adliye Haberleri</title>
-<meta name="description" content="MİHVER – 81 ilde yerel haberler, adli gelişmeler, soruşturmalar ve duruşmalar.">
+<title>MİHVER | Türkiye Olay ve Adliye Haberleri</title>
+<meta name="description" content="81 ilde yerel haberler ve adli gelişmeler.">
 
 <style>
-* {
-  box-sizing: border-box;
+:root {
+  --bg: #F7F5F0;
+  --panel: #FFFFFF;
+  --navy: #172B4D;
+  --gold: #B49A69;
+  --text: #303B4A;
+  --muted: #77808C;
+  --border: #E7E3DA;
 }
-
+* { box-sizing: border-box; }
 body {
   margin: 0;
-  background: #10151e;
-  color: #edf2f7;
+  background: var(--bg);
+  color: var(--text);
   font-family: Arial, sans-serif;
 }
-
 header {
-  background: #192332;
-  padding: 22px 16px;
-  border-bottom: 1px solid #344154;
+  background: var(--navy);
+  color: white;
+  padding: 25px 18px;
+  border-bottom: 4px solid var(--gold);
 }
-
-h1 {
-  margin: 0 0 8px;
-  font-size: 28px;
-  letter-spacing: 2px;
-}
-
-header p {
-  margin: 0;
-  color: #aab7c8;
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-main {
-  max-width: 1100px;
+.header-inner, main, footer {
+  max-width: 1180px;
   margin: auto;
-  padding: 18px;
 }
-
-.panel {
-  background: #192332;
-  border: 1px solid #344154;
-  border-radius: 12px;
-  padding: 16px;
-  margin-bottom: 16px;
+header h1 {
+  margin: 0;
+  font-size: 30px;
+  letter-spacing: 3px;
 }
-
+header p {
+  margin: 8px 0 0;
+  color: #D9DFE8;
+  font-size: 14px;
+}
+.header-label {
+  color: #D5BD91;
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin-top: 12px;
+}
+main { padding: 22px 16px; }
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.stat, .panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 17px;
+}
+.stat strong {
+  display: block;
+  color: var(--navy);
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.stat span {
+  color: var(--muted);
+  font-size: 12px;
+}
+.panel { margin-bottom: 17px; }
 h2 {
-  font-size: 18px;
-  margin: 0 0 14px;
+  color: var(--navy);
+  font-size: 17px;
+  margin: 0 0 15px;
 }
-
+.filters {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 10px;
+}
 input, select {
   width: 100%;
   padding: 13px;
-  margin: 6px 0;
-  background: #101a29;
-  border: 1px solid #45546b;
-  border-radius: 8px;
-  color: white;
-  font-size: 15px;
+  border: 1px solid #D8D5CE;
+  border-radius: 7px;
+  background: white;
+  color: var(--text);
+  font-size: 14px;
+  min-width: 0;
 }
-
-button {
-  padding: 10px 13px;
-  border: 1px solid #45546b;
-  background: #26364c;
-  color: white;
-  border-radius: 8px;
-  margin: 4px;
-  cursor: pointer;
+input:focus, select:focus {
+  outline: 2px solid var(--gold);
+  border-color: var(--gold);
 }
-
-button.active {
-  background: #176bba;
-  border-color: #176bba;
-}
-
 .categories {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 8px;
 }
-
-#status {
-  color: #aab7c8;
+button {
+  border: 1px solid var(--navy);
+  border-radius: 6px;
+  padding: 9px 13px;
+  background: white;
+  color: var(--navy);
+  cursor: pointer;
   font-size: 13px;
-  margin: 10px 0;
 }
-
+button:hover, button.active {
+  background: var(--navy);
+  color: white;
+}
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+#status {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
 .news {
-  padding: 15px 0;
-  border-bottom: 1px solid #344154;
+  padding: 17px 0;
+  border-bottom: 1px solid var(--border);
 }
-
-.news:last-child {
-  border: 0;
-}
-
+.news:last-child { border-bottom: 0; }
 .news h3 {
+  margin: 9px 0;
   font-size: 17px;
-  line-height: 1.4;
-  margin: 8px 0;
+  line-height: 1.5;
+  color: var(--navy);
 }
-
 .news a {
-  color: #72b8ff;
+  color: var(--navy);
   text-decoration: none;
 }
-
 .news a:hover {
+  color: #8B7042;
   text-decoration: underline;
 }
-
-.meta {
-  font-size: 12px;
-  color: #aab7c8;
-  line-height: 1.8;
-}
-
 .tag {
   display: inline-block;
-  background: #263c55;
-  color: #a9d5ff;
-  padding: 5px 8px;
-  border-radius: 5px;
+  padding: 5px 9px;
+  border-radius: 4px;
+  background: #F1EBDD;
+  color: #755E35;
+  font-size: 11px;
+}
+.meta {
+  color: var(--muted);
   font-size: 12px;
+  line-height: 1.8;
 }
-
 .empty {
-  color: #aab7c8;
-  padding: 25px 0;
+  padding: 30px 10px;
   text-align: center;
+  color: var(--muted);
 }
-
 #more {
   width: 100%;
-  margin-top: 15px;
+  margin-top: 12px;
+  padding: 13px;
+  background: var(--navy);
+  color: white;
 }
-
 footer {
+  padding: 25px 16px 30px;
   text-align: center;
-  color: #7f8da0;
+  color: var(--muted);
   font-size: 12px;
-  padding: 25px;
   line-height: 1.8;
+}
+.footer-name {
+  margin-top: 17px;
+  padding-top: 15px;
+  border-top: 1px solid #D8C9AA;
+  color: var(--navy);
+  font-size: 16px;
+  font-weight: normal;
+}
+@media (max-width: 650px) {
+  .stats { grid-template-columns: 1fr 1fr; }
+  .filters { grid-template-columns: 1fr; }
+  header h1 { font-size: 26px; }
+  main { padding: 14px 11px; }
+  .news h3 { font-size: 16px; }
 }
 </style>
 </head>
@@ -159,73 +199,71 @@ footer {
 <body>
 
 <header>
-  <h1>MİHVER</h1>
-  <p>Türkiye Olay ve Adliye Haberleri</p>
-  <p>81 İl · Yerel Haberler · Adli Gelişmeler</p>
+  <div class="header-inner">
+    <h1>MİHVER</h1>
+    <p>Türkiye Olay ve Adliye Haberleri</p>
+    <div class="header-label">81 İL · YEREL HABERLER · ADLİ GELİŞMELER</div>
+  </div>
 </header>
 
 <main>
 
-<section class="panel">
-  <h2>Haber Ara</h2>
+  <section class="stats">
+    <div class="stat">
+      <strong id="totalNews">—</strong>
+      <span>Toplam haber</span>
+    </div>
+    <div class="stat">
+      <strong id="totalCities">—</strong>
+      <span>Takip edilen il</span>
+    </div>
+    <div class="stat">
+      <strong id="shownNews">—</strong>
+      <span>Listelenen haber</span>
+    </div>
+  </section>
 
-  <input
-    id="search"
-    type="search"
-    placeholder="Haber, olay, il veya kaynak ara..."
-  >
+  <section class="panel">
+    <h2>Haber Ara ve Filtrele</h2>
+    <div class="filters">
+      <input id="search" type="search"
+        placeholder="Haber, olay, il veya kaynak ara...">
+      <select id="city">
+        <option value="">Bütün iller</option>
+      </select>
+      <select id="category">
+        <option value="">Bütün kategoriler</option>
+      </select>
+    </div>
+    <div id="status">Haberler yükleniyor...</div>
+  </section>
 
-  <select id="city">
-    <option value="">Bütün iller</option>
-  </select>
+  <section class="panel">
+    <h2>Haber Kategorileri</h2>
+    <div class="categories" id="categoryButtons"></div>
+  </section>
 
-  <select id="category">
-    <option value="">Bütün kategoriler</option>
-  </select>
-
-  <div id="status">Haberler yükleniyor...</div>
-</section>
-
-<section class="panel">
-  <h2>Takip Edilen Kategoriler</h2>
-  <div class="categories" id="categoryButtons"></div>
-</section>
-
-<section class="panel">
-  <h2>Canlı Haber Akışı</h2>
-
-  <div id="newsList">
-    <div class="empty">Haberler yükleniyor...</div>
-  </div>
-
-  <button id="more" hidden>
-    Daha fazla haber göster
-  </button>
-</section>
+  <section class="panel">
+    <div class="section-heading">
+      <h2>Haber Akışı</h2>
+      <button id="reset">Filtreleri Temizle</button>
+    </div>
+    <div id="newsList">
+      <div class="empty">Haberler yükleniyor...</div>
+    </div>
+    <button id="more" hidden>Daha Fazla Haber Göster</button>
+  </section>
 
 </main>
 
 <footer>
-  MİHVER · Türkiye Olay ve Adliye Haberleri
-  <br>
-  Haberler kaynak yayınlarından alınır.
-  İddialar kesinleşmiş hüküm anlamına gelmez.
+  <div>MİHVER · Türkiye Olay ve Adliye Haberleri</div>
+  <div>Haberler kaynak yayınlarından alınır.</div>
+  <div>İddialar kesinleşmiş hüküm anlamına gelmez.</div>
+  <div class="footer-name">Büşra Kartal</div>
 </footer>
 
 <script>
-const categories = [
-  "Cinayet ve şüpheli ölüm",
-  "Kadın cinayetleri",
-  "Cinsel saldırı ve istismar",
-  "Çocuk istismarı",
-  "Büyük çaplı dolandırıcılık",
-  "Kamu skandalları",
-  "Vatandaş mağduriyetleri",
-  "Yolsuzluk ve usulsüzlük",
-  "Adli soruşturmalar",
-  "Duruşmalar ve kararlar"
-];
-
 let allNews = [];
 let filteredNews = [];
 let shown = 30;
@@ -238,29 +276,67 @@ const newsList = document.getElementById("newsList");
 const statusBox = document.getElementById("status");
 const more = document.getElementById("more");
 
-categories.forEach(name => {
-  category.add(new Option(name, name));
+async function loadNews() {
+  try {
+    const response = await fetch("./haberler.json?t=" + Date.now());
 
-  const button = document.createElement("button");
-  button.textContent = name;
+    if (!response.ok) {
+      throw new Error("Haber dosyası bulunamadı.");
+    }
 
-  button.addEventListener("click", () => {
-    selectedCategory =
-      selectedCategory === name ? "" : name;
+    const data = await response.json();
 
-    category.value = selectedCategory;
-    updateButtons();
+    if (!Array.isArray(data)) {
+      throw new Error("Haber dosyasının biçimi geçersiz.");
+    }
+
+    allNews = data;
+
+    const cities = [...new Set(
+      allNews.map(item => item.il).filter(Boolean)
+    )].sort((a, b) => a.localeCompare(b, "tr"));
+
+    cities.forEach(name => city.add(new Option(name, name)));
+
+    const categories = [...new Set(
+      allNews.map(item => item.kategori).filter(Boolean)
+    )].sort((a, b) => a.localeCompare(b, "tr"));
+
+    categories.forEach(name => {
+      category.add(new Option(name, name));
+
+      const button = document.createElement("button");
+      button.textContent = name;
+
+      button.addEventListener("click", () => {
+        selectedCategory =
+          selectedCategory === name ? "" : name;
+        category.value = selectedCategory;
+        updateButtons();
+        filterNews();
+      });
+
+      document.getElementById("categoryButtons")
+        .appendChild(button);
+    });
+
+    document.getElementById("totalNews").textContent =
+      allNews.length.toLocaleString("tr-TR");
+
+    document.getElementById("totalCities").textContent =
+      cities.length.toLocaleString("tr-TR");
+
     filterNews();
-  });
 
-  document
-    .getElementById("categoryButtons")
-    .appendChild(button);
-});
+  } catch (error) {
+    statusBox.textContent = "Haberler yüklenemedi: " + error.message;
+    newsList.innerHTML =
+      '<div class="empty">Haber dosyasına erişilemedi. Daha sonra tekrar deneyin.</div>';
+  }
+}
 
 function updateButtons() {
-  document
-    .querySelectorAll("#categoryButtons button")
+  document.querySelectorAll("#categoryButtons button")
     .forEach(button => {
       button.classList.toggle(
         "active",
@@ -269,54 +345,8 @@ function updateButtons() {
     });
 }
 
-async function loadNews() {
-  try {
-    const response = await fetch(
-      "./haberler.json?t=" + Date.now()
-    );
-
-    if (!response.ok) {
-      throw new Error("haberler.json bulunamadı");
-    }
-
-    const data = await response.json();
-
-    if (!Array.isArray(data)) {
-      throw new Error("Haber dosyasının biçimi geçersiz");
-    }
-
-    allNews = data;
-
-    const cities = [
-      ...new Set(
-        allNews.map(item => item.il).filter(Boolean)
-      )
-    ].sort((a, b) => a.localeCompare(b, "tr"));
-
-    cities.forEach(name => {
-      city.add(new Option(name, name));
-    });
-
-    statusBox.textContent =
-      allNews.length.toLocaleString("tr-TR") +
-      " haber yüklendi.";
-
-    filterNews();
-
-  } catch (error) {
-    statusBox.textContent =
-      "Haberler yüklenemedi: " + error.message;
-
-    newsList.innerHTML =
-      '<div class="empty">Haber dosyasına erişilemedi. Biraz sonra tekrar deneyin.</div>';
-  }
-}
-
 function filterNews() {
-  const term = search.value
-    .toLocaleLowerCase("tr")
-    .trim();
-
+  const term = search.value.toLocaleLowerCase("tr").trim();
   const selectedCity = city.value;
   const selectedCat = category.value;
 
@@ -326,15 +356,11 @@ function filterNews() {
       item.il,
       item.kategori,
       item.kaynak
-    ]
-      .join(" ")
-      .toLocaleLowerCase("tr");
+    ].join(" ").toLocaleLowerCase("tr");
 
-    return (
-      (!term || text.includes(term)) &&
+    return (!term || text.includes(term)) &&
       (!selectedCity || item.il === selectedCity) &&
-      (!selectedCat || item.kategori === selectedCat)
-    );
+      (!selectedCat || item.kategori === selectedCat);
   });
 
   shown = 30;
@@ -347,53 +373,35 @@ function renderNews() {
   statusBox.textContent =
     filteredNews.length.toLocaleString("tr-TR") +
     " haber bulundu · Toplam " +
-    allNews.length.toLocaleString("tr-TR") +
-    " haber";
+    allNews.length.toLocaleString("tr-TR") + " haber";
+
+  document.getElementById("shownNews").textContent =
+    items.length.toLocaleString("tr-TR");
 
   if (!items.length) {
     newsList.innerHTML =
       '<div class="empty">Bu aramaya uygun haber bulunamadı.</div>';
-
     more.hidden = true;
     return;
   }
 
   newsList.innerHTML = items.map(item => {
-    const title = escapeHTML(
-      item.baslik || "Başlıksız haber"
-    );
-
-    const source = escapeHTML(
-      item.kaynak || "Kaynak belirtilmemiş"
-    );
-
-    const il = escapeHTML(
-      item.il || "İl belirtilmemiş"
-    );
-
-    const cat = escapeHTML(
-      item.kategori || "Kategorisiz"
-    );
-
-    const date = escapeHTML(
-      formatDate(item.tarih)
-    );
-
+    const title = escapeHTML(item.baslik || "Başlıksız haber");
+    const source = escapeHTML(item.kaynak || "Kaynak belirtilmemiş");
+    const il = escapeHTML(item.il || "İl belirtilmemiş");
+    const cat = escapeHTML(item.kategori || "Kategorisiz");
+    const date = escapeHTML(formatDate(item.tarih));
     const url = safeURL(item.link);
 
     return `
       <article class="news">
         <span class="tag">${cat}</span>
         <h3>
-          ${
-            url
-              ? `<a href="${url}" target="_blank" rel="noopener noreferrer">${title}</a>`
-              : title
-          }
+          ${url
+            ? `<a href="${url}" target="_blank" rel="noopener noreferrer">${title}</a>`
+            : title}
         </h3>
-        <div class="meta">
-          ${il} · ${source}<br>${date}
-        </div>
+        <div class="meta">${il} · ${source}<br>${date}</div>
       </article>
     `;
   }).join("");
@@ -414,11 +422,9 @@ function escapeHTML(value) {
 function safeURL(value) {
   try {
     const url = new URL(value);
-
     return ["http:", "https:"].includes(url.protocol)
       ? escapeHTML(url.href)
       : "";
-
   } catch {
     return "";
   }
@@ -428,10 +434,7 @@ function formatDate(value) {
   if (!value) return "Tarih belirtilmemiş";
 
   const date = new Date(value);
-
-  if (Number.isNaN(date.getTime())) {
-    return value;
-  }
+  if (Number.isNaN(date.getTime())) return value;
 
   return date.toLocaleString("tr-TR");
 }
@@ -441,6 +444,15 @@ city.addEventListener("change", filterNews);
 
 category.addEventListener("change", () => {
   selectedCategory = category.value;
+  updateButtons();
+  filterNews();
+});
+
+document.getElementById("reset").addEventListener("click", () => {
+  search.value = "";
+  city.value = "";
+  category.value = "";
+  selectedCategory = "";
   updateButtons();
   filterNews();
 });
