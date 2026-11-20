@@ -3763,6 +3763,402 @@
       "tur": "Google Haberler RSS",
       "durum": "aday",
       "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Ağrı",
+      "ad": "Aksu TV Haber",
+      "url": "https://www.aksutvhaber.net",
+      "alan": "www.aksutvhaber.net",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Ağrı",
+      "ad": "Doğubayazıt Gazetesi",
+      "url": "https://dogubayazitgazetesi.com",
+      "alan": "dogubayazitgazetesi.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Ağrı",
+      "ad": "Bizim Tv",
+      "url": "https://bizimtv.com.tr",
+      "alan": "bizimtv.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Ağrı",
+      "ad": "Haber Global",
+      "url": "https://haberglobal.com",
+      "alan": "haberglobal.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Ağrı",
+      "ad": "Diyadinnet",
+      "url": "https://www.diyadinnet.com",
+      "alan": "www.diyadinnet.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Ağrı",
+      "ad": "Çınarın Sesi",
+      "url": "https://www.cinarinsesi.com",
+      "alan": "www.cinarinsesi.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Ankara",
+      "ad": "T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",
+      "url": "https://csb.gov.tr",
+      "alan": "csb.gov.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Ankara",
+      "ad": "İz Gazete",
+      "url": "https://www.izgazete.net",
+      "alan": "www.izgazete.net",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Ankara",
+      "ad": "Haberhergün",
+      "url": "https://www.haberhergun.com",
+      "alan": "www.haberhergun.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Diyarbakır",
+      "ad": "Türkinform",
+      "url": "https://turkinform.com.tr",
+      "alan": "turkinform.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Elazığ",
+      "ad": "Kanal23",
+      "url": "https://kanal23.com",
+      "alan": "kanal23.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Elazığ",
+      "ad": "Elazığ Hakimiyet Haber",
+      "url": "https://www.elazighakimiyethaber.com",
+      "alan": "www.elazighakimiyethaber.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Elazığ",
+      "ad": "Elazığ Online",
+      "url": "https://www.elazigonline.com",
+      "alan": "www.elazigonline.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Elazığ",
+      "ad": "Yeniçağ Gazetesi",
+      "url": "https://www.yenicaggazetesi.com",
+      "alan": "www.yenicaggazetesi.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Hatay",
+      "ad": "İşçi Sağlığı ve İş Güvenliği Meclisi",
+      "url": "https://www.isigmeclisi.org",
+      "alan": "www.isigmeclisi.org",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Mersin",
+      "ad": "Mersin Büyükşehir Belediyesi",
+      "url": "https://www.mersin.bel.tr",
+      "alan": "www.mersin.bel.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Mersin",
+      "ad": "Mersin Gazetesi",
+      "url": "https://mersingazetesi.com",
+      "alan": "mersingazetesi.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Kahramanmaraş",
+      "ad": "Independent Türkçe",
+      "url": "https://www.indyturk.com",
+      "alan": "www.indyturk.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Kahramanmaraş",
+      "ad": "Kahramanmaraş Manşet Gazetesi",
+      "url": "https://www.marasmanset.com",
+      "alan": "www.marasmanset.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Kahramanmaraş",
+      "ad": "Maraş Son Haber",
+      "url": "https://marassonhaber.com",
+      "alan": "marassonhaber.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Kahramanmaraş",
+      "ad": "Yeşil Afşin Gazetesi",
+      "url": "https://www.yesilafsin.com",
+      "alan": "www.yesilafsin.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Kahramanmaraş",
+      "ad": "24 Saat Gazetesi",
+      "url": "https://www.24saatgazetesi.com",
+      "alan": "www.24saatgazetesi.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Ordu",
+      "ad": "gunes.com",
+      "url": "https://www.gunes.com",
+      "alan": "www.gunes.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Ordu",
+      "ad": "Sağlık Personeli Haber Net",
+      "url": "https://www.saglikpersonelihaber.net",
+      "alan": "www.saglikpersonelihaber.net",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Ordu",
+      "ad": "Haber Gündemim",
+      "url": "https://www.habergundemim.com",
+      "alan": "www.habergundemim.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Siirt",
+      "ad": "Siirt haber",
+      "url": "https://www.artisiirt.com",
+      "alan": "www.artisiirt.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Tekirdağ",
+      "ad": "Bölge Gündemi",
+      "url": "https://www.bolgegundemi.com",
+      "alan": "www.bolgegundemi.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Tekirdağ",
+      "ad": "ABC Haber",
+      "url": "https://abcgazetesi.com.tr",
+      "alan": "abcgazetesi.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Tekirdağ",
+      "ad": "İşte Kocaeli Gazetesi",
+      "url": "https://www.istekocaeli.com",
+      "alan": "www.istekocaeli.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Tekirdağ",
+      "ad": "Gerçek Haberci",
+      "url": "https://www.gercekhaberci.com",
+      "alan": "www.gercekhaberci.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Tekirdağ",
+      "ad": "Genç Gazete",
+      "url": "https://www.gencgazete.net",
+      "alan": "www.gencgazete.net",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Tekirdağ",
+      "ad": "Babaeski Söz Gazetesi",
+      "url": "https://www.babaeskisozgazetesi.com",
+      "alan": "www.babaeskisozgazetesi.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Tekirdağ",
+      "ad": "Elbistanın Sesi",
+      "url": "https://www.elbistaninsesi.com",
+      "alan": "www.elbistaninsesi.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Tekirdağ",
+      "ad": "Samanyolu Haber",
+      "url": "https://www.samanyoluhaber.com",
+      "alan": "www.samanyoluhaber.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Tekirdağ",
+      "ad": "Avaz Türk",
+      "url": "https://www.avazturk.com",
+      "alan": "www.avazturk.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Tekirdağ",
+      "ad": "Haber Zamanı",
+      "url": "https://haberzamani.com",
+      "alan": "haberzamani.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Şanlıurfa",
+      "ad": "Gazete İpekyol",
+      "url": "https://www.gazeteipekyol.com",
+      "alan": "www.gazeteipekyol.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Şanlıurfa",
+      "ad": "Urfadasın",
+      "url": "https://www.urfadasin.com",
+      "alan": "www.urfadasin.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Aksaray",
+      "ad": "Aksaray Haberleri",
+      "url": "https://www.aksarayhaberleri.gen.tr",
+      "alan": "www.aksarayhaberleri.gen.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Şırnak",
+      "ad": "Şırnak Haber",
+      "url": "https://sirnakhaber.com",
+      "alan": "sirnakhaber.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Bartın",
+      "ad": "Sağlık Aktüel",
+      "url": "https://www.saglikaktuel.com",
+      "alan": "www.saglikaktuel.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Iğdır",
+      "ad": "igdirhaber.net",
+      "url": "https://www.igdirhaber.net",
+      "alan": "www.igdirhaber.net",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Iğdır",
+      "ad": "Yaşam Gazetesi",
+      "url": "https://www.yasamgazetesi.com.tr",
+      "alan": "www.yasamgazetesi.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Karabük",
+      "ad": "Karabük Postası",
+      "url": "https://karabukpostasi.com",
+      "alan": "karabukpostasi.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
     }
   ]
 }
