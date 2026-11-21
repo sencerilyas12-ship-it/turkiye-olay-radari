@@ -51,7 +51,7 @@ jobs:
         run: |
           git fetch origin main
           if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
-            echo "GitHub verisi değişti. Güvenli kayıt için işlem durduruldu."
+            echo "GitHub verisi değişti. Kayıt güvenliği için işlem durduruldu."
             exit 1
           fi
 
