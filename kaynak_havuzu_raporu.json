@@ -1,13 +1,14 @@
 {
-  "proje": "MİHVER",
-  "surum": "2.0.0",
-  "olusturulma": "2026-11-21T09:55:40.456725+00:00",
-  "il_sayisi": 81,
-  "ilce_hedefi": 922,
-  "ilce_listesi_durumu": "resmi_veri_entegrasyonu_bekleniyor",
-  "arama_adayi_sayisi": 567,
-  "yeni_aday_sayisi": 0,
-  "mevcut_kaynak_sayisi": 1205,
-  "toplam_kayit_sayisi": 1205,
-  "not": "Oluşturulan kayıtlar arama adaylarıdır; doğrulanmış yayıncı veya haber kaynağı değildir. İlçe listesi resmî veriden ayrıca alınmalıdır."
+  "surum": "5.0.0",
+  "rapor_tarihi": "2026-11-21T12:45:34.550995+00:00",
+  "toplam_il": 81,
+  "toplam_ilce": 922,
+  "bu_calistirmada_taranan_ilce": 60,
+  "basarili_ilce": 60,
+  "basarisiz_ilce": 0,
+  "yeni_aday_kaynak": 91,
+  "toplam_kaynak": 1299,
+  "tam_tur_tamamlandi": false,
+  "hatalar": [],
+  "haberler_json_degistirildi": false
 }
