@@ -3,253 +3,473 @@
 # -*- coding: utf-8 -*-
 
 """
-MİHVER - Otomatik Kaynak Havuzu Oluşturucu
-81 il ve 922 ilçe için kaynak adaylarını oluşturur.
-Mevcut kaynakları ve haberleri silmez.
+MIHVER - İlçe Bazlı Gerçek Kaynak Keşif Motoru
+Sürüm: 3.0.0
+
+- 922 ilçelik listeyi İçişleri Bakanlığı PDF listesinden alır.
+- Google News RSS üzerinden gerçek yayıncı URL'lerini keşfeder.
+- Her çalıştırmada 60 ilçe tarar ve kaldığı yerden devam eder.
+- Mevcut kaynakları korur, URL mükerrerlerini eklemez.
+- Haberler.json dosyasına dokunmaz.
 """
 
 import json
 import re
 import hashlib
 import urllib.request
+import urllib.parse
 import urllib.error
+import subprocess
+import tempfile
+import os
+import time
+import xml.etree.ElementTree as ET
+
 from pathlib import Path
 from datetime import datetime, timezone
-
-BASE_DIR = Path(__file__).resolve().parent
-SOURCES_FILE = BASE_DIR / "kaynaklar.json"
-REPORT_FILE = BASE_DIR / "kaynak_havuzu_raporu.json"
-
-USER_AGENT = "MIHVER-KaynakEnvanteri/1.0"
-
-# Türkiye'nin 81 ili ve plaka kodları
-ILLER = [
-    "Adana", "Adıyaman", "Afyonkarahisar", "Ağrı", "Amasya",
-    "Ankara", "Antalya", "Artvin", "Aydın", "Balıkesir",
-    "Bilecik", "Bingöl", "Bitlis", "Bolu", "Burdur",
-    "Bursa", "Çanakkale", "Çankırı", "Çorum", "Denizli",
-    "Diyarbakır", "Edirne", "Elazığ", "Erzincan", "Erzurum",
-    "Eskişehir", "Gaziantep", "Giresun", "Gümüşhane", "Hakkari",
-    "Hatay", "Isparta", "Mersin", "İstanbul", "İzmir",
-    "Kars", "Kastamonu", "Kayseri", "Kırklareli", "Kırşehir",
-    "Kocaeli", "Konya", "Kütahya", "Malatya", "Manisa",
-    "Kahramanmaraş", "Mardin", "Muğla", "Muş", "Nevşehir",
-    "Niğde", "Ordu", "Rize", "Sakarya", "Samsun",
-    "Siirt", "Sinop", "Sivas", "Tekirdağ", "Tokat",
-    "Trabzon", "Tunceli", "Şanlıurfa", "Uşak", "Van",
-    "Yozgat", "Zonguldak", "Aksaray", "Bayburt", "Karaman",
-    "Kırıkkale", "Batman", "Şırnak", "Bartın", "Ardahan",
-    "Iğdır", "Yalova", "Karabük", "Kilis", "Osmaniye",
-    "Düzce"
-]
-
-# Kaynak adayları için kullanılacak arama kalıpları.
-# Bunlar kaynak keşif ipuçlarıdır; doğrulanmış adres değildir.
-ARAMA_SABLONLARI = [
-    "{il} yerel haber",
-    "{il} son dakika haberleri",
-    "{il} belediyesi duyurular",
-    "{il} valiliği duyurular",
-    "{il} kaymakamlığı duyurular",
-    "{il} adliyesi basın açıklaması",
-    "{il} barosu duyurular",
-]
-
-KATEGORILER = [
-    "yerel_basın",
-    "belediye",
-    "valilik",
-    "kaymakamlik",
-    "adliye",
-    "baro",
-    "kamu_duyurusu",
-]
+from html import unescape
 
 
-def simdi():
+BASE = Path(__file__).resolve().parent
+
+SOURCES_FILE = BASE / "kaynaklar.json"
+STATE_FILE = BASE / "kaynak_havuzu_ilerleme.json"
+REPORT_FILE = BASE / "kaynak_havuzu_raporu.json"
+
+DISTRICT_PDF = (
+    "https://www.alomaliye.com/wp-content/uploads/2020/05/"
+    "ilce-listesi.pdf"
+)
+
+USER_AGENT = "Mozilla/5.0 (compatible; MIHVER/3.0)"
+BATCH_SIZE = 60
+REQUEST_TIMEOUT = 25
+PAUSE_SECONDS = 1.0
+
+
+def now():
     return datetime.now(timezone.utc).isoformat()
 
 
-def oku_json(dosya, varsayilan):
-    if not dosya.exists():
-        return varsayilan
-    try:
-        with dosya.open("r", encoding="utf-8") as f:
-            return json.load(f)
-    except (json.JSONDecodeError, OSError):
-        raise RuntimeError(
-            f"{dosya.name} okunamadı. Dosyayı korumak için işlem durduruldu."
-        )
+def fetch(url, timeout=REQUEST_TIMEOUT):
+    req = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": USER_AGENT,
+            "Accept": "*/*"
+        }
+    )
+    with urllib.request.urlopen(req, timeout=timeout) as response:
+        return response.read()
 
 
-def kaydet_json(dosya, veri):
-    gecici = dosya.with_suffix(dosya.suffix + ".tmp")
-    with gecici.open("w", encoding="utf-8") as f:
-        json.dump(veri, f, ensure_ascii=False, indent=2)
-    gecici.replace(dosya)
+def load_json(path, default):
+    if not path.exists():
+        return default
+
+    with path.open("r", encoding="utf-8") as f:
+        return json.load(f)
 
 
-def kaynak_listesi(veri):
-    if isinstance(veri, list):
-        return veri
+def atomic_save(path, data):
+    temp = path.with_suffix(path.suffix + ".tmp")
 
-    if isinstance(veri, dict):
-        for anahtar in ("kaynaklar", "sources", "items"):
-            if isinstance(veri.get(anahtar), list):
-                return veri[anahtar]
+    with temp.open("w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+    os.replace(temp, path)
+
+
+def get_source_list(data):
+    if isinstance(data, list):
+        return data, None
+
+    if isinstance(data, dict):
+        for key in ("kaynaklar", "sources", "items"):
+            if isinstance(data.get(key), list):
+                return data[key], key
 
     raise RuntimeError(
-        "kaynaklar.json içinde tanınan bir kaynak listesi bulunamadı. "
-        "Dosya değiştirilmedi."
+        "kaynaklar.json biçimi tanınamadı. Dosya değiştirilmedi."
     )
 
 
-def kaynak_url(kaynak):
-    if not isinstance(kaynak, dict):
-        return ""
-    return (
-        kaynak.get("url")
-        or kaynak.get("adres")
-        or kaynak.get("link")
-        or ""
-    ).strip()
+def normalize(text):
+    text = unescape(str(text or ""))
+    text = text.replace("\xa0", " ")
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
 
 
-def kimlik_uret(url):
+def slug_id(url):
     return "mihver-" + hashlib.sha256(
         url.encode("utf-8")
     ).hexdigest()[:20]
 
 
-def il_adi_duzelt(il):
-    return il.strip()
+def clean_url(url):
+    url = normalize(url)
+
+    if not url.startswith(("http://", "https://")):
+        return ""
+
+    parsed = urllib.parse.urlsplit(url)
+
+    if not parsed.hostname:
+        return ""
+
+    if parsed.hostname.endswith("google.com"):
+        return ""
+
+    if parsed.hostname.endswith("googleusercontent.com"):
+        return ""
+
+    if parsed.hostname.endswith("gstatic.com"):
+        return ""
+
+    return urllib.parse.urlunsplit((
+        parsed.scheme,
+        parsed.netloc.lower(),
+        parsed.path.rstrip("/"),
+        "",
+        ""
+    ))
 
 
-def aday_kaynak(il, arama, kategori):
+def download_district_pdf():
+    print("Resmî ilçe listesi indiriliyor...")
+
+    data = fetch(DISTRICT_PDF)
+
+    if not data.startswith(b"%PDF"):
+        raise RuntimeError("İlçe listesi PDF olarak alınamadı.")
+
+    with tempfile.NamedTemporaryFile(
+        suffix=".pdf", delete=False
+    ) as f:
+        f.write(data)
+        return f.name
+
+
+def extract_pdf_text(pdf_path):
+    result = subprocess.run(
+        ["pdftotext", "-layout", pdf_path, "-"],
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        timeout=60
+    )
+
+    if result.returncode != 0 or not result.stdout.strip():
+        raise RuntimeError(
+            "PDF metni çıkarılamadı. pdftotext işlemi başarısız."
+        )
+
+    return result.stdout
+
+
+def parse_districts(text):
     """
-    Arama ifadesi kaynak URL'si değildir.
-    Kaynağı doğrulanmış gibi göstermemek için aday kaydı üretir.
+    İçişleri Bakanlığı ilçe listesi PDF metnini okur.
+    İl başlıklarını ve altındaki ilçe isimlerini ayıklar.
     """
-    kimlik = hashlib.sha256(
-        f"{il}|{arama}|{kategori}".encode("utf-8")
-    ).hexdigest()[:20]
 
-    return {
-        "id": f"aday-{kimlik}",
-        "ad": f"{il} - {kategori.replace('_', ' ').title()} kaynak keşfi",
-        "il": il,
-        "ilce": None,
-        "kategori": kategori,
-        "arama_ifadesi": arama,
-        "durum": "aday",
-        "dogrulandi": False,
-        "otomatik_haber_toplama": False,
-        "kaynak_turu": "kesif_adayi",
-        "olusturulma": simdi()
-    }
-
-
-def ilce_envanteri_olustur():
-    """
-    İlçe isimleri resmî bir veri kaynağından çekilmeden
-    uydurulmaz. Bu fonksiyon 81 il için ilçe envanteri
-    alanlarını hazırlar.
-    """
-    return [
-        {
-            "il": il,
-            "ilceler": [],
-            "ilce_listesi_durumu": "resmi_veri_bekleniyor"
-        }
-        for il in ILLER
+    provinces = [
+        "ADANA", "ADIYAMAN", "AFYONKARAHİSAR", "AĞRI",
+        "AMASYA", "ANKARA", "ANTALYA", "ARTVİN", "AYDIN",
+        "BALIKESİR", "BİLECİK", "BİNGÖL", "BİTLİS", "BOLU",
+        "BURDUR", "BURSA", "ÇANAKKALE", "ÇANKIRI", "ÇORUM",
+        "DENİZLİ", "DİYARBAKIR", "EDİRNE", "ELAZIĞ",
+        "ERZİNCAN", "ERZURUM", "ESKİŞEHİR", "GAZİANTEP",
+        "GİRESUN", "GÜMÜŞHANE", "HAKKARİ", "HATAY",
+        "ISPARTA", "MERSİN", "İSTANBUL", "İZMİR", "KARS",
+        "KASTAMONU", "KAYSERİ", "KIRKLARELİ", "KIRŞEHİR",
+        "KOCAELİ", "KONYA", "KÜTAHYA", "MALATYA", "MANİSA",
+        "KAHRAMANMARAŞ", "MARDİN", "MUĞLA", "MUŞ",
+        "NEVŞEHİR", "NİĞDE", "ORDU", "RİZE", "SAKARYA",
+        "SAMSUN", "SİİRT", "SİNOP", "SİVAS", "TEKİRDAĞ",
+        "TOKAT", "TRABZON", "TUNCELİ", "ŞANLIURFA", "UŞAK",
+        "VAN", "YOZGAT", "ZONGULDAK", "AKSARAY", "BAYBURT",
+        "KARAMAN", "KIRIKKALE", "BATMAN", "ŞIRNAK",
+        "BARTIN", "ARDAHAN", "IĞDIR", "YALOVA", "KARABÜK",
+        "KİLİS", "OSMANİYE", "DÜZCE"
     ]
 
-
-def ana():
-    mevcut_veri = oku_json(SOURCES_FILE, [])
-    mevcut = kaynak_listesi(mevcut_veri)
-
-    mevcut_urller = {
-        kaynak_url(k).rstrip("/").lower()
-        for k in mevcut
-        if kaynak_url(k)
+    province_map = {
+        p.casefold(): p.title() for p in provinces
     }
 
-    adaylar = []
-    for il in ILLER:
-        for sablon in ARAMA_SABLONLARI:
-            arama = sablon.format(il=il)
-            kategori = (
-                "yerel_basın" if "haber" in arama
-                else "belediye" if "belediye" in arama
-                else "valilik" if "valilik" in arama
-                else "kaymakamlik" if "kaymakamlık" in arama
-                else "adliye" if "adliye" in arama
-                else "baro" if "baro" in arama
-                else "kamu_duyurusu"
+    current_province = None
+    districts = []
+    seen = set()
+
+    for raw_line in text.splitlines():
+        line = normalize(raw_line).upper()
+
+        if not line:
+            continue
+
+        line = re.sub(
+            r"İLÇE SAYISI\s*:\s*\d+",
+            "",
+            line
+        ).strip()
+
+        if not line:
+            continue
+
+        # İl başlıkları
+        candidate = re.sub(r"[^A-ZÇĞİÖŞÜ]", "", line)
+
+        if candidate.casefold() in province_map:
+            current_province = province_map[candidate.casefold()]
+            continue
+
+        if current_province is None:
+            continue
+
+        if "TOPLAM İLÇE SAYISI" in line:
+            continue
+
+        if "İLLER İDARESİ" in line or "İÇİŞLERİ" in line:
+            continue
+
+        # PDF satırında yalnızca ilçe adı kalacak şekilde temizle
+        name = re.sub(r"[^A-ZÇĞİÖŞÜ]", "", line)
+
+        if len(name) < 2:
+            continue
+
+        if name in {
+            "İLÇELERGENELLİSTESİ",
+            "TÜRKİYECUMHURİYETİ"
+        }:
+            continue
+
+        key = (current_province, name)
+
+        if key not in seen:
+            seen.add(key)
+            districts.append({
+                "il": current_province,
+                "ilce": name.title()
+            })
+
+    if len(districts) < 850:
+        raise RuntimeError(
+            f"PDF'den yalnızca {len(districts)} ilçe çıkarıldı. "
+            "Eksik liste kullanılmayacak."
+        )
+
+    if len(districts) != 922:
+        raise RuntimeError(
+            f"PDF'den {len(districts)} kayıt çıkarıldı; "
+            "beklenen 922. Liste kontrol edilmeden kullanılmayacak."
+        )
+
+    return districts
+
+
+def get_districts():
+    pdf_path = download_district_pdf()
+
+    try:
+        text = extract_pdf_text(pdf_path)
+        districts = parse_districts(text)
+    finally:
+        try:
+            os.unlink(pdf_path)
+        except OSError:
+            pass
+
+    return districts
+
+
+def google_news_rss(province, district):
+    query = f'"{district}" "{province}" yerel haber'
+
+    params = urllib.parse.urlencode({
+        "q": query,
+        "hl": "tr",
+        "gl": "TR",
+        "ceid": "TR:tr"
+    })
+
+    return (
+        "https://news.google.com/rss/search?"
+        + params
+    )
+
+
+def parse_rss_sources(xml_data, province, district):
+    found = []
+
+    try:
+        root = ET.fromstring(xml_data)
+    except ET.ParseError:
+        return found
+
+    for item in root.findall(".//item"):
+        source = item.find("source")
+
+        if source is None:
+            continue
+
+        publisher_url = clean_url(
+            source.attrib.get("url", "")
+        )
+
+        publisher_name = normalize(source.text)
+
+        if not publisher_url:
+            continue
+
+        found.append({
+            "ad": publisher_name or publisher_url,
+            "url": publisher_url,
+            "il": province,
+            "ilce": district,
+            "kategori": "yerel_basın",
+            "durum": "aday",
+            "dogrulandi": False,
+            "kaynak_turu": "google_news_rss_kesfi",
+            "kesif_tarihi": now()
+        })
+
+    return found
+
+
+def main():
+    print("MİHVER kaynak keşif motoru başlatıldı.")
+
+    # İlçe listesi doğrulanmadan kaynak dosyasına dokunulmaz.
+    districts = get_districts()
+
+    print(f"İlçe listesi doğrulandı: {len(districts)}")
+
+    state = load_json(STATE_FILE, {"next_index": 0})
+
+    start = int(state.get("next_index", 0))
+    start = max(0, min(start, len(districts)))
+
+    end = min(start + BATCH_SIZE, len(districts))
+
+    print(f"Bu çalıştırmada taranacak ilçe: {start + 1}-{end}")
+
+    original_data = load_json(SOURCES_FILE, [])
+    sources, source_key = get_source_list(original_data)
+
+    known_urls = {
+        clean_url(
+            item.get("url")
+            or item.get("adres")
+            or item.get("link")
+            or ""
+        )
+        for item in sources
+        if isinstance(item, dict)
+    }
+
+    known_urls.discard("")
+
+    discovered = []
+    checked_districts = 0
+    errors = 0
+
+    for district_info in districts[start:end]:
+        province = district_info["il"]
+        district = district_info["ilce"]
+
+        print(f"Taranıyor: {province} / {district}")
+
+        try:
+            rss_url = google_news_rss(province, district)
+            rss_data = fetch(rss_url)
+
+            results = parse_rss_sources(
+                rss_data,
+                province,
+                district
             )
-            adaylar.append(aday_kaynak(il, arama, kategori))
 
-    # Mevcut kaynak kayıtlarına dokunulmaz.
-    # Sadece URL'si olan kayıtlar mevcut kaynak kabul edilir.
-    yeni_kayitlar = []
-    for aday in adaylar:
-        arama_anahtari = (
-            aday["il"].casefold(),
-            aday["arama_ifadesi"].casefold()
-        )
+            for item in results:
+                url = item["url"]
 
-        zaten_var = any(
-            isinstance(k, dict)
-            and k.get("il", "").casefold() == arama_anahtari[0]
-            and k.get("arama_ifadesi", "").casefold() == arama_anahtari[1]
-            for k in mevcut
-        )
+                if url in known_urls:
+                    continue
 
-        if not zaten_var:
-            yeni_kayitlar.append(aday)
+                item["id"] = slug_id(url)
+                item["eklenme_tarihi"] = now()
 
-    # Eski JSON biçimini koru.
-    if isinstance(mevcut_veri, list):
-        yeni_veri = mevcut_veri + yeni_kayitlar
+                discovered.append(item)
+                known_urls.add(url)
+
+        except Exception as exc:
+            errors += 1
+            print(
+                f"Uyarı: {province}/{district}: {exc}"
+            )
+
+        checked_districts += 1
+        time.sleep(PAUSE_SECONDS)
+
+    # Sadece yeni ve gerçek yayıncı URL'leri eklenir.
+    updated_sources = sources + discovered
+
+    if isinstance(original_data, list):
+        updated_data = updated_sources
     else:
-        yeni_veri = dict(mevcut_veri)
-        anahtar = next(
-            (k for k in ("kaynaklar", "sources", "items")
-             if isinstance(yeni_veri.get(k), list)),
-            "kaynaklar"
-        )
-        yeni_veri[anahtar] = mevcut + yeni_kayitlar
+        updated_data = dict(original_data)
+        updated_data[source_key] = updated_sources
 
-    kaydet_json(SOURCES_FILE, yeni_veri)
+    # Kaynak dosyasını atomik biçimde kaydet.
+    atomic_save(SOURCES_FILE, updated_data)
 
-    rapor = {
+    next_index = end
+    completed = next_index >= len(districts)
+
+    if completed:
+        next_index = 0
+
+    atomic_save(STATE_FILE, {
+        "surum": "3.0.0",
+        "next_index": next_index,
+        "son_taranan_aralik": [start, end],
+        "toplam_ilce": len(districts),
+        "tamamlandi": completed,
+        "son_calistirma": now()
+    })
+
+    report = {
         "proje": "MİHVER",
-        "surum": "2.0.0",
-        "olusturulma": simdi(),
-        "il_sayisi": len(ILLER),
-        "ilce_hedefi": 922,
-        "ilce_listesi_durumu": "resmi_veri_entegrasyonu_bekleniyor",
-        "arama_adayi_sayisi": len(adaylar),
-        "yeni_aday_sayisi": len(yeni_kayitlar),
-        "mevcut_kaynak_sayisi": len(mevcut),
-        "toplam_kayit_sayisi": len(mevcut) + len(yeni_kayitlar),
+        "surum": "3.0.0",
+        "tarih": now(),
+        "toplam_il": 81,
+        "toplam_ilce": len(districts),
+        "bu_calismada_taranan_ilce": checked_districts,
+        "kesif_hatasi": errors,
+        "yeni_kaynak_adayi": len(discovered),
+        "toplam_kaynak_kaydi": len(updated_sources),
+        "tarama_tamamlandi": completed,
+        "sonraki_baslangic_sirasi": next_index,
         "not": (
-            "Oluşturulan kayıtlar arama adaylarıdır; doğrulanmış "
-            "yayıncı veya haber kaynağı değildir. İlçe listesi "
-            "resmî veriden ayrıca alınmalıdır."
+            "Keşfedilen yayıncı adresleri adaydır. "
+            "İlçe aidiyeti ve yayıncı kimliği ayrıca "
+            "doğrulanmalıdır."
         )
     }
 
-    kaydet_json(REPORT_FILE, rapor)
+    atomic_save(REPORT_FILE, report)
 
-    print("MİHVER kaynak envanteri tamamlandı.")
-    print(f"İl sayısı: {len(ILLER)}")
-    print(f"İlçe hedefi: 922")
-    print(f"Yeni keşif adayı: {len(yeni_kayitlar)}")
-    print(f"Toplam kaynak kaydı: {len(mevcut) + len(yeni_kayitlar)}")
-    print(f"Rapor: {REPORT_FILE.name}")
+    print("--------------------------------")
+    print("MİHVER kaynak keşfi tamamlandı.")
+    print(f"Kontrol edilen ilçe: {checked_districts}")
+    print(f"Yeni kaynak adayı: {len(discovered)}")
+    print(f"Toplam kaynak kaydı: {len(updated_sources)}")
+    print(f"Tarama tamamlandı mı: {completed}")
+    print("--------------------------------")
 
 
 if __name__ == "__main__":
-    ana()
+    main()
