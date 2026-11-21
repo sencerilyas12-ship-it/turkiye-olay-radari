@@ -1,22 +1,30 @@
 
 {
-  "surum": "1.0.2",
+  "surum": "1.1.0",
   "proje": "MIHVER",
-  "aciklama": "Mevcut kaynaklar.json dosyasından bağımsız ek kaynak envanteri. Mevcut kaynaklar ve haber kayıtları korunur.",
-  "olusturma_tarihi": "2026-11-20",
+  "aciklama": "Türkiye genelinde yerel, ulusal ve resmî kaynakları keşfeden; haberleri otomatik toplayıp yayımlayan ek kaynak envanteri. Mevcut kaynaklar.json ve haberler.json dosyaları korunur.",
+  "olusturma_tarihi": "2026-11-21",
   "ayarlar": {
     "mevcut_dosya_degistirilmeyecek": true,
-    "otomatik_aktiflestirme": false,
-    "varsayilan_durum": "aday",
-    "adres_dogrulanmadan_haber_toplamaya_baslama": true,
-    "adres_dogrulanmadan_haber_toplama_yasak": true,
+    "otomatik_kaynak_ekleme": true,
+    "otomatik_aktiflestirme": true,
+    "varsayilan_durum": "aktif",
+    "dogrulanmamis_kaynaktan_haber_toplama": true,
+    "dogrulanmamis_haberleri_yayinla": true,
+    "haberleri_otomatik_yayinla": true,
+    "adres_dogrulanmadan_haber_toplamaya_baslama": false,
+    "adres_dogrulanmadan_haber_toplama_yasak": false,
     "robots_txt_kontrolu": true,
     "robots_txt_kontrolu_gerekli": true,
-    "kaynak_aktiflestirme_icin_insan_onayi": true,
+    "kaynak_aktiflestirme_icin_insan_onayi": false,
+    "kaynak_durumu_yayinla_bilgisi": true,
+    "haber_kaynagini_goster": true,
+    "haber_kaynak_baglantisini_goster": true,
+    "yinelenen_haberleri_kontrol_et": true,
     "mevcut_kaynaklar_dosyasi": "kaynaklar.json",
     "mevcut_haberler_dosyasi": "haberler.json",
-    "birlestirme_politikasi": "yalnizca_okuma_ve_ekleme_mevcut_dosyaya_yazma_yok",
-    "id_cakismasinda": "hata_ver_ve_dur"
+    "birlestirme_politikasi": "mevcut_verileri_koru_yeni_kayitlari_ekle",
+    "id_cakismasinda": "mevcut_kaydi_degistirme_yeni_kaydi_atla_ve_raporla"
   },
   "iller": [
     {"plaka": 1, "ad": "Adana"},
@@ -138,12 +146,7 @@
       "kurum": "Basın İlan Kurumu",
       "url": "https://ilanbis.bik.gov.tr/Uygulamalar/AylikListe",
       "kapsam": ["81 il", "yerel gazeteler", "ilçe gazeteleri", "internet haber siteleri", "ulusal yayıncılar"],
-      "veri_turleri": [
-        "resmi_ilan_yayinlayan_gazeteler",
-        "resmi_ilan_yayinlayan_internet_haber_siteleri",
-        "bekleme_suresindeki_yayinlar",
-        "reklam_yayinlayan_yayinlar"
-      ],
+      "veri_turleri": ["resmi_ilan_yayinlayan_gazeteler", "resmi_ilan_yayinlayan_internet_haber_siteleri", "bekleme_suresindeki_yayinlar", "reklam_yayinlayan_yayinlar"],
       "ilce_bilgisi": true,
       "otomatik_veri_cekme": false,
       "durum": "aday",
@@ -245,6 +248,9 @@
       "trafik",
       "kayip_kisi"
     ],
+    "otomatik_yayin": true,
+    "dogrulanmamis_haber_yayini": true,
+    "kaynak_bilgisi_goster": true,
     "hukuki_yayin_kurallari": {
       "masumiyet_karinesi": true,
       "kesinlesmemis_iddialar_iddia_olarak_yazilir": true,
@@ -269,11 +275,15 @@
     "ilce_dogrulamasi": true,
     "yayinci_kimligi_dogrulamasi": true,
     "resmi_kurum_dogrulamasi": true,
-    "kaynak_aktiflestirme_icin_insan_onayi": true,
-    "dogrulanmamis_kaynak_haber_toplamada_kullanilmaz": true
+    "kaynak_aktiflestirme_icin_insan_onayi": false,
+    "dogrulanmamis_kaynak_haber_toplamada_kullanilmaz": false,
+    "dogrulanmamis_haberleri_yayinla": true,
+    "haber_kaynak_bilgisi_gosterilir": true,
+    "haber_kaynak_urlsi_gosterilir": true,
+    "hukuki_yayin_kurallari_uygulanir": true
   },
   "istatistik": {
-    "_not": "Bu değerler başlangıç değeridir; kod tarafından yeniden hesaplanmalıdır. İlçe hedefi resmî kaynaktan doğrulanana kadar kesin sayı kabul edilmez.",
+    "_not": "Başlangıç değerleridir. Gerçek kaynak ve ilçe sayıları tarama sonuçlarına göre hesaplanmalıdır.",
     "il_sayisi": 81,
     "ilce_hedefi": 922,
     "ilce_hedefi_dogrulama": "bekliyor",
