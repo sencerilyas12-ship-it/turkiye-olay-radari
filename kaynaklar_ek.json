@@ -1,14 +1,22 @@
+
 {
-  "surum": "1.0.1",
+  "surum": "1.0.2",
   "proje": "MIHVER",
-  "aciklama": "Mevcut kaynaklar.json dosyasından bağımsız ek kaynak envanteri.",
+  "aciklama": "Mevcut kaynaklar.json dosyasından bağımsız ek kaynak envanteri. Mevcut kaynaklar ve haber kayıtları korunur.",
   "olusturma_tarihi": "2026-11-20",
   "ayarlar": {
     "mevcut_dosya_degistirilmeyecek": true,
-    "otomatik_aktiflestirme": true,
+    "otomatik_aktiflestirme": false,
     "varsayilan_durum": "aday",
-    "adres_dogrulanmadan_haber_toplamaya_baslama": false,
-    "robots_txt_kontrolu_gerekli": true
+    "adres_dogrulanmadan_haber_toplamaya_baslama": true,
+    "adres_dogrulanmadan_haber_toplama_yasak": true,
+    "robots_txt_kontrolu": true,
+    "robots_txt_kontrolu_gerekli": true,
+    "kaynak_aktiflestirme_icin_insan_onayi": true,
+    "mevcut_kaynaklar_dosyasi": "kaynaklar.json",
+    "mevcut_haberler_dosyasi": "haberler.json",
+    "birlestirme_politikasi": "yalnizca_okuma_ve_ekleme_mevcut_dosyaya_yazma_yok",
+    "id_cakismasinda": "hata_ver_ve_dur"
   },
   "iller": [
     {"plaka": 1, "ad": "Adana"},
@@ -231,13 +239,25 @@
       "yerel_yonetim",
       "kamu_gorevlileri_hakkinda_iddialar"
     ],
-    "haric_tutulan_kategoriler": ["siber_suc", "uyusturucu", "trafik", "kayip_kisi"],
+    "haric_tutulan_kategoriler": [
+      "siber_suc",
+      "uyusturucu",
+      "trafik",
+      "kayip_kisi"
+    ],
     "hukuki_yayin_kurallari": {
       "masumiyet_karinesi": true,
       "kesinlesmemis_iddialar_iddia_olarak_yazilir": true,
       "cocuk_kimligi_gizlenir": true,
       "cinsel_siddet_magdurunun_kimligi_gizlenir": true,
-      "kisisel_veriler_minimumda_tutulur": true
+      "kisisel_veriler_minimumda_tutulur": true,
+      "yayinlanmasi_yasak_kisisel_veriler": [
+        "kimlik_numarasi",
+        "acik_ev_adresi",
+        "telefon_numarasi",
+        "cocuklarin_kimligini_belirleyen_bilgiler",
+        "cinsel_siddet_magdurunun_kimligini_belirleyen_bilgiler"
+      ]
     }
   },
   "dogrulama_kurallari": {
@@ -253,9 +273,10 @@
     "dogrulanmamis_kaynak_haber_toplamada_kullanilmaz": true
   },
   "istatistik": {
-    "_not": "Bu değerler başlangıç değeridir; kod tarafından yeniden hesaplanmalıdır.",
+    "_not": "Bu değerler başlangıç değeridir; kod tarafından yeniden hesaplanmalıdır. İlçe hedefi resmî kaynaktan doğrulanana kadar kesin sayı kabul edilmez.",
     "il_sayisi": 81,
     "ilce_hedefi": 922,
+    "ilce_hedefi_dogrulama": "bekliyor",
     "kaynak_sayisi": 0,
     "resmi_dizin_sayisi": 5,
     "dogrulanmis_kaynak_sayisi": 0,
