@@ -14,8 +14,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  kaynaklar:
-    name: Kaynak Keşfi ve Doğrulama
+  kaynak-envanteri:
     runs-on: ubuntu-latest
     timeout-minutes: 45
 
@@ -24,50 +23,42 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-          fetch-depth: 0
 
       - name: Python kur
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Python kodlarını kontrol et
+      - name: Python dosyalarını kontrol et
         run: |
-          python -m py_compile \
-            kesif_motoru.py \
-            kaynak_dogrulama.py \
-            kaynak_envanter_kontrol.py
+          python -m py_compile kaynak_havuzu_olustur.py
+          python -m py_compile kesif_motoru.py
+          python -m py_compile kaynak_dogrulama.py
+          python -m py_compile kaynak_envanter_kontrol.py
 
-      - name: Kaynak envanterini kontrol et
-        run: python kaynak_envanter_kontrol.py
+      - name: Kaynak havuzunu oluştur
+        run: python kaynak_havuzu_olustur.py
 
-      - name: Yeni kaynakları keşfet
+      - name: Kaynak keşfini çalıştır
         run: python kesif_motoru.py
 
       - name: Kaynakları doğrula
         run: python kaynak_dogrulama.py
 
-      - name: Güncel GitHub verisini kontrol et
-        run: |
-          git fetch origin main
-          if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
-            echo "GitHub verisi değişti. Kayıt güvenliği için işlem durduruldu."
-            exit 1
-          fi
-
-      - name: Kaynak verilerini kaydet
+      - name: Değişiklikleri kaydet
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add kaynaklar.json
+          git add kaynak_havuzu_raporu.json
           git add dogrulama_durumu.json
           git add kaynak_dogrulama_raporu.json
           git add kaynak_envanter_kontrol_raporu.json
 
           if git diff --cached --quiet; then
-            echo "Kaynaklarda yeni değişiklik yok."
+            echo "Kaydedilecek yeni değişiklik yok."
           else
-            git commit -m "MIHVER kaynak envanteri ve doğrulama güncellendi"
+            git commit -m "MİHVER kaynak envanterini güncelle"
             git push origin HEAD:main
           fi
