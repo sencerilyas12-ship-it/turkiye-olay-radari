@@ -8869,11 +8869,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:40:24.881584+00:00",
+        "son_kontrol": "2026-11-21T18:41:09.804202+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:40:24.881584+00:00",
+      "son_kontrol": "2026-11-21T18:41:09.804202+00:00",
       "rss_adresleri": [
         "https://www.gazeteilksayfa.com/service/rss.php"
       ],
@@ -8978,11 +8978,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:40:34.497024+00:00",
+        "son_kontrol": "2026-11-21T18:41:22.403957+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:40:34.497024+00:00",
+      "son_kontrol": "2026-11-21T18:41:22.403957+00:00",
       "rss_adresleri": [
         "https://www.bomba15.com/rss",
         "https://www.bomba15.com/rss/"
@@ -9081,11 +9081,11 @@
       "dogrulama": {
         "adres": "erisime_engel",
         "rss": "bulunamadi",
-        "son_kontrol": "2026-11-21T17:40:38.866362+00:00",
+        "son_kontrol": "2026-11-21T18:41:27.440153+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:40:38.866362+00:00",
+      "son_kontrol": "2026-11-21T18:41:27.440153+00:00",
       "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": 403,
@@ -9113,11 +9113,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:40:39.906407+00:00",
+        "son_kontrol": "2026-11-21T18:41:28.498389+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:40:39.906407+00:00",
+      "son_kontrol": "2026-11-21T18:41:28.498389+00:00",
       "rss_adresleri": [
         "https://www.saraymedya.com/xml/rss/"
       ],
@@ -9218,11 +9218,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "gecerli_besleme_bulunamadi",
-        "son_kontrol": "2026-11-21T17:40:45.072629+00:00",
+        "son_kontrol": "2026-11-21T18:41:35.236137+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:40:45.072629+00:00",
+      "son_kontrol": "2026-11-21T18:41:35.236137+00:00",
       "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": 200,
@@ -9309,11 +9309,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:40:54.445224+00:00",
+        "son_kontrol": "2026-11-21T18:41:45.842105+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:40:54.445224+00:00",
+      "son_kontrol": "2026-11-21T18:41:45.842105+00:00",
       "rss_adresleri": [
         "https://beyazgazete.com/rss/guncel.xml"
       ],
@@ -9414,11 +9414,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:41:02.169951+00:00",
+        "son_kontrol": "2026-11-21T18:41:52.371741+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:41:02.169951+00:00",
+      "son_kontrol": "2026-11-21T18:41:52.371741+00:00",
       "rss_adresleri": [
         "https://www.haberizma.com/feed/",
         "https://www.haberizma.com/comments/feed/"
@@ -9537,11 +9537,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:41:24.317968+00:00",
+        "son_kontrol": "2026-11-21T18:42:18.367850+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:41:24.317968+00:00",
+      "son_kontrol": "2026-11-21T18:42:18.367850+00:00",
       "rss_adresleri": [
         "https://www.bursatv.com.tr/rss",
         "https://www.bursatv.com.tr/rss/"
@@ -9638,95 +9638,26 @@
       "arama": "adliye mahkeme duruşma",
       "kimlik": "mihver-d91b2afefd8d292d2819",
       "dogrulama": {
-        "adres": "erisilebilir",
-        "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:41:28.479389+00:00",
+        "adres": "erisilemedi",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T18:42:23.357177+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:41:28.479389+00:00",
-      "rss_adresleri": [
-        "https://tr.euronews.com/rss"
-      ],
+      "son_kontrol": "2026-11-21T18:42:23.357177+00:00",
+      "rss_adresleri": [],
       "kontrol_raporu": {
-        "http_kodu": 200,
-        "erisim": "erisilebilir",
-        "yonlendirme": "yok",
-        "son_url": "https://tr.euronews.com",
+        "http_kodu": null,
+        "erisim": "erisilemedi",
+        "yonlendirme": null,
+        "son_url": null,
         "eski_alan": "tr.euronews.com",
-        "yeni_alan": "tr.euronews.com",
-        "rss_adresleri": [
-          "https://tr.euronews.com/rss"
-        ],
-        "rss_testleri": [
-          {
-            "adres": "https://tr.euronews.com/feed",
-            "durum": "erisilemedi",
-            "http_kodu": 404,
-            "son_url": "https://tr.euronews.com/feed"
-          },
-          {
-            "adres": "https://tr.euronews.com/feed/",
-            "durum": "erisilemedi",
-            "http_kodu": 404,
-            "son_url": "https://tr.euronews.com/feed/"
-          },
-          {
-            "adres": "https://tr.euronews.com/rss",
-            "durum": "rss_atom_icerigi_gecerli",
-            "http_kodu": 200,
-            "son_url": "https://tr.euronews.com/rss",
-            "tur": "rss",
-            "kayit_sayisi": 50
-          },
-          {
-            "adres": "https://tr.euronews.com/rss/",
-            "durum": "rss_atom_icerigi_gecerli",
-            "http_kodu": 200,
-            "son_url": "https://tr.euronews.com/rss",
-            "tur": "rss",
-            "kayit_sayisi": 50
-          },
-          {
-            "adres": "https://tr.euronews.com/rss.xml",
-            "durum": "erisilemedi",
-            "http_kodu": 404,
-            "son_url": "https://tr.euronews.com/rss.xml"
-          },
-          {
-            "adres": "https://tr.euronews.com/feed.xml",
-            "durum": "erisilemedi",
-            "http_kodu": 404,
-            "son_url": "https://tr.euronews.com/feed.xml"
-          },
-          {
-            "adres": "https://tr.euronews.com/atom.xml",
-            "durum": "erisilemedi",
-            "http_kodu": 404,
-            "son_url": "https://tr.euronews.com/atom.xml"
-          },
-          {
-            "adres": "https://tr.euronews.com/feeds/posts/default",
-            "durum": "erisilemedi",
-            "http_kodu": 404,
-            "son_url": "https://tr.euronews.com/feeds/posts/default"
-          },
-          {
-            "adres": "https://tr.euronews.com/?feed=rss2",
-            "durum": "gecerli_besleme_degil",
-            "http_kodu": 200,
-            "son_url": "https://tr.euronews.com/?feed=rss2",
-            "tur": null,
-            "kayit_sayisi": 0
-          }
-        ],
-        "rss_durumu": "icerik_dogrulandi",
-        "robots": {
-          "adres": "https://tr.euronews.com/robots.txt",
-          "durum": "robots_dosyasi_bulundu",
-          "izin_durumu": "kurallar_yuklendi"
-        },
-        "hata": null
+        "yeni_alan": null,
+        "rss_adresleri": [],
+        "rss_testleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots": null,
+        "hata": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
       }
     },
     {
@@ -9741,11 +9672,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:41:33.199888+00:00",
+        "son_kontrol": "2026-11-21T18:42:39.418171+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:41:33.199888+00:00",
+      "son_kontrol": "2026-11-21T18:42:39.418171+00:00",
       "rss_adresleri": [
         "https://kisadalga.net/service/rss.php"
       ],
@@ -9852,11 +9783,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:41:41.569592+00:00",
+        "son_kontrol": "2026-11-21T18:42:49.865487+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:41:41.569592+00:00",
+      "son_kontrol": "2026-11-21T18:42:49.865487+00:00",
       "rss_adresleri": [
         "https://www.turkiyegazetesi.com.tr/rss/son-dakika-haberleri",
         "https://www.turkiyegazetesi.com.tr/feed",
@@ -9893,7 +9824,7 @@
             "http_kodu": 200,
             "son_url": "https://www.turkiyegazetesi.com.tr/feed",
             "tur": "rss",
-            "kayit_sayisi": 442
+            "kayit_sayisi": 444
           },
           {
             "adres": "https://www.turkiyegazetesi.com.tr/feed/",
@@ -9901,7 +9832,7 @@
             "http_kodu": 200,
             "son_url": "https://www.turkiyegazetesi.com.tr/feed/",
             "tur": "rss",
-            "kayit_sayisi": 442
+            "kayit_sayisi": 444
           },
           {
             "adres": "https://www.turkiyegazetesi.com.tr/rss",
@@ -9909,7 +9840,7 @@
             "http_kodu": 200,
             "son_url": "https://www.turkiyegazetesi.com.tr/rss",
             "tur": "rss",
-            "kayit_sayisi": 442
+            "kayit_sayisi": 444
           },
           {
             "adres": "https://www.turkiyegazetesi.com.tr/rss/",
@@ -9917,7 +9848,7 @@
             "http_kodu": 200,
             "son_url": "https://www.turkiyegazetesi.com.tr/rss/",
             "tur": "rss",
-            "kayit_sayisi": 442
+            "kayit_sayisi": 444
           },
           {
             "adres": "https://www.turkiyegazetesi.com.tr/rss.xml",
@@ -9979,11 +9910,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:41:54.415660+00:00",
+        "son_kontrol": "2026-11-21T18:43:09.100290+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:41:54.415660+00:00",
+      "son_kontrol": "2026-11-21T18:43:09.100290+00:00",
       "rss_adresleri": [
         "https://www.canakkaleolay.com/rss",
         "https://www.canakkaleolay.com/rss/",
@@ -10086,11 +10017,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:42:07.521079+00:00",
+        "son_kontrol": "2026-11-21T18:43:38.122275+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:42:07.521079+00:00",
+      "son_kontrol": "2026-11-21T18:43:38.122275+00:00",
       "rss_adresleri": [
         "https://www.medyalokum.com/rss",
         "https://www.medyalokum.com/rss/"
@@ -10189,11 +10120,11 @@
       "dogrulama": {
         "adres": "erisime_engel",
         "rss": "bulunamadi",
-        "son_kontrol": "2026-11-21T17:42:12.046580+00:00",
+        "son_kontrol": "2026-11-21T18:43:43.775302+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:42:12.046580+00:00",
+      "son_kontrol": "2026-11-21T18:43:43.775302+00:00",
       "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": 403,
@@ -10221,11 +10152,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:42:13.078511+00:00",
+        "son_kontrol": "2026-11-21T18:43:44.854652+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:42:13.078511+00:00",
+      "son_kontrol": "2026-11-21T18:43:44.854652+00:00",
       "rss_adresleri": [
         "https://www.haberci18.com/rss.xml"
       ],
@@ -10322,11 +10253,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:42:23.065602+00:00",
+        "son_kontrol": "2026-11-21T18:43:59.084122+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:42:23.065602+00:00",
+      "son_kontrol": "2026-11-21T18:43:59.084122+00:00",
       "rss_adresleri": [
         "https://www.sozcu.com.tr/feeds/rsssubpub",
         "https://www.sozcu.com.tr/rss/",
@@ -10439,11 +10370,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "gecerli_besleme_bulunamadi",
-        "son_kontrol": "2026-11-21T17:42:28.245536+00:00",
+        "son_kontrol": "2026-11-21T18:44:04.886862+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:42:28.245536+00:00",
+      "son_kontrol": "2026-11-21T18:44:04.886862+00:00",
       "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": 200,
@@ -10540,11 +10471,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:42:42.614311+00:00",
+        "son_kontrol": "2026-11-21T18:44:25.224314+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:42:42.614311+00:00",
+      "son_kontrol": "2026-11-21T18:44:25.224314+00:00",
       "rss_adresleri": [
         "https://www.sozcu18.com/service/rss.php"
       ],
@@ -10649,11 +10580,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:42:50.182492+00:00",
+        "son_kontrol": "2026-11-21T18:44:34.586627+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:42:50.182492+00:00",
+      "son_kontrol": "2026-11-21T18:44:34.586627+00:00",
       "rss_adresleri": [
         "https://www.yaylahaber.com.tr/rss",
         "https://www.yaylahaber.com.tr/rss/"
@@ -10760,11 +10691,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:42:55.512015+00:00",
+        "son_kontrol": "2026-11-21T18:44:40.824980+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:42:55.512015+00:00",
+      "son_kontrol": "2026-11-21T18:44:40.824980+00:00",
       "rss_adresleri": [
         "https://www.habercim19.com/rss"
       ],
@@ -10871,11 +10802,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:43:07.731141+00:00",
+        "son_kontrol": "2026-11-21T18:44:52.567920+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:43:07.731141+00:00",
+      "son_kontrol": "2026-11-21T18:44:52.567920+00:00",
       "rss_adresleri": [
         "https://www.corumtime.com/feed",
         "https://www.corumtime.com/feed/atom",
@@ -10988,11 +10919,11 @@
       "dogrulama": {
         "adres": "erisime_engel",
         "rss": "bulunamadi",
-        "son_kontrol": "2026-11-21T17:43:13.493454+00:00",
+        "son_kontrol": "2026-11-21T18:45:05.064131+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:43:13.493454+00:00",
+      "son_kontrol": "2026-11-21T18:45:05.064131+00:00",
       "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": 403,
@@ -11020,11 +10951,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:43:14.525738+00:00",
+        "son_kontrol": "2026-11-21T18:45:06.120981+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:43:14.525738+00:00",
+      "son_kontrol": "2026-11-21T18:45:06.120981+00:00",
       "rss_adresleri": [
         "https://dosyahaber.com/rss.xml",
         "https://dosyahaber.com/topic/adliye-ve-yargi/rss-feed",
@@ -11179,11 +11110,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "gecerli_besleme_bulunamadi",
-        "son_kontrol": "2026-11-21T17:43:24.465971+00:00",
+        "son_kontrol": "2026-11-21T18:45:19.969069+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:43:24.465971+00:00",
+      "son_kontrol": "2026-11-21T18:45:19.969069+00:00",
       "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": 200,
@@ -11280,11 +11211,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:43:35.195939+00:00",
+        "son_kontrol": "2026-11-21T18:45:35.834746+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:43:35.195939+00:00",
+      "son_kontrol": "2026-11-21T18:45:35.834746+00:00",
       "rss_adresleri": [
         "https://corumhaber.net/rss",
         "https://corumhaber.net/rss/"
@@ -11387,11 +11318,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:43:39.271814+00:00",
+        "son_kontrol": "2026-11-21T18:45:40.745127+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:43:39.271814+00:00",
+      "son_kontrol": "2026-11-21T18:45:40.745127+00:00",
       "rss_adresleri": [
         "https://www.corumhakimiyet.net/rss",
         "https://www.corumhakimiyet.net/rss/"
@@ -11492,11 +11423,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:43:43.387244+00:00",
+        "son_kontrol": "2026-11-21T18:45:45.901678+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:43:43.387244+00:00",
+      "son_kontrol": "2026-11-21T18:45:45.901678+00:00",
       "rss_adresleri": [
         "https://denizliyeniolay.com/rss"
       ],
@@ -11593,11 +11524,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:43:50.452109+00:00",
+        "son_kontrol": "2026-11-21T18:45:55.316213+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:43:50.452109+00:00",
+      "son_kontrol": "2026-11-21T18:45:55.316213+00:00",
       "rss_adresleri": [
         "https://www.denizlihaber.com/feed/",
         "https://www.denizlihaber.com/comments/feed/"
@@ -11708,11 +11639,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "gecerli_besleme_bulunamadi",
-        "son_kontrol": "2026-11-21T17:44:02.834303+00:00",
+        "son_kontrol": "2026-11-21T18:46:12.573327+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:44:02.834303+00:00",
+      "son_kontrol": "2026-11-21T18:46:12.573327+00:00",
       "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": 200,
@@ -11817,11 +11748,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "gecerli_besleme_bulunamadi",
-        "son_kontrol": "2026-11-21T17:44:18.579943+00:00",
+        "son_kontrol": "2026-11-21T18:46:36.100544+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:44:18.579943+00:00",
+      "son_kontrol": "2026-11-21T18:46:36.100544+00:00",
       "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": 200,
@@ -11910,11 +11841,11 @@
       "dogrulama": {
         "adres": "erisilemedi",
         "rss": "bulunamadi",
-        "son_kontrol": "2026-11-21T17:44:21.701960+00:00",
+        "son_kontrol": "2026-11-21T18:46:43.597048+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:44:21.701960+00:00",
+      "son_kontrol": "2026-11-21T18:46:43.597048+00:00",
       "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": null,
@@ -11927,7 +11858,7 @@
         "rss_testleri": [],
         "rss_durumu": "bulunamadi",
         "robots": null,
-        "hata": "<urlopen error timed out>"
+        "hata": "<urlopen error [Errno -3] Temporary failure in name resolution>"
       }
     },
     {
@@ -11942,11 +11873,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:44:37.856068+00:00",
+        "son_kontrol": "2026-11-21T18:46:54.616269+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:44:37.856068+00:00",
+      "son_kontrol": "2026-11-21T18:46:54.616269+00:00",
       "rss_adresleri": [
         "https://www.haberdenizli.com/rss/"
       ],
@@ -12045,11 +11976,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:44:41.903650+00:00",
+        "son_kontrol": "2026-11-21T18:46:59.541811+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:44:41.903650+00:00",
+      "son_kontrol": "2026-11-21T18:46:59.541811+00:00",
       "rss_adresleri": [
         "https://amidahaber.com/service/rss.php"
       ],
@@ -12162,11 +12093,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:44:49.195993+00:00",
+        "son_kontrol": "2026-11-21T18:47:11.309901+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:44:49.195993+00:00",
+      "son_kontrol": "2026-11-21T18:47:11.309901+00:00",
       "rss_adresleri": [
         "https://www.tigrishaber.com/service/rss.php"
       ],
@@ -12271,11 +12202,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:44:55.054942+00:00",
+        "son_kontrol": "2026-11-21T18:47:18.774052+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:44:55.054942+00:00",
+      "son_kontrol": "2026-11-21T18:47:18.774052+00:00",
       "rss_adresleri": [
         "https://www.diyarbakir.net/rss/news"
       ],
@@ -12384,11 +12315,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:45:04.589356+00:00",
+        "son_kontrol": "2026-11-21T18:47:29.965617+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:45:04.589356+00:00",
+      "son_kontrol": "2026-11-21T18:47:29.965617+00:00",
       "rss_adresleri": [
         "https://ajansnews.com.tr/feed/"
       ],
@@ -12489,11 +12420,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:45:22.525065+00:00",
+        "son_kontrol": "2026-11-21T18:47:53.757571+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:45:22.525065+00:00",
+      "son_kontrol": "2026-11-21T18:47:53.757571+00:00",
       "rss_adresleri": [
         "https://www.mucadelegazetesi.com.tr/rss",
         "https://www.mucadelegazetesi.com.tr/rss/"
@@ -12594,11 +12525,11 @@
       "dogrulama": {
         "adres": "erisime_engel",
         "rss": "bulunamadi",
-        "son_kontrol": "2026-11-21T17:45:26.736951+00:00",
+        "son_kontrol": "2026-11-21T18:47:58.933544+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:45:26.736951+00:00",
+      "son_kontrol": "2026-11-21T18:47:58.933544+00:00",
       "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": 403,
@@ -12626,11 +12557,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:45:27.861424+00:00",
+        "son_kontrol": "2026-11-21T18:48:00.114233+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:45:27.861424+00:00",
+      "son_kontrol": "2026-11-21T18:48:00.114233+00:00",
       "rss_adresleri": [
         "https://www.hukukihaber.net/rss",
         "https://www.hukukihaber.net/rss/"
@@ -12729,11 +12660,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-21T17:45:32.045430+00:00",
+        "son_kontrol": "2026-11-21T18:48:05.395317+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-21T17:45:32.045430+00:00",
+      "son_kontrol": "2026-11-21T18:48:05.395317+00:00",
       "rss_adresleri": [
         "https://edirnesonhaber.com/feed"
       ],
@@ -30100,6 +30031,811 @@
       "ad": "Trakya Gazetesi",
       "url": "https://trakyagazetesi.com.tr",
       "alan": "trakyagazetesi.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "ad": "Hatay Büyükşehir Belediyesi",
+      "url": "https://www.hatay.bel.tr",
+      "alan_adi": "hatay.bel.tr",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"ALTINÖZÜ\" \"HATAY\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "10. ALTINÖZÜ ZEYTİN, ZEYTİNYAĞI VE GASTRONOMİ FESTİVALİ BAŞLADI - Hatay Büyükşehir Belediyesi",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPa2tabFY1SDlMWDdDN0tuQ1JZTkRrdFl3a2tueUE3SkEzakY0MUpPVHRORGM2S1RhdTdjdS1waGpreTVmRlZLZEduUGlWSDNINXNBUWJzR1VsTzhwcHBNSDNITWpoN1hDTXZZcjZXTTNDeno3TXAxUHJ4Uk9HbzJWY0xKZEo1WThKcTdVT0hwU3htWFo0YnpsckFSUzFvaHNRN0xzSjhrSjZ0TkI2MnNoSFpHVmFIRkVTelZ2QXZyVXhEcmt6UzZuVWo2VnB2bDRPU1gtaGkta2FUMlhvVWtmSVNjRURBd1R2Mm1tWQ?oc=5",
+      "kesif_tarihi": "2026-11-21T18:36:50.293063+00:00",
+      "il": "HATAY",
+      "ilce": "ALTINÖZÜ"
+    },
+    {
+      "ad": "Hatay Söz Gazetesi",
+      "url": "https://www.hataysoz.com",
+      "alan_adi": "hataysoz.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"ALTINÖZÜ\" \"HATAY\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "ALTINÖZÜ’NDE OKUL SERVİSLERİ DENETLENDİ - Hatay Söz Gazetesi",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVmVkQW9USDBjQWdRdnZjSm1ZUE93SnRoMXJmeGVjQVlnVWpDME8zVWZlVjN3Nm91OExQeHVIajVYMFVnYU0xRDZSSElfcjd3MW4zU1ByMDFJVVo4NXdsVlJTQkh1b0tQZWxRWmZCTnBlNUJJejJDQWlZVGM4XzNuZ040UUw?oc=5",
+      "kesif_tarihi": "2026-11-21T18:36:50.293216+00:00",
+      "il": "HATAY",
+      "ilce": "ALTINÖZÜ"
+    },
+    {
+      "ad": "Türkiye Belediyeler Birliği",
+      "url": "https://www.tbb.gov.tr",
+      "alan_adi": "tbb.gov.tr",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"DEFNE\" \"HATAY\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "TBB, HATAY VE 13 İLÇESİNE 23 HİZMET ARACI HİBE ETTİ - Türkiye Belediyeler Birliği",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWWVUazBVSk1NNzZMYWltT0dHdDdZWEVqSDFFNUtNLUZqbVlpWHllUU1BU3BEWUFqbE5vaDEydEZJZUJpbS1UcWlfMUZmNFFTc29mNDB6LWZ2b1VaNnFQS3dVbHJmVUp1Z1lFVFFtNDM5cUFNdmxyaUhURUZFRkRyV09pUmdUTUFobml4RFBR?oc=5",
+      "kesif_tarihi": "2026-11-21T18:36:51.240612+00:00",
+      "il": "HATAY",
+      "ilce": "DEFNE"
+    },
+    {
+      "ad": "Anamur Ekspres",
+      "url": "https://anamurekspres.com",
+      "alan_adi": "anamurekspres.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"DEFNE\" \"HATAY\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Hatay'ın Defne ilçesinden yeni görüntüler - Anamur Ekspres",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNG9ySi03b0E2YTYydldBWHNHYVFuYlpldkt6RTJGeXdablFxcy14cVYtTmplTjVzSHhSbzEzd0tPV0diUGc0Z0tBeUJkaUhiLXJRdlp0RXdZRVhpalpmZHhVV0ZfVGpsc08yOG9aTVJiWHpaUEIxZFRjSld6d1dCOHlWMDQ?oc=5",
+      "kesif_tarihi": "2026-11-21T18:36:51.240680+00:00",
+      "il": "HATAY",
+      "ilce": "DEFNE"
+    },
+    {
+      "ad": "İskenderun.org",
+      "url": "https://www.iskenderun.org",
+      "alan_adi": "iskenderun.org",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"İSKENDERUN\" \"HATAY\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Hatay Spor Camiasının Acı Kaybı - İskenderun.org",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1QZE9nejl1RmtSMXYyVU1zNndHSkpXbGhrbmhwU0JNWEthOW5EUnk5bE5wSHd3X0I3SS1zT3AwOVVmdVl3b3RhT01qcFlYaWZ4OWw1VHFybEEyemxQUzEyRlVjcnI0YTZGTEE?oc=5",
+      "kesif_tarihi": "2026-11-21T18:36:52.025095+00:00",
+      "il": "HATAY",
+      "ilce": "İSKENDERUN"
+    },
+    {
+      "ad": "Hatay İl Millî Eğitim Müdürlüğü",
+      "url": "https://hatay.meb.gov.tr",
+      "alan_adi": "hatay.meb.gov.tr",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"ANTAKYA\" \"HATAY\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Antakya Belediye Başkanı Sayın İzzettin Yılmaz, uzaktan eğitim sistemine erişimi olmayan öğrenciler için bağışladığı 200 adet tableti Hatay İl Milli Eğitim Müdürü Sayın Kemal Karahan'a teslim etti. - Hatay İl Millî Eğitim Müdürlüğü",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxPUzk2eFllRGM1RWhSUzgtQWxnNzFHZ3ZyMk1oZXd5NWp6MmVNTlhCQmUycHFUQkVxcFVoNWh0b3BvOF8tM1A3RFV1SmN5MEl6WFJpZkRyV05fRXJJdjlZeWRnZFdsdWwtcy14Y2FnazdDMmFPVXEzUnhvNkphbzJ3V3JUaFBXZDZFTGV2Skg5V05NUGhqVzZzZzl3UTFMX01ET2tZblFaQ3RwM1pTZUpNcS1XQjZpb3RuNFBkdy15WE5iaVNvR21BWXN1ejR0b3F4aEVyc294RjBOaUJnd0phV1B4VDdkWWVnaVdKUFRESWk2a2RrbXI2VTdLQWRkQ0VCei14OXhaWWNUUDN6b0dmQ2xRa000dGk3c2xjV0g4ajVFZ3dCazlnbVNrLWhza3hNcEZ5bmxUTFIxcTRpY1V3ZjJaR0xWeDdaWld1ZWowaHRReGJNbFFwZUt3?oc=5",
+      "kesif_tarihi": "2026-11-21T18:36:53.619174+00:00",
+      "il": "HATAY",
+      "ilce": "ANTAKYA"
+    },
+    {
+      "ad": "Doğruluk Payı",
+      "url": "https://www.dogrulukpayi.com",
+      "alan_adi": "dogrulukpayi.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"ANTAKYA\" \"HATAY\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Antakya'da Yer Alan ve Sıfır Bina Olduğu İddia Edilen \"Güçlü Bahçe\" Sitesinin Yıkıldığı Doğru mu? - Doğruluk Payı",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQWElMOTAya3dxeUVNVGJtNWdUcXZ6cTlCdzE3UVpiamRiU3FKeXhZWjBqVGZtUFhyNU95T2hmSEp6WE01emhkSkdmREdXSUJYek9VQmtiNUo4ZE1kWTZaaTRDOGZGTE1aMjBRLWJlV3RETnhHcVNTWnVvV3EzWm96SjlvRjZrRnBvXzRleGZjUFdDTFNGMnVmUG9YUlJ5RHhBNWVFZklmd0NyR2dMVW5vbWZVYkdqZzVPTEpFRkRkYnVyV2dpVDdtbVo5N2N3OC1FeTljdlphU04?oc=5",
+      "kesif_tarihi": "2026-11-21T18:36:53.619200+00:00",
+      "il": "HATAY",
+      "ilce": "ANTAKYA"
+    },
+    {
+      "ad": "Başak Gazetesi",
+      "url": "https://basakgazetesi.com",
+      "alan_adi": "basakgazetesi.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"DÖRTYOL\" \"HATAY\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Hatay Dörtyol'da Sağanak Yağış Çayları Taşırtıp Toprak Kaymasına Neden Oldu - Başak Gazetesi",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSHMxeTJWamtFMlhyMXBuS0QxbWVlMUtTLWFidDVyTW1YNTBrNWs4ZGdWTy12NDQweDQtUV9GVmRkNFJHVUNNdUpwcEN0VENLOENsN3VaM2tXbmE4LW5ud05CYzVVMTExcVBlcVNic3UxdGFxNUhOdXNoWDFJZjZRNWlCQ0xJOG9pLWRTMVFsaTNubllxZ2FxRGoxd2RSWTNpV0lnQWVOUVJyc1g0QVk3LVRkONIBuAFBVV95cUxNMFZkZk53WWlUN2Zqb0VoSWtyNzBNeHZMV0hnY2licUNVeXdUeWRacjhYVGRNelpBSHZMZGdXQ2ZmODRiVGJuZ3hIMEdnZWxOQXVZdDNqNFZtSFVqOXlzLTFfX2lvZW01bjVhYTFQcUZ1VE5VU3dTWDJKZzZCZE0tUEpFQ2VhRzhuSVMyNTZwaU1rYVFkUy13MkNvMkxNMV8zeVpweGxjajZmR3h2Z0g2YnhodW1qODB4?oc=5",
+      "kesif_tarihi": "2026-11-21T18:36:54.417377+00:00",
+      "il": "HATAY",
+      "ilce": "DÖRTYOL"
+    },
+    {
+      "ad": "İzmir Büyükşehir Belediyesi",
+      "url": "https://www.izmir.bel.tr",
+      "alan_adi": "izmir.bel.tr",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"SAMANDAĞ\" \"HATAY\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Haberler | Başkan Tugay'dan medeniyetler şehri Hatay için dayanışma çağrısı - İzmir Büyükşehir Belediyesi",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNangyTHg0U2NxdVFPZG1kay13c1FLU0hyMnpHaVhEOFQ2QWRndmJaU1lPeG9tQm1Fby1zaTRZUnZZUW9JcXFNWEVPMkJQT05zLXFtbEN6cE80UzBhNWdrejVlZTlnel9aYm1TNVpiRTlHSHdYLW5rakpOQzBpTFBzeG1aa3A1NGd5MUo4aUFFVDh0ckRlRjlSZTdSVElQSFJSS2VkUmRhQkdTVmRoeGxN?oc=5",
+      "kesif_tarihi": "2026-11-21T18:36:56.280192+00:00",
+      "il": "HATAY",
+      "ilce": "SAMANDAĞ"
+    },
+    {
+      "ad": "İskenderun Haber",
+      "url": "https://www.iskenderunhaber.com",
+      "alan_adi": "iskenderunhaber.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"SAMANDAĞ\" \"HATAY\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Topraktan Tabağa HATAY Yolculuğu SAMANDAĞ’da - İskenderun Haber",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbHpVTmM3SXBhMmpGeUFpQi1RTWs1WDNMYkFpZ3JudnFDQTlHemZVX2dWS2g4bDBCZVlrZWVydXg3Y2k0YVJJbi1XQWF6UHF2RlpodlRVemIxdzFtNmVNb1A0N1lJeFlhMk0xSUhKOXducG1nY0ZfVXBHa3ljaGZkcjlEejhmMFByWmhUWGFrM1E?oc=5",
+      "kesif_tarihi": "2026-11-21T18:36:56.280244+00:00",
+      "il": "HATAY",
+      "ilce": "SAMANDAĞ"
+    },
+    {
+      "ad": "Webtekno",
+      "url": "https://www.webtekno.com",
+      "alan_adi": "webtekno.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"ERZİN\" \"HATAY\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Hatay’da Tek Bir Binanın Bile Yıkılmadığı Erzin İlçesinin Belediye Başkanı Konuştu: “Kaçak Yapıya İzin Vermedim” - Webtekno",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQVJiRG83YmZwbXl4clpCTF9abHM4NmIteWQxVU5fRUxlcER2MEpoeDR1akNTeTA2MzNMQ3lyUjhMUGFLTHB5SDUwWEd3S1VXemxJZU9PcGRENnZfNmQ2SkRDc0JIZnZSM1pjZVVBb0o4ME9qc3pBQkI0M1d4RmRZSFZnMnlXdw?oc=5",
+      "kesif_tarihi": "2026-11-21T18:36:57.803193+00:00",
+      "il": "HATAY",
+      "ilce": "ERZİN"
+    },
+    {
+      "ad": "Güncel Haberler",
+      "url": "https://www.memurhaber365.com",
+      "alan_adi": "memurhaber365.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"PAYAS\" \"HATAY\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Hatay Payas’ta müezzin Seyfullah Barış balkondan düşerek hayatını kaybetti - Güncel Haberler",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVUxITUhsbEItVW9QNjM0QXI0MUx6NDdnNUNKeVhGSXNRaGJoNE1tZlhZd2lKc0lWNHNXQUhWUV9GTWx5dHd0eVNfX0JNWVJNcWl6algyYW1zOEo0MkY0WEZITzRDbU4wUHF3OE02VkZEUFFCN1dDc3VZRWNMTDdmZFpfS1FBb29lN003MjZSZzM0cWxSYkZhWktQYVVvV2lPb2NGR3BNbw?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:01.620172+00:00",
+      "il": "HATAY",
+      "ilce": "PAYAS"
+    },
+    {
+      "ad": "ispartamanset.com",
+      "url": "https://www.ispartamanset.com",
+      "alan_adi": "ispartamanset.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"YALVAÇ\" \"ISPARTA\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "YALVAÇ - ISPARTA BELEDİYE OTOBÜS SEFERLERİ HİZMETE BAŞLADI haberi - ispartamanset.com",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPcXYxUHpneF9WaldEdVNqRU1PZHFTWTB4ZFE0d19QUTFNb2F4ZHBzeDg5dDkxY2d4cUdkSUtaOC10N1FNUXlrVGd0M2JqTG12US1uSWVVdl9fd0p1d2dHcEFjTzZib3pMa1pvb2EyNWNvMXhBMkFXMTRSMU5FVkdnWTFDUk14Z0Z4blhRQ3JleWJWLVBFUDM3ajRxZ3lJUlpYbW5wRzNB?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:08.995196+00:00",
+      "il": "ISPARTA",
+      "ilce": "YALVAÇ"
+    },
+    {
+      "ad": "ÖZYALVAÇ",
+      "url": "https://www.ozyalvac.com",
+      "alan_adi": "ozyalvac.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"YALVAÇ\" \"ISPARTA\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Yalvaç-Isparta dolmuşlarına yüksek zam: 350 TL - ÖZYALVAÇ",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPdEo3WmJRYUstTDZsQzEyZHJyZ0U4dUJZVXM0VGJnbGRPb003dHVNQklzVVotdDBaSEgtUHJyck1WZ016WnI3TTJaSTlRU2xLSFlISlQwYVJnT3RDeHduZmhZMWNVU19WZERLQUh5bGYzSDJKVllsWVoyQTJNR1hMUw?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:08.995227+00:00",
+      "il": "ISPARTA",
+      "ilce": "YALVAÇ"
+    },
+    {
+      "ad": "Demokrat32.com",
+      "url": "https://www.demokrat32.com",
+      "alan_adi": "demokrat32.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"YALVAÇ\" \"ISPARTA\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "YALVAÇ-ISPARTA ARASINDA BELEDİYE SEFERLERİ BAŞLIYOR - Demokrat32.com",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOQl9zSG5RamgyU0VRR3hKTkI2UG9IX0dvblB3N1E1ZGNoZi1NMFhpb0RieHhTektnd2FwODZ5OUVIZ2JiMjFkZWJ6MDk5STc3U1h4S2ZQZ09MMGhGcmk3Y1RwYWpvZ0pZYTJDelhiQUNKd3pkdEZndEw3RzJfR21fOWhFa1U?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:08.995237+00:00",
+      "il": "ISPARTA",
+      "ilce": "YALVAÇ"
+    },
+    {
+      "ad": "Çukurova Gazetesi",
+      "url": "https://cukurovagazetesi.com",
+      "alan_adi": "cukurovagazetesi.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"ÇAMLIYAYLA\" \"MERSİN\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Mersin Çamlıyayla Namaz Vakitleri - Çukurova Gazetesi",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBUd0NjdjNudTBzd3V2RVBvNU5MWHpIYllLVTBkUHF2VDFtdGlHOTZPcmNIMGxvOWxGazVOcUFkdkJQeW4zbEx1d3MzbVdIdy1hUEE2bjRFN2N4RWNURW5JYzNzdG5aS0RTdUN2YzJqWQ?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:13.037228+00:00",
+      "il": "MERSİN",
+      "ilce": "ÇAMLIYAYLA"
+    },
+    {
+      "ad": "İş'te Mersin",
+      "url": "https://www.istemersin.com",
+      "alan_adi": "istemersin.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"ÇAMLIYAYLA\" \"MERSİN\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "ÇAMLIYAYLA ORMAN İŞLETME MÜDÜRLÜĞÜ 2027 YILI AKARYAKIT ALIMI - İş'te Mersin",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxONjJtSzgxdTdTWEpKNFZLX3pydkQyQ2IzRXRvSUFvdmltYmcwRExYTUhOQjhXendXMEQ1R21xUXdVMG1BYzBIdzR0MTRzYTBFQ1hFakdFcEV1YUY5QW8yWmVUS3k1cHNFcGFpU3lMQlhmVkJGcXZVcnUzeXY5cVh0MGpyVmw2MzN5NFNPU1htYVd4dUVLSUJWRDV3Q2dnTjB2czFZWg?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:13.037249+00:00",
+      "il": "MERSİN",
+      "ilce": "ÇAMLIYAYLA"
+    },
+    {
+      "ad": "MERSİN MUT HABERLERİ - Mersin Mut Haberleri",
+      "url": "https://mutilcemiz.net",
+      "alan_adi": "mutilcemiz.net",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"MUT\" \"MERSİN\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Mersin Milletvekili Hasan Ufuk Çakır Mut’ta muhtarlarla buluştu: Mahallelerin taleplerini dinledi - MERSİN MUT HABERLERİ - Mersin Mut Haberleri",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNT0dkVHFHeTVHdmhDcC1lZmRJRXNjelV5cUNMS2NPYnBPVVozZkMtVTc5Z08xLWhWQWdDcXpCUGoyTmxiVEIwU0ZIVnA1anprVWt3OV9GUW5VRTctNVdWN0h6cGNhTGt1N2toY0ZrekxOSnRsTFNxWHgySFVoVlZtUjFEcm4tM1BHbHM3R3FKUS1sZ1FPS0RwT2ZjRF9FTVg2cTN4NVVYaFlLNzVoRUhpWlJnYjFBZHc3cG9Z?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:13.917999+00:00",
+      "il": "MERSİN",
+      "ilce": "MUT"
+    },
+    {
+      "ad": "Anadolu Ajansı",
+      "url": "https://mobile.aa.com.tr",
+      "alan_adi": "mobile.aa.com.tr",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"YENİŞEHİR\" \"MERSİN\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Mersin'deki yolsuzluk soruşturmasında Vahap Seçer ve 2 belediye başkanı tutuklandı - Anadolu Ajansı",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOMmdIdUJmM29ya2otelpCM2s0aFJmY1hBNlNsOWlWVXN2VUptNjJncFp1T2Q0S2dpcUtCODlrNTQydGdnLWlaaGdpWmsxMUVpRURJS1JuNnplWUFhSVJJTnNhYVZaLWhwZFgzU1pTdlhzVy1teGNZOWprYTVna2ZTMVBKOFNSMHZJc0Vzbjd3VnUyTklEOUdDWE56cjhSVkg3M2pTei1Fb2NMOERsZEYzSEhERlI3U3E5aEpINGZZTG9PZw?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:14.732474+00:00",
+      "il": "MERSİN",
+      "ilce": "YENİŞEHİR"
+    },
+    {
+      "ad": "Borsanın Gündemi",
+      "url": "https://www.borsaningundemi.com",
+      "alan_adi": "borsaningundemi.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"YENİŞEHİR\" \"MERSİN\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Mersin'de Yenişehir Belediyesi'ne operasyon haberi - Borsanın Gündemi",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNV2o4eVdTRldnNU1mdWl3Zl9nY2lLdmQ5a3BsczJJMGRNWWJwWjRMMWRBRXl5Vm1DOG5vSWc4YUlCZmcyeTBqRjRjTEhFdlBMZHBSVVJWVnBWVWlvaUVwWVlsa3Y2QVVrWXBNTEVFUi05RlBfTnd6dFZnTEhCa195VHc0NTJCZGRySDdPSmNjRWk?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:14.732575+00:00",
+      "il": "MERSİN",
+      "ilce": "YENİŞEHİR"
+    },
+    {
+      "ad": "MERSİN OBJEKTİF",
+      "url": "https://www.mersinobjektif.com.tr",
+      "alan_adi": "mersinobjektif.com.tr",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"TARSUS\" \"MERSİN\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Tarsus’ta tüp dolum tesisinin yanında çıkan yangın korkuttu - MERSİN OBJEKTİF",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOU3NGUnVyenl3YkJPaE4ycDhTZHp4Mlo3VUdpWXgxQVFwWndQaGxrOVpsNHFVTHFYTThRNnVuTXo0N0NhRE9vS2M1a0JEZ1RnQy1vaU1Cc2l3T2RjdHpaRkpWMUVKR0lUa3g4TzJ4bU1ISk9BYmZESUVtZUlSV1RQSmQxYW8xcW5WdEZheFFqUU5pQjhkc1NB?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:19.456909+00:00",
+      "il": "MERSİN",
+      "ilce": "TARSUS"
+    },
+    {
+      "ad": "Mersin Halk Haber",
+      "url": "https://www.mersinhalkhaber.com",
+      "alan_adi": "mersinhalkhaber.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"BOZYAZI\" \"MERSİN\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "MERSİN BÜYÜKŞEHİR’DEN BOZYAZI’DAKİ ORMAN YANGINI İLE MÜCADELEYE KESİNTİSİZ DESTEK - Mersin Halk Haber",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYndvRGNRSUhSUTExcWpsUVVSazVqTDVQeUtuQm1aeTZhNHlkeEJNeTg1dDdvb3ZnRmpLR1RON0dHc3ZyLVFsN1p5blpmaEpFWnl5WnFCQ0pCb0lybHVpNDFtcFFVTkQ2a1p0cUVXbUZyZ0lXOGFNLUZDSFktdElaUnR1b3VSdEdvWkpha3JrLTVxMm85WTVfWWx2NHFZRXlNalhHTkxLdUtWZk5ZMTA4bUhObGJ1c0cwVTVqa0hNbGNYVE94LW9F?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:20.184351+00:00",
+      "il": "MERSİN",
+      "ilce": "BOZYAZI"
+    },
+    {
+      "ad": "Mersin İz Haber",
+      "url": "https://www.mersinizhaber.com",
+      "alan_adi": "mersinizhaber.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"TOROSLAR\" \"MERSİN\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Toroslar’dan Türkiye’ye örnek olacak kırsal kalkınma hamlesi - Mersin İz Haber",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQMVNtZ09RbnMwa2NITFFUN2JRNU5ZN3A3UUdLOGtIelRQcU5lN3BIOTlwTVhFS281bVhwSG9pcWFwVy12RDdvMUpOSkJJMzBrZmJmeHdfZEx1Zy1qamtrd2t0X2NLNmxmT0F4WDZCMmJFVmJ6cU1xQWtGR3FJcFc4VTl4UkNxbURtZlc0elpnZHV3R0FhZVdIT0Nwa1pUUnh1eFBWb0ZJbTc?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:22.029465+00:00",
+      "il": "MERSİN",
+      "ilce": "TOROSLAR"
+    },
+    {
+      "ad": "siyasalbirikim.com.tr",
+      "url": "https://siyasalbirikim.com.tr",
+      "alan_adi": "siyasalbirikim.com.tr",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"TOROSLAR\" \"MERSİN\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Mersin Büyükşehir Belediyesi Toroslar'da Yol Seferberliği Başlattı - siyasalbirikim.com.tr",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbWdoX21INHg2UTNUQXFEcUwzNDNFYUIzMVBxRWViUnN5NkZPTmU2NUJtLTN2TmNWbHNWUkVWWlJna1FURG1iMmhqSGFORk00SXNyUm83UTZMeTNrZGtXVmlCMXBJLUtLVF9YZVluOFdRdzZ0RDR6VlBTTjNIQ3dWM1hYNEZZQUlMYi1yaTBYSnE2cF9FaHNub2l6cm5iZ1AtYmhYT1FSQTkxZm_SAbABQVVfeXFMTUFoZXI4NTQyczVNQmNqeGdhX055YnZ1Q0VEQjNRcHhxTkV6ekl6Zk9DeS1wMXk0N0ZWdXhUS3cyaFZkWXRwOEE2bG5SUHVRVjhtWjFjVzYzWkpTTG50MWJYRmp6NkFOMk5NWERPaGNPbEwwMUtGeDlPNmRGV3p3SUFMWVdsMU54QjFJQjY0SHp2MmxGaWJfQ2IzcjhmaVlMNnlwbFBpRzh3RncxUU9tYzU?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:22.029514+00:00",
+      "il": "MERSİN",
+      "ilce": "TOROSLAR"
+    },
+    {
+      "ad": "Yeni Asya",
+      "url": "https://www.yeniasya.com.tr",
+      "alan_adi": "yeniasya.com.tr",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"ADALAR\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Adalar peş peşe sallandı: 'Adalar fayı aktif' - Üşümezsoy: “Büyük deprem çıkmaz” - Yeni Asya",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQVdreXdqVXVqaUxpWkJ0RFJndEtLVUZ6QXd2NVZWcV80bndSNHlmSnRiWnp6UHh3STZTOWR6eE1sWHJ6S1liTmhfWGVfSEFISWU4emRZZG5Lanl2aFRVRVhBcGFKeTNqVWhrcEd6RmJpdzhfa1pweHQtTXBmSEVDMmlXQTFLZ3NrRl80VVpkVnpoWUVKSGR1azZJUzN4QXE5bHpraWVzTDNwZXNDVlYwczZTQ0syT1JzU2c?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:23.019035+00:00",
+      "il": "İSTANBUL",
+      "ilce": "ADALAR"
+    },
+    {
+      "ad": "Gündem Kıbrıs Gazetesi - Kıbrıs Haber",
+      "url": "https://www.gundemkibris.com",
+      "alan_adi": "gundemkibris.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"ADALAR\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "İstanbul Adalar'da peş peşe depremler - Gündem Kıbrıs Gazetesi - Kıbrıs Haber",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1hd1B6Z24yS1NJWWl3b3BHMU1tbGxkQWVSM2tSY3dlaDgxTms2YkpnUTYzODR1LW5WR3BQZnZCMF9HY0dQUTQxN0k3clI5MVNmVGFlYUpUWVl4UjdObEVYR3JhNm1OcnFsV1lmRFFJSkFMMUk?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:23.019073+00:00",
+      "il": "İSTANBUL",
+      "ilce": "ADALAR"
+    },
+    {
+      "ad": "CGTN Türk",
+      "url": "https://www.cgtnturk.com",
+      "alan_adi": "cgtnturk.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"ADALAR\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Adalar Belediyesi 21 Eylül'de seçime gidiyor! - CGTN Türk",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9WbUFYS3NLOHZuUVR6MUZJeVVNWmgxUmZDWF94clpQSkNNcjcxalYyYjVmOUpnamtGOEZ2NUpmbll1YUVrU1FGX2F2RE14M1dubnB1dGt1WEdCMlRqTmcwYWZTU0k5S1ZhNWdSMk1iVHV4SDFKUWpz?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:23.019099+00:00",
+      "il": "İSTANBUL",
+      "ilce": "ADALAR"
+    },
+    {
+      "ad": "Adalar Haber",
+      "url": "https://adalarhaber.com",
+      "alan_adi": "adalarhaber.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"ADALAR\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Heybeliada Deniz Harp Okulu’nda Çatı Yangını: Korkutan Alevler! - Adalar Haber",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQeEVvMUh5bWxtOEc4WEhYdWtxRXhpQUpLYmtic3hfei1lSnRaU0JZejNsbTY1dzFyWW1ELVhYYUlieEdiVHRFUHFudWNmQWtPNWdMb1hQV2FScXlkWXBGR2FwTTRLQkJ3VUNjTm5RMjNxaG5NZ0RvOFdpSFZVaDVUMWNVMGRxZXU0NXhKWC1R?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:23.019107+00:00",
+      "il": "İSTANBUL",
+      "ilce": "ADALAR"
+    },
+    {
+      "ad": "World Socialist Web Site",
+      "url": "https://www.wsws.org",
+      "alan_adi": "wsws.org",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"ADALAR\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Adalar Belediyesi’ne yönelik operasyon Büyükada’da protesto edilirken Belediye Başkanı Akpolat adliyeye sevk edildi - World Socialist Web Site",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5nRld4cU1DZGxEcHV1N1JyVXNWVXQ1SnRmbklsNUlSM2dRX25BUVVtdEVUUlpqelIwNVQwdVpDdlRTUkxjQ0liMnhRdWFDaEVDdEZiZFJFaEM1TlpFTHR1OC01OExhU1di?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:23.019115+00:00",
+      "il": "İSTANBUL",
+      "ilce": "ADALAR"
+    },
+    {
+      "ad": "Sabah",
+      "url": "https://haber.sabah.com.tr",
+      "alan_adi": "haber.sabah.com.tr",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"ADALAR\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "SON DAKİKA… Marmara Denizi’ndeki Adalar fayında deprem fırtınası! Uzmanlardan kritik uyarı: İstanbul için tehdit! - Sabah",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOWW9ETkpsc2dPS0tEOGx6RldZR2pkZ1FSQnFRZWI1MmRkZnF2VkZxZUMzQUNvd1NqeDZTcXJ3My1jOUtTT0pNbXpXN2o3dTFCSkdKc04tTXUtX1drQlp5ZVBPeWJrQVZiV3N4NkpNdHdvbHpqY1FMaFdWUFQ3ZFNyMmtBMGlxdFVjdExXY3NNbUdYVllvVXVSOHRZWUNGTU1GYmc4M2dEVktGbndIM2NRMGhSYVF3c3FvdW9DMk1lUXdsbnd4Vk01SVh5STI3WHBmNFdQUkt0a0g2Zw?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:23.019136+00:00",
+      "il": "İSTANBUL",
+      "ilce": "ADALAR"
+    },
+    {
+      "ad": "İstanbul Ses",
+      "url": "https://www.istanbulses.com",
+      "alan_adi": "istanbulses.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"BAĞCILAR\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "BAĞCILAR YENİ MEYDANI’NA VE KADIN MERKEZİ’NE KAVUŞTU - İstanbul Ses",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQNnkwS3h3TU4yc1Ezd1MybXBTam9sUWdZVld2WjN0My1LNmRBeXlqdV93TEZBRUJ1RlYxVVpSVGI0Qm04NWY3NEhjMDdJOFk5WFBVaERuZ3NqRDY4eXhmMWtudGhXWXJhazFhN2JhUkFfZms1RE9mT1VZSkVQNlg4NlAyYjQ0TzhDSUoteWNTN3VubDJ0WUHSAaYBQVVfeXFMUDRpOFFnbm1McU9TclBOclpZRHJ2cEgxZkVFWFVhWTE3VDcwMlFuMUJFUkhhSmtlcjl4ODAzVl9HQXR5OXlJZktIM3o5NkRpT3ljWk9hb292R2xjeG5CWWFLWHhHR2k2UEVoRjBkQXdCMnA1TXRBWm00ZzRUMXZZR09qc3Y5Wk56dUNJZHp5M3I5Z2pNQ1FPZUdrajlXenlpTVUyREd4Zw?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:23.857922+00:00",
+      "il": "İSTANBUL",
+      "ilce": "BAĞCILAR"
+    },
+    {
+      "ad": "T.C. Bayrampaşa Belediyesi",
+      "url": "https://www.bayrampasa.bel.tr",
+      "alan_adi": "bayrampasa.bel.tr",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"BAYRAMPAŞA\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Bayrampaşa Belediye Başkanlığına Zabıta Memuru Alım İlanı Başvuru Formu - T.C. Bayrampaşa Belediyesi",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTEhRMnF1MU8xWGZoWEZLenNiVHZpbGRqSmRyNFRVRkFkMmZVOWhkcUlxU2xPRTcweFhLMi01ZUxQTG8yRVBzV0l4QVlGaFh2UmlhaVRMVXNOZGJGcFFMNkphNE5kQmg1ekNCWWs3U1JGeUZDNUlhczY0THhiTXdlMFFjRHpNREJzTTVpc3Qxall4Y280Wk9VN3Q0ZkJrTGdxdHo5dg?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:24.637959+00:00",
+      "il": "İSTANBUL",
+      "ilce": "BAYRAMPAŞA"
+    },
+    {
+      "ad": "Show TV",
+      "url": "https://www.showtv.com.tr",
+      "alan_adi": "showtv.com.tr",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"BAYRAMPAŞA\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "İstanbul Bayrampaşa'da yol verme kavgası! | Show Özel Haber - Show TV",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBTeWVpNnFWYVp3c2ItRHFZVlJBblpISlFwZzYxTG5YVExtRzhzSkUzU00wVTFiNUpaN0l4bHVIYkl2ZnI5X0N1TGtRR3J1dFdxdXVXSW4xclFJd19QMG9TcHpOalVJaFhrQUNfR0FPejlpejhX?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:24.638126+00:00",
+      "il": "İSTANBUL",
+      "ilce": "BAYRAMPAŞA"
+    },
+    {
+      "ad": "Beyoğlu Belediyesi",
+      "url": "https://beyoglu.bel.tr",
+      "alan_adi": "beyoglu.bel.tr",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"BEYOĞLU\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Kabataş Transfer Merkezi Tam Kapasite Hizmete Açıldı - Beyoğlu Belediyesi",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNY2VMVDhhTkw5RmV4Mi1SNGVVd2hFM0JCcWhRdW1LcFNYMHJMT21DWEhxeGRfbWFSMXliU3FkRllUemdQNUNzZ0F0R0RadG9Fb2VEaDBLRDFkZ0Y1TE5OTUxuLUx2YWhGZldoZkJHQldYem40VGFyVzJ4QURfZzRmbGJiS2FsZ3lWSGE4N21BUkxCOWc?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:25.474756+00:00",
+      "il": "İSTANBUL",
+      "ilce": "BEYOĞLU"
+    },
+    {
+      "ad": "Veryansın TV",
+      "url": "https://www.veryansintv.com",
+      "alan_adi": "veryansintv.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"BEYOĞLU\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "9 belediye AKP’ye geçti: Antalya, Tekirdağ, Beyoğlu… - Veryansın TV",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQLW0zbWNTUDdBcUFYVnQtTkV5V2o3b3FBNHRMeVFRLWp4OFdGTTBUemdBS29nQWFqUmVGLXJ6OUZNS2VqNVVXWFo1bVloaXNSd0M5TWI3ZnFCTjVYVDFLdUtLRWxtLW9sbzA5LXMzbml2NElHYXlMd0NNY0RuVUltNQ?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:25.474872+00:00",
+      "il": "İSTANBUL",
+      "ilce": "BEYOĞLU"
+    },
+    {
+      "ad": "isthaberler.com",
+      "url": "https://isthaberler.com",
+      "alan_adi": "isthaberler.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"BEYOĞLU\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Beyoğlu'nda korsan otoparkçılık operasyonu, sürücülerden para isteyen 4 kişi gözaltında - isthaberler.com",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOWE1oMy1QNkUwbDVXRHNBY1d0TmF6QXJVVXVqTEpDTnlxTVhGSW9UMnBVbVFnSnRtWDFiTWI4UHJvTTA3bmxrYXBaVFdwT240cV9tM3VBSm1rb0p1N0g4ZWxQa2Jva2pjY2xKMHd1STJyT0V2R0c4UTlZNzJPalAtandDU0J6QXVyN1pMa2MxdU40bHFjSC1ONi16cnZaTHY1ZTRNTDM2Z1BhRVQtaUdZ?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:25.474914+00:00",
+      "il": "İSTANBUL",
+      "ilce": "BEYOĞLU"
+    },
+    {
+      "ad": "Esenler Gündem -",
+      "url": "https://www.esenlergundem.com",
+      "alan_adi": "esenlergundem.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"ESENLER\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "İSTANBUL’DA YATIRIMIN ZİRVESİNDE AK PARTİLİ BELEDİYELER VAR - - Esenler Gündem -",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNc0dIVGFsRGU5bGs3N0t3cTNaRlNJcl9NQmltOVZGdGNPUXRMUnRzRlU5bWltVFhmUHBlZld6VVdVUGMtM0pRZFkydTEwbWNqNmRlUFNKcmdaY2VTQ0NuanQ2ZnYxMm5TYlE2Mm9nQlRjZnlqQlFMSXpTNUwtdG1YRlZQc2JvZ0NzT2dqWUdTLVFvWGM?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:26.289129+00:00",
+      "il": "İSTANBUL",
+      "ilce": "ESENLER"
+    },
+    {
+      "ad": "AKŞAM",
+      "url": "https://www.aksam.com.tr",
+      "alan_adi": "aksam.com.tr",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"ESENLER\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "İstanbul'da yatırım bütçesi şampiyonu Esenler Belediyesi oldu - AKŞAM",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUm5zT3QtaTVlSGRPcldZbzZaOFZxc3hHaFN4R2hMbVVpSGt2RWNJam9RWVNOVk5MeGEybGxXWEs0UzZwS1RUV1hnT09oUUtFbzZrYWQ5UkNZQ0p4Y2RZT25SODdGbVVDZTV6UmJtWjAtUHlSaVlTZkVoUFZUQ3p2UFZCZFE0WTU4N0M5NEV3S09mcXNiNmZhWklDTU1xYWF0WTN2YUtUazFXUdIBrAFBVV95cUxNRTY5ekpOS2J0OTNyRUtOTW16d3JZek8tU1k2NWtTUTl5LVFNckNZMDhZTktERzR5YXA0dUlGd3c2M2xiRWdDMzJOZGdzWU9oWGNJRWthMWNqZVZ5VUl4MlNNNVU5bmx6cHNob0dmNWs1dGdPU29CSC1BZnh2X0p2bWRVVFlVdzVQaWxWR3B1cHd3RTRoQ1RpMl95R2ZYOXV4a1I4QWhxUnFiSzZv?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:26.289312+00:00",
+      "il": "İSTANBUL",
+      "ilce": "ESENLER"
+    },
+    {
+      "ad": "Fotospor",
+      "url": "https://www.fotospor.com.tr",
+      "alan_adi": "fotospor.com.tr",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"KARTAL\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Kartal Kayra Beşiktaş'tan ayrılacak: Ama İstanbul'da kalacak - Fotospor",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZkpNV1BNZzJ5ZVJQNnpxUnlfSkNaandLR0EyNFJkbmVJR2dndXNtcDA2UWNXZVAwemJNQkFhc09LMklET2NGTmFwNE1lUXhEQXN6dEpLeUltbnpIdmpLc1RkTjFVb1VlWUNQNGhDcWs5V2VPeVNZNUY4QnV2TXY2bloteFhGYU9VS29STTRkc0VCblE5Rlpoam5oTXJlaGs2djRZ?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:27.847279+00:00",
+      "il": "İSTANBUL",
+      "ilce": "KARTAL"
+    },
+    {
+      "ad": "gdh dijital",
+      "url": "https://gdhdijital.com",
+      "alan_adi": "gdhdijital.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"SULTANGAZİ\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Sultangazi'de yıkım sırasında çıkan gürültü paniğe neden oldu - gdh dijital",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOY2s1SEFTRTlyUm9kWjI1UmRyNHpXUGJJTXNpOXFQdWY5X3JZajNjamQwbXdPV2IyWi0telRnZ2JtTFRkRXlFNHlEU2czMWxfdjIyZ2M5cF9Oc0lfSXMwaTVwLWJrZmJrMjBlc01WZWV1dTdDQXBzZ2gyMm1NT2dFVHFFQ1VMeWd2WlU0eWJhS1JjSVVXM1B3czRkYzktSUg4VHRZ?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:29.398331+00:00",
+      "il": "İSTANBUL",
+      "ilce": "SULTANGAZİ"
+    },
+    {
+      "ad": "Ümraniye Belediyesi",
+      "url": "https://umraniye.bel.tr",
+      "alan_adi": "umraniye.bel.tr",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"ÜMRANİYE\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "BAŞKAN İSMET YILDIRIM’A “İSTANBUL’DA YILIN BELEDİYE BAŞKANI” ÖDÜLÜ - Ümraniye Belediyesi",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPd1JJaXdjQW1yTEl0TG1JVk5zVE1qQnFzNkZ5ODJZanZKS3l6NEQxWHJsWTNZQVFxamI5Ui0xS1BYdlZWY2JVVW54RTNTVHpIa0JhSHdUSmk2dGFydVYtNzhjUUJNOFpsdTExY2ljXzV4ZS1FNjRYWHpzMlp0NnFxSjlPNlVpWjhmVDNiYWpxSXJXUkVUTXFScw?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:30.193033+00:00",
+      "il": "İSTANBUL",
+      "ilce": "ÜMRANİYE"
+    },
+    {
+      "ad": "KARAR",
+      "url": "https://www.karar.com",
+      "alan_adi": "karar.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"ÜMRANİYE\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "İstanbul'da yeni metro hattı için tarih verildi: Ümraniye-Göztepe arası 21 dakika olacak - KARAR",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQYzBRYmlDRGxQbTdSREVUV1pYelpPMHd0elA3R0pSUFRNZUpkVlJKRG16MDZCMnpTZHNwY2YxalJYMFRuekVGUlVNelRIX01kNUdUZ3EtVWFFaGpJdFQ4Q1FhUkIzeFFDWFZDaTRFZjNZdzhGVEx1eTdoTWd1bGc4dzBxaTQ2cGRuUS1wNW9KYXlTUHFVWlMxVXBUWWo1MFRXa1dxYXVMSWpzLV93aF9aOHBwTDRVZw?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:30.193107+00:00",
+      "il": "İSTANBUL",
+      "ilce": "ÜMRANİYE"
+    },
+    {
+      "ad": "on2ay bahçelievler",
+      "url": "https://www.on2aybahcelievler.com",
+      "alan_adi": "on2aybahcelievler.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"BAHÇELİEVLER\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Bahçelievler kira getirisinde İstanbul ortalamasını aştı - on2ay bahçelievler",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBIWTl3NkJta0V2d1Z3T0ZFc3pmQi1ESkpSVDktMW5fMFpBTWIxSjBDZzdyOE5PeFREZ0V0NGp2UThlMkxGUEQyOEQtU25ibDNkeW1FdURvRHZFQVRSRjhSRGJoeEVjQVkyZjB3?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:31.870695+00:00",
+      "il": "İSTANBUL",
+      "ilce": "BAHÇELİEVLER"
+    },
+    {
+      "ad": "Bahçelievler Belediyesi",
+      "url": "https://www.bahcelievler.istanbul",
+      "alan_adi": "bahcelievler.istanbul",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"BAHÇELİEVLER\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Kentsel Dönüşümde Bahçelievler İstanbul’da İlk Sırada - Bahçelievler Belediyesi",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWndfN1FqNDdyMFI2YTR4OHFxYUNheW40dkpSdGNCUDRYd0hDekpLQmRBVDFhMkpkSzNuOFMxV3VwNENvUFFrcUVyQjJVbVkxTWFjYkh2SmJDWkpveWUyc2tiMjhRMTdJNHRXUTVRdFFPOWtEdUl1S2ZCZ09zQkl6Z1NhWk9wVjZqUkJZSW9XOGNwYlBSNWx3Rg?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:31.870708+00:00",
+      "il": "İSTANBUL",
+      "ilce": "BAHÇELİEVLER"
+    },
+    {
+      "ad": "Haber Meydan",
+      "url": "https://www.habermeydan.com",
+      "alan_adi": "habermeydan.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"BEŞİKTAŞ\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Beşiktaş BOA, İstanbul Gençlikspor'u farklı geçti! | Spor - Haber Meydan",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQYjV2TUVFOXMtQ1hoYU1sS2J3cFRGekVxd2dPTHdyYnU2TUIzVEpkZUNhQ1FEZ25ZaGN3UmRBNTluVUlDU3FPQW1RcnFvb2g2SDdUOE5OY0daODJ2VExjSi1SWWtick1EbFpYM2tfc1h2ZllCRDF3VVZEeGhLNHp0cXpFRnVnWmJIVWRVS0VYWVhkSXfSAZgBQVVfeXFMUEZuOGx5a3JQR0NUQ2FMN3BVREF0WkhWSlExWkp0QmNVTFBJTDhVRzRTUnUydGo4TFFzR1NJN29LVFNzaW9wdFV2QkRZekV1TVBycVlSWkVFY0IzaUFkaURLMTRhdHZVdkplUkhnMnE4QzJwNlAyZFp2MlpXZGZieVpSR0xpN2JkbnJHa2tQa3RFcHItVHVULXk?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:32.728460+00:00",
+      "il": "İSTANBUL",
+      "ilce": "BEŞİKTAŞ"
+    },
+    {
+      "ad": "Ajans Beşiktaş",
+      "url": "https://ajansbesiktas.com",
+      "alan_adi": "ajansbesiktas.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"BEŞİKTAŞ\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Beşiktaş BOA, İstanbul Gençlik SK’yi 77-49 Mağlup Etti - Ajans Beşiktaş",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOSEVpYW5xdEVUTk82NEw1aG1pdlRQZkdjYUZpeHhLWkgzN3RpU0RZM3Nxc1g2WE1lYkh2WXNtbjRUWGFjNWxCYmFVQ2FrVmk1ejNQMlE5ZkR1d1Y0NkRJeFBXT3EyMkdUZHE4eWJsN0JlM2N5Szhnc0tWd3FXRG1CMTAybENScVhiRElfa1lCaDBOaXIz?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:32.728473+00:00",
+      "il": "İSTANBUL",
+      "ilce": "BEŞİKTAŞ"
+    },
+    {
+      "ad": "Doğayı Dinle",
+      "url": "https://www.dogayidinle.com",
+      "alan_adi": "dogayidinle.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"BEŞİKTAŞ\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Beşiktaş BOA–İstanbul Gençlik Spor Maçı Ne Zaman, Saat Kaçta, Hangi Kanalda? - Doğayı Dinle",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNOHRheV9zWkpmai1RRUdrMV9HQl9QVzhqMlFTVV9Fc0JWbl9wc1pheHNZNW9DbHBjc0V2MmI3d0hVcTY5MFF1a05LWkVsUTJfN21zOEoyR013WHFXWW1QYzNuNkJDbTQ0b3YtN0NGNDdUMEVWbE1aRnl3SWg4QUtLWmFvcEtyM2dtcXhXenlmX3UxRmNRVVBqLVRsZWRrTGNPalEyMG9TUW1HYnVheTNfdGFR?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:32.728481+00:00",
+      "il": "İSTANBUL",
+      "ilce": "BEŞİKTAŞ"
+    },
+    {
+      "ad": "Büyükçekmece Festivali",
+      "url": "https://buyukcekmecefest.com",
+      "alan_adi": "buyukcekmecefest.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"BÜYÜKÇEKMECE\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Festivalin açılış seremonisi görkemli anlara sahne oldu - Büyükçekmece Festivali",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQLXVsUzlpZFFPX2NjR2FlVDlITjRtdGNydEQ2Z2FyU1pJUDJJNWtQbVUwNU1sZXJPWnB2Y0Y5Z1JlY3pZOGkzYnhqT1QwR2UxS0JhY2hCSFAtRGdmZ1d6dmIzRDFZOFVlS1BHVXlIbXBSdU9zSE8xdFVucUZPOGxILXJKRXNtRklPSkhISFEwUVMwV29YejBMZQ?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:33.545443+00:00",
+      "il": "İSTANBUL",
+      "ilce": "BÜYÜKÇEKMECE"
+    },
+    {
+      "ad": "AjansHaber",
+      "url": "https://ajanshaber.com.tr",
+      "alan_adi": "ajanshaber.com.tr",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"GÜNGÖREN\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "İstanbul Güngören'de inşaatta toprak kayması: 1 işçi hayatını kaybetti - AjansHaber",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVEtMdkJvdVlqZF9yWGxVRkVaaG9LZTRkQmtGeUcyQlRYb09nanNQT2QwSnZvMklDXzU3bXhFc3MzLWVDenBUWmdhcnQtellNWldTajR5T3Nxa1l6Qmw2dkE1TVRmOVlWVzFSU0xUYnNsM1QwNWZFbDQ2Y0xmalRqdXd4RTZuV214QnJmeU9WbktUVUJwVHk2TE95Skw0dS1SMDhv?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:35.338041+00:00",
+      "il": "İSTANBUL",
+      "ilce": "GÜNGÖREN"
+    },
+    {
+      "ad": "https://www.ticarigm360.com/",
+      "url": "https://www.ticarigm360.com",
+      "alan_adi": "ticarigm360.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"KÜÇÜKÇEKMECE\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "İstanbul’da Konut Satışları 37 İlçede Düştü! Tuzla ve Küçükçekmece Ters Köşe Yaptı - https://www.ticarigm360.com/",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZ2pWMGhxTHdqb01PQVB4X09rNFZIaFFXLVZrc1RLMm44cEIwX2x6U200LVNmak8zdDRHM05uemZSNkE4eXNEQnBKc3JCbUlRbGJGNzlGZGFLMUpBUHVEQ214SWt3cGgzbWpPaWY0TGc0NXowczI3clEtUWVWM3pySVVWZzgycmxMTFVtQmY1MzN3WFF1ekdPemQ1WW1SeVltNGQzbzNLZWxSTW8xaFE?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:36.116382+00:00",
+      "il": "İSTANBUL",
+      "ilce": "KÜÇÜKÇEKMECE"
+    },
+    {
+      "ad": "Sarıyer Posta",
+      "url": "https://www.sariyerposta.com",
+      "alan_adi": "sariyerposta.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"SARIYER\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "AK Parti Sarıyer’de bu bekleyiş niye? - Sarıyer Posta",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5vRFhBbXNPUS1fTmdOM082VTBjVG1hMWdPY0FyYmo4ZGJGUHJGVzZxanFwU29jUlUyUGRNUnczOVhJT0xlNU9NOG5sdV9TaldxTFU4T2hkdm9lTTVKTXRTNkxiLTFkUQ?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:36.952189+00:00",
+      "il": "İSTANBUL",
+      "ilce": "SARIYER"
+    },
+    {
+      "ad": "Sarıyer Yenigün Gazetesi",
+      "url": "https://www.sariyeryenigun.com",
+      "alan_adi": "sariyeryenigun.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"SARIYER\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "SARIYER’DE DOLU DOLU EDEBİYAT GÜNLERİ DEVAM EDİYOR - Sarıyer Yenigün Gazetesi",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUWJVaXNKcUhOUEFNaUZGX2NwTl9YTnJ1b1dRck5Zcnl4ZE5DbjlWNVNGTFI0V2xvVjU1OHJMWXlxUXlqWkVpcE9YWWZZRVoxRFR6YXVuZC1oalh4MV85RGpkOXpqMHNkQnlNeVVmNkdYR21xUG1BbkZWZE9TUXNRTjQ1enU0NXJfSm9rOU84dEhNY184dUt0SmItT0FnaWtacWxlYw?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:36.952243+00:00",
+      "il": "İSTANBUL",
+      "ilce": "SARIYER"
+    },
+    {
+      "ad": "Samsun Canlı Haber",
+      "url": "https://www.samsuncanlihaber.com",
+      "alan_adi": "samsuncanlihaber.com",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"SARIYER\" \"İSTANBUL\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Atakum kira fiyatlarıyla Türkiye'nin en pahalıları arasında - Samsun Canlı Haber",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPWkFqeEpXaHdoVTJsYm42SWhPNTdYbVRwQnd0b3VDMHhSSURfZXZDS20zcnktbi1ZNnNvQzJoZlR6UWlGQVFzaHJhLTFjV0lvU0YzMnVPbWV6ZHc3aHZTdHhTeEdDdFUwMVBQc1hRQWJLZ1VIazZscnlOUFVKMGJjYUdkX2RfN1JRRXhzOFl4dmhNaGtfbGc?oc=5",
+      "kesif_tarihi": "2026-11-21T18:37:36.952300+00:00",
+      "il": "İSTANBUL",
+      "ilce": "SARIYER"
+    },
+    {
+      "il": "Adıyaman",
+      "ad": "Turizm News",
+      "url": "https://www.turizmnews.com",
+      "alan": "www.turizmnews.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Adıyaman",
+      "ad": "yapi.com.tr",
+      "url": "https://www.yapi.com.tr",
+      "alan": "www.yapi.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Erzurum",
+      "ad": "Erzurum Pusula Gazetesi",
+      "url": "https://www.gazetepusula.net",
+      "alan": "www.gazetepusula.net",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Erzurum",
+      "ad": "Erzurum Gazetesi",
+      "url": "https://www.erzurumgazetesi.com.tr",
+      "alan": "www.erzurumgazetesi.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "İstanbul",
+      "ad": "İletişim Başkanlığı",
+      "url": "https://www.iletisim.gov.tr",
+      "alan": "www.iletisim.gov.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Sinop",
+      "ad": "Vitrin Haber",
+      "url": "https://www.vitrinhaber.com",
+      "alan": "www.vitrinhaber.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Osmaniye",
+      "ad": "Hasret Gazetesi",
+      "url": "https://www.hasretgazetesi.com.tr",
+      "alan": "www.hasretgazetesi.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
       "arama": "adliye mahkeme duruşma"
