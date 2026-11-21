@@ -1,13 +1,13 @@
 {
   "surum": "5.0.0",
-  "rapor_tarihi": "2026-11-21T21:33:03.469817+00:00",
+  "rapor_tarihi": "2026-11-21T22:33:09.837496+00:00",
   "toplam_il": 81,
   "toplam_ilce": 922,
   "bu_calistirmada_taranan_ilce": 60,
   "basarili_ilce": 60,
   "basarisiz_ilce": 0,
-  "yeni_aday_kaynak": 40,
-  "toplam_kaynak": 1820,
+  "yeni_aday_kaynak": 36,
+  "toplam_kaynak": 1858,
   "tam_tur_tamamlandi": false,
   "hatalar": [],
   "haberler_json_degistirildi": false
