@@ -90,7 +90,28 @@
       "alan": "www.hurriyet.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T09:15:26.494458+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:15:26.494458+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.hurriyet.com.tr",
+        "eski_alan": "www.hurriyet.com.tr",
+        "yeni_alan": "hurriyet.com.tr",
+        "rss_adresleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Adana",
@@ -99,7 +120,33 @@
       "alan": "yerel-haberler.haberturk.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:15:34.946517+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:15:34.946517+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://yerel-haberler.haberturk.com",
+        "eski_alan": "yerel-haberler.haberturk.com",
+        "yeni_alan": "yerel-haberler.haberturk.com",
+        "rss_adresleri": [
+          "https://yerel-haberler.haberturk.com/rss",
+          "https://yerel-haberler.haberturk.com/rss/"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://yerel-haberler.haberturk.com/rss",
+        "https://yerel-haberler.haberturk.com/rss/"
+      ]
     },
     {
       "il": "Adana",
@@ -108,7 +155,32 @@
       "alan": "www.canligaste.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:15:51.597832+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:15:51.597832+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.canligaste.com",
+        "eski_alan": "www.canligaste.com",
+        "yeni_alan": "canligaste.com",
+        "rss_adresleri": [
+          "https://www.canligaste.com/rss.xml"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://www.canligaste.com/rss.xml"
+      ],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Adana",
@@ -117,7 +189,32 @@
       "alan": "www.objektifa.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:16:00.120241+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:16:00.120241+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.objektifa.com",
+        "eski_alan": "www.objektifa.com",
+        "yeni_alan": "objektifa.com",
+        "rss_adresleri": [
+          "https://www.objektifa.com/rss.xml"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://www.objektifa.com/rss.xml"
+      ],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Adana",
@@ -126,7 +223,32 @@
       "alan": "www.haber7.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:16:14.562776+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:16:14.562776+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.haber7.com",
+        "eski_alan": "www.haber7.com",
+        "yeni_alan": "haber7.com",
+        "rss_adresleri": [
+          "https://i12.haber7.net/sondakika/newsstand/latest.xml"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://i12.haber7.net/sondakika/newsstand/latest.xml"
+      ],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Adana",
@@ -135,7 +257,32 @@
       "alan": "www.yenisafak.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:16:26.508325+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:16:26.508325+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.yenisafak.com",
+        "eski_alan": "www.yenisafak.com",
+        "yeni_alan": "yenisafak.com",
+        "rss_adresleri": [
+          "https://www.yenisafak.com/rss"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://www.yenisafak.com/rss"
+      ],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Adana",
@@ -144,7 +291,32 @@
       "alan": "www.gzt.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:16:34.408820+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:16:34.408820+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.gzt.com",
+        "eski_alan": "www.gzt.com",
+        "yeni_alan": "gzt.com",
+        "rss_adresleri": [
+          "https://www.gzt.com/rss"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://www.gzt.com/rss"
+      ],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Adana",
@@ -153,7 +325,28 @@
       "alan": "www.sondakika.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T09:16:42.600969+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:16:42.600969+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.sondakika.com",
+        "eski_alan": "www.sondakika.com",
+        "yeni_alan": "sondakika.com",
+        "rss_adresleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Adana",
@@ -162,7 +355,27 @@
       "alan": "www.referansturk.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "dogrulama": {
+        "adres": "erisilemedi",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T09:17:00.772021+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:17:00.772021+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 403,
+        "yonlendirme": null,
+        "son_url": null,
+        "eski_alan": "www.referansturk.com.tr",
+        "yeni_alan": null,
+        "rss_adresleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots_durumu": "kontrol_edilmedi",
+        "hata": "HTTP 403"
+      },
+      "rss_adresleri": []
     },
     {
       "il": "Adana",
@@ -171,7 +384,37 @@
       "alan": "adanatorosgazetesi.net",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:17:01.940979+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:17:01.940979+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://adanatorosgazetesi.net",
+        "eski_alan": "adanatorosgazetesi.net",
+        "yeni_alan": "adanatorosgazetesi.net",
+        "rss_adresleri": [
+          "https://adanatorosgazetesi.net/feed",
+          "https://adanatorosgazetesi.net/feed/",
+          "https://adanatorosgazetesi.net/rss",
+          "https://adanatorosgazetesi.net/rss/"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://adanatorosgazetesi.net/feed",
+        "https://adanatorosgazetesi.net/feed/",
+        "https://adanatorosgazetesi.net/rss",
+        "https://adanatorosgazetesi.net/rss/"
+      ]
     },
     {
       "il": "Adana",
@@ -180,7 +423,27 @@
       "alan": "t24.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T09:17:07.145599+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:17:07.145599+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://t24.com.tr",
+        "eski_alan": "t24.com.tr",
+        "yeni_alan": "t24.com.tr",
+        "rss_adresleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": []
     },
     {
       "il": "Adana",
@@ -189,7 +452,28 @@
       "alan": "www.dha.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T09:17:13.688408+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:17:13.688408+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.dha.com.tr",
+        "eski_alan": "www.dha.com.tr",
+        "yeni_alan": "dha.com.tr",
+        "rss_adresleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots_durumu": "robots_dosyasi_yok",
+        "hata": null
+      },
+      "rss_adresleri": [],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Adana",
@@ -198,7 +482,27 @@
       "alan": "ankahaber.net",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T09:17:20.185511+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:17:20.185511+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://ankahaber.net",
+        "eski_alan": "ankahaber.net",
+        "yeni_alan": "ankahaber.net",
+        "rss_adresleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": []
     },
     {
       "il": "Adana",
@@ -207,7 +511,34 @@
       "alan": "www.barandergisi.net",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:17:26.930192+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:17:26.930192+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.barandergisi.net",
+        "eski_alan": "www.barandergisi.net",
+        "yeni_alan": "barandergisi.net",
+        "rss_adresleri": [
+          "https://www.barandergisi.net/rss",
+          "https://www.barandergisi.net/rss/"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://www.barandergisi.net/rss",
+        "https://www.barandergisi.net/rss/"
+      ],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Adana",
@@ -216,7 +547,40 @@
       "alan": "www.5ocakgazetesi.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:17:32.500379+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:17:32.500379+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.5ocakgazetesi.com",
+        "eski_alan": "www.5ocakgazetesi.com",
+        "yeni_alan": "5ocakgazetesi.com",
+        "rss_adresleri": [
+          "https://www.5ocakgazetesi.com/feed",
+          "https://www.5ocakgazetesi.com/feed/",
+          "https://www.5ocakgazetesi.com/rss",
+          "https://www.5ocakgazetesi.com/rss/",
+          "https://www.5ocakgazetesi.com/rss.xml"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://www.5ocakgazetesi.com/feed",
+        "https://www.5ocakgazetesi.com/feed/",
+        "https://www.5ocakgazetesi.com/rss",
+        "https://www.5ocakgazetesi.com/rss/",
+        "https://www.5ocakgazetesi.com/rss.xml"
+      ],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Adana",
@@ -225,7 +589,34 @@
       "alan": "www.ilkhaber-gazetesi.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:17:37.932882+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:17:37.932882+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.ilkhaber-gazetesi.com",
+        "eski_alan": "www.ilkhaber-gazetesi.com",
+        "yeni_alan": "ilkhaber-gazetesi.com",
+        "rss_adresleri": [
+          "https://www.ilkhaber-gazetesi.com/rss",
+          "https://www.ilkhaber-gazetesi.com/rss/"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://www.ilkhaber-gazetesi.com/rss",
+        "https://www.ilkhaber-gazetesi.com/rss/"
+      ],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Adana",
@@ -234,7 +625,34 @@
       "alan": "www.haber46.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:17:58.037377+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:17:58.037377+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.haber46.com.tr",
+        "eski_alan": "www.haber46.com.tr",
+        "yeni_alan": "haber46.com.tr",
+        "rss_adresleri": [
+          "https://www.haber46.com.tr/rss",
+          "https://www.haber46.com.tr/rss/"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://www.haber46.com.tr/rss",
+        "https://www.haber46.com.tr/rss/"
+      ],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Adıyaman",
@@ -243,7 +661,32 @@
       "alan": "www.medyagazete.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:18:03.388645+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:18:03.388645+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.medyagazete.com",
+        "eski_alan": "www.medyagazete.com",
+        "yeni_alan": "medyagazete.com",
+        "rss_adresleri": [
+          "https://www.medyagazete.com/rss.xml"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://www.medyagazete.com/rss.xml"
+      ],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Adıyaman",
@@ -252,7 +695,32 @@
       "alan": "www.ensondakika.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:18:13.037652+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:18:13.037652+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.ensondakika.com.tr",
+        "eski_alan": "www.ensondakika.com.tr",
+        "yeni_alan": "ensondakika.com.tr",
+        "rss_adresleri": [
+          "https://www.ensondakika.com.tr/rss.xml"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://www.ensondakika.com.tr/rss.xml"
+      ],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Adıyaman",
@@ -261,7 +729,34 @@
       "alan": "www.adiyamanlilar.net",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:18:19.717293+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:18:19.717293+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.adiyamanlilar.net",
+        "eski_alan": "www.adiyamanlilar.net",
+        "yeni_alan": "adiyamanlilar.net",
+        "rss_adresleri": [
+          "https://www.adiyamanlilar.net/rss",
+          "https://www.adiyamanlilar.net/rss/"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://www.adiyamanlilar.net/rss",
+        "https://www.adiyamanlilar.net/rss/"
+      ],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Adıyaman",
@@ -270,7 +765,32 @@
       "alan": "www.haberler.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:18:24.881365+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:18:24.881365+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.haberler.com",
+        "eski_alan": "www.haberler.com",
+        "yeni_alan": "haberler.com",
+        "rss_adresleri": [
+          "https://rss.haberler.com/podcast.aspx"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://rss.haberler.com/podcast.aspx"
+      ],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Adıyaman",
@@ -279,7 +799,27 @@
       "alan": "www.aydinlik.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "dogrulama": {
+        "adres": "erisilemedi",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T09:18:33.306972+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:18:33.306972+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 403,
+        "yonlendirme": null,
+        "son_url": null,
+        "eski_alan": "www.aydinlik.com.tr",
+        "yeni_alan": null,
+        "rss_adresleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots_durumu": "kontrol_edilmedi",
+        "hata": "HTTP 403"
+      },
+      "rss_adresleri": []
     },
     {
       "il": "Adıyaman",
@@ -288,7 +828,28 @@
       "alan": "www.trthaber.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T09:18:34.460604+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:18:34.460604+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.trthaber.com",
+        "eski_alan": "www.trthaber.com",
+        "yeni_alan": "trthaber.com",
+        "rss_adresleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Adıyaman",
@@ -297,7 +858,27 @@
       "alan": "medyascope.tv",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "dogrulama": {
+        "adres": "erisilemedi",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T09:18:43.281324+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:18:43.281324+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 403,
+        "yonlendirme": null,
+        "son_url": null,
+        "eski_alan": "medyascope.tv",
+        "yeni_alan": null,
+        "rss_adresleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots_durumu": "kontrol_edilmedi",
+        "hata": "HTTP 403"
+      },
+      "rss_adresleri": []
     },
     {
       "il": "Adıyaman",
@@ -306,7 +887,28 @@
       "alan": "www.milliyet.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T09:18:44.342645+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:18:44.342645+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.milliyet.com.tr",
+        "eski_alan": "www.milliyet.com.tr",
+        "yeni_alan": "milliyet.com.tr",
+        "rss_adresleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Adıyaman",
@@ -315,7 +917,27 @@
       "alan": "bianet.org",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T09:18:52.064150+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:18:52.064150+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://bianet.org",
+        "eski_alan": "bianet.org",
+        "yeni_alan": "bianet.org",
+        "rss_adresleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": []
     },
     {
       "il": "Adıyaman",
@@ -324,7 +946,34 @@
       "alan": "www.cumhuriyet.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:18:57.121743+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:18:57.121743+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.cumhuriyet.com.tr",
+        "eski_alan": "www.cumhuriyet.com.tr",
+        "yeni_alan": "cumhuriyet.com.tr",
+        "rss_adresleri": [
+          "https://www.cumhuriyet.com.tr/rss",
+          "https://www.cumhuriyet.com.tr/rss/"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://www.cumhuriyet.com.tr/rss",
+        "https://www.cumhuriyet.com.tr/rss/"
+      ],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Adıyaman",
@@ -333,7 +982,34 @@
       "alan": "www.kibrismanset.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:19:02.307105+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:19:02.307105+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.kibrismanset.com",
+        "eski_alan": "www.kibrismanset.com",
+        "yeni_alan": "kibrismanset.com",
+        "rss_adresleri": [
+          "https://www.kibrismanset.com/rss",
+          "https://www.kibrismanset.com/rss/"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://www.kibrismanset.com/rss",
+        "https://www.kibrismanset.com/rss/"
+      ],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Adıyaman",
@@ -342,7 +1018,40 @@
       "alan": "www.son.tv",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:19:07.625242+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:19:07.625242+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.son.tv",
+        "eski_alan": "www.son.tv",
+        "yeni_alan": "son.tv",
+        "rss_adresleri": [
+          "https://www.son.tv/feed",
+          "https://www.son.tv/feed/",
+          "https://www.son.tv/rss",
+          "https://www.son.tv/rss/",
+          "https://www.son.tv/?feed=rss2"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://www.son.tv/feed",
+        "https://www.son.tv/feed/",
+        "https://www.son.tv/rss",
+        "https://www.son.tv/rss/",
+        "https://www.son.tv/?feed=rss2"
+      ],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Adıyaman",
@@ -351,7 +1060,27 @@
       "alan": "www.besniguncel.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "dogrulama": {
+        "adres": "erisilemedi",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T09:19:25.218219+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:19:25.218219+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 403,
+        "yonlendirme": null,
+        "son_url": null,
+        "eski_alan": "www.besniguncel.com",
+        "yeni_alan": null,
+        "rss_adresleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots_durumu": "kontrol_edilmedi",
+        "hata": "HTTP 403"
+      },
+      "rss_adresleri": []
     },
     {
       "il": "Adıyaman",
@@ -360,7 +1089,27 @@
       "alan": "gunebakisgazetesi.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "dogrulama": {
+        "adres": "erisilemedi",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T09:19:26.296966+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:19:26.296966+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 403,
+        "yonlendirme": null,
+        "son_url": null,
+        "eski_alan": "gunebakisgazetesi.com",
+        "yeni_alan": null,
+        "rss_adresleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots_durumu": "kontrol_edilmedi",
+        "hata": "HTTP 403"
+      },
+      "rss_adresleri": []
     },
     {
       "il": "Afyonkarahisar",
@@ -369,7 +1118,34 @@
       "alan": "www.odakgazetesi.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:19:27.371337+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:19:27.371337+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.odakgazetesi.com",
+        "eski_alan": "www.odakgazetesi.com",
+        "yeni_alan": "odakgazetesi.com",
+        "rss_adresleri": [
+          "https://www.odakgazetesi.com/rss",
+          "https://www.odakgazetesi.com/rss/"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://www.odakgazetesi.com/rss",
+        "https://www.odakgazetesi.com/rss/"
+      ],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Afyonkarahisar",
@@ -378,7 +1154,28 @@
       "alan": "www.afyonyerelhaber.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T09:19:32.780535+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:19:32.780535+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.afyonyerelhaber.com",
+        "eski_alan": "www.afyonyerelhaber.com",
+        "yeni_alan": "afyonyerelhaber.com",
+        "rss_adresleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Afyonkarahisar",
@@ -387,7 +1184,28 @@
       "alan": "www.beyazbelgehaber.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T09:19:45.663047+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:19:45.663047+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.beyazbelgehaber.com",
+        "eski_alan": "www.beyazbelgehaber.com",
+        "yeni_alan": "beyazbelgehaber.com",
+        "rss_adresleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Afyonkarahisar",
@@ -396,7 +1214,33 @@
       "alan": "haberuskudar.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:20:00.558134+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:20:00.558134+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://haberuskudar.com",
+        "eski_alan": "haberuskudar.com",
+        "yeni_alan": "haberuskudar.com",
+        "rss_adresleri": [
+          "https://haberuskudar.com/rss",
+          "https://haberuskudar.com/rss/"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://haberuskudar.com/rss",
+        "https://haberuskudar.com/rss/"
+      ]
     },
     {
       "il": "Afyonkarahisar",
@@ -405,7 +1249,32 @@
       "alan": "www.iscihaber.net",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:20:13.327498+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:20:13.327498+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.iscihaber.net",
+        "eski_alan": "www.iscihaber.net",
+        "yeni_alan": "iscihaber.net",
+        "rss_adresleri": [
+          "https://www.iscihaber.net/rss/news"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://www.iscihaber.net/rss/news"
+      ],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Afyonkarahisar",
@@ -414,7 +1283,28 @@
       "alan": "www.gunhaber.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T09:20:22.030638+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:20:22.030638+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.gunhaber.com.tr",
+        "eski_alan": "www.gunhaber.com.tr",
+        "yeni_alan": "gunhaber.com.tr",
+        "rss_adresleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Afyonkarahisar",
@@ -423,7 +1313,37 @@
       "alan": "emlakkulisi.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:20:28.048920+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:20:28.048920+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://emlakkulisi.com",
+        "eski_alan": "emlakkulisi.com",
+        "yeni_alan": "emlakkulisi.com",
+        "rss_adresleri": [
+          "https://emlakkulisi.com/Atom/Rss",
+          "https://emlakkulisi.com/feed",
+          "https://emlakkulisi.com/feed/",
+          "https://emlakkulisi.com/rss"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://emlakkulisi.com/Atom/Rss",
+        "https://emlakkulisi.com/feed",
+        "https://emlakkulisi.com/feed/",
+        "https://emlakkulisi.com/rss"
+      ]
     },
     {
       "il": "Afyonkarahisar",
@@ -432,7 +1352,38 @@
       "alan": "www.kocatepegazetesi.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:20:35.243828+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:20:35.243828+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.kocatepegazetesi.com",
+        "eski_alan": "www.kocatepegazetesi.com",
+        "yeni_alan": "kocatepegazetesi.com",
+        "rss_adresleri": [
+          "https://www.kocatepegazetesi.com/rss/",
+          "https://www.kocatepegazetesi.com/feed",
+          "https://www.kocatepegazetesi.com/feed/",
+          "https://www.kocatepegazetesi.com/rss"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://www.kocatepegazetesi.com/rss/",
+        "https://www.kocatepegazetesi.com/feed",
+        "https://www.kocatepegazetesi.com/feed/",
+        "https://www.kocatepegazetesi.com/rss"
+      ],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Afyonkarahisar",
@@ -441,7 +1392,32 @@
       "alan": "www.memleket.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "bulundu",
+        "son_kontrol": "2026-11-21T09:20:46.660632+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:20:46.660632+00:00",
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "yonlendirme": "yok",
+        "son_url": "https://www.memleket.com.tr",
+        "eski_alan": "www.memleket.com.tr",
+        "yeni_alan": "memleket.com.tr",
+        "rss_adresleri": [
+          "https://www.memleket.com.tr/service/rss.php"
+        ],
+        "rss_durumu": "bulundu",
+        "robots_durumu": "robots_dosyasi_bulundu",
+        "hata": null
+      },
+      "rss_adresleri": [
+        "https://www.memleket.com.tr/service/rss.php"
+      ],
+      "alan_dogrulama_uyarisi": "Yönlendirme farklı alan adına gidiyor. Manuel inceleme gerekiyor."
     },
     {
       "il": "Ağrı",
@@ -5455,6 +6431,240 @@
       "tur": "Google Haberler RSS",
       "durum": "aday",
       "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Bingöl",
+      "ad": "bingöl sürmanşet",
+      "url": "https://www.bingolsurmanset.com",
+      "alan": "www.bingolsurmanset.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Bolu",
+      "ad": "Bolu Nabız",
+      "url": "https://www.bolunabiz.com",
+      "alan": "www.bolunabiz.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Bolu",
+      "ad": "Bolu Havadis",
+      "url": "https://www.boluhavadis.net",
+      "alan": "www.boluhavadis.net",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Bolu",
+      "ad": "Bolu Olay",
+      "url": "https://www.boluolay.com",
+      "alan": "www.boluolay.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Burdur",
+      "ad": "Denizliekspres",
+      "url": "https://www.denizliekspres.com.tr",
+      "alan": "www.denizliekspres.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Burdur",
+      "ad": "Burdur Yenigün",
+      "url": "https://www.burduryenigun.com",
+      "alan": "www.burduryenigun.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Denizli",
+      "ad": "drttv.com",
+      "url": "https://www.drttv.com",
+      "alan": "www.drttv.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Denizli",
+      "ad": "D20Haber",
+      "url": "https://d20haber.com",
+      "alan": "d20haber.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Edirne",
+      "ad": "Haberet",
+      "url": "https://www.haberet.com",
+      "alan": "www.haberet.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Gaziantep",
+      "ad": "Gazikent27",
+      "url": "https://www.gazikent27.com",
+      "alan": "www.gazikent27.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Gaziantep",
+      "ad": "Gaziantep Doğuş",
+      "url": "https://www.gaziantepdogus.com",
+      "alan": "www.gaziantepdogus.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Giresun",
+      "ad": "Toplumsal Haber",
+      "url": "https://www.toplumsal.com.tr",
+      "alan": "www.toplumsal.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Giresun",
+      "ad": "Yeni Giresun Gazetesi",
+      "url": "https://www.yenigiresun.net",
+      "alan": "www.yenigiresun.net",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Hatay",
+      "ad": "tv100 Haber",
+      "url": "https://www.tv100.com",
+      "alan": "www.tv100.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Malatya",
+      "ad": "Malatya Flaş Haber",
+      "url": "https://malatyaflashaber.com",
+      "alan": "malatyaflashaber.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Malatya",
+      "ad": "Malatya Kalite Haber",
+      "url": "https://www.malatyakalitehaber.com",
+      "alan": "www.malatyakalitehaber.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Muğla",
+      "ad": "Muğla Haber",
+      "url": "https://www.mugladevrim.com.tr",
+      "alan": "www.mugladevrim.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Ordu",
+      "ad": "orducu.com",
+      "url": "https://www.orducu.com",
+      "alan": "www.orducu.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Sakarya",
+      "ad": "Söz Sakarya",
+      "url": "https://sozsakarya.com",
+      "alan": "sozsakarya.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Tekirdağ",
+      "ad": "Tekirdağ Habertrak Gazetesi",
+      "url": "https://habertrak.com.tr",
+      "alan": "habertrak.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Tokat",
+      "ad": "Günışığı Gazetesi",
+      "url": "https://www.gunisigigazetesi.net",
+      "alan": "www.gunisigigazetesi.net",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Trabzon",
+      "ad": "Trabzon Büyükşehir Belediyesi",
+      "url": "https://www.trabzon.bel.tr",
+      "alan": "www.trabzon.bel.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Trabzon",
+      "ad": "Kuzey Ekspres",
+      "url": "https://www.kuzeyekspres.com.tr",
+      "alan": "www.kuzeyekspres.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Trabzon",
+      "ad": "Güneydoğu Ekspres",
+      "url": "https://www.guneydoguekspres.com",
+      "alan": "www.guneydoguekspres.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Trabzon",
+      "ad": "Sporx.com",
+      "url": "https://www.sporx.com",
+      "alan": "www.sporx.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Batman",
+      "ad": "Batman Rehber Gazetesi",
+      "url": "https://www.batmanrehbergazetesi.com",
+      "alan": "www.batmanrehbergazetesi.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
     }
   ]
 }

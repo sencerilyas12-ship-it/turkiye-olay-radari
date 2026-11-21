@@ -1,0 +1,19 @@
+{
+  "proje": "MIHVER",
+  "kontrol_zamani": "2026-11-21T09:11:47",
+  "envanter_surumu": "1.1.0",
+  "il_sayisi": 81,
+  "resmi_dizin_sayisi": 5,
+  "kaynak_sayisi": 0,
+  "otomatik_kaynak_ekleme": true,
+  "otomatik_aktiflestirme": true,
+  "dogrulanmamis_haber_toplama": true,
+  "otomatik_yayin": true,
+  "hata_sayisi": 0,
+  "uyari_sayisi": 1,
+  "hatalar": [],
+  "uyarilar": [
+    "Türkiye'deki ilçe listesi henüz tamamlanmamış."
+  ],
+  "sonuc": "basarili"
+}
