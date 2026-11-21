@@ -3,7 +3,7 @@ name: MIHVER Kaynak Yönetimi
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 * * * *"
 
 permissions:
   contents: write
@@ -27,7 +27,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          cache: "pip"
 
       - name: Gerekli kütüphaneleri kur
         run: |
@@ -40,6 +39,45 @@ jobs:
           python -m py_compile kesif_motoru.py
           python -m py_compile kaynak_dogrulama.py
           python -m py_compile kaynak_envanter_kontrol.py
+
+      - name: Eksik kütüphane var mı denetle
+        run: |
+          python - << 'PY'
+          import ast, importlib.util, pathlib, sys
+
+          dosyalar = [
+              "kaynak_havuzu_olustur.py",
+              "kesif_motoru.py",
+              "kaynak_dogrulama.py",
+              "kaynak_envanter_kontrol.py"
+          ]
+
+          yerel = {p.stem for p in pathlib.Path(".").glob("*.py")}
+          eksik = {}
+
+          for d in dosyalar:
+              for n in ast.walk(ast.parse(pathlib.Path(d).read_text(encoding="utf-8"))):
+                  if isinstance(n, ast.Import):
+                      adlar = [a.name.split(".")[0] for a in n.names]
+                  elif isinstance(n, ast.ImportFrom) and n.module and n.level == 0:
+                      adlar = [n.module.split(".")[0]]
+                  else:
+                      adlar = []
+
+                  for a in adlar:
+                      if a in sys.stdlib_module_names or a in yerel:
+                          continue
+                      if importlib.util.find_spec(a) is None:
+                          eksik.setdefault(a, set()).add(d)
+
+          if eksik:
+              for a, ds in sorted(eksik.items()):
+                  print(f"EKSIK MODUL: {a} (kullanan: {', '.join(sorted(ds))})")
+              print("Eksik modülleri kurulum adımına ekleyin.")
+              sys.exit(1)
+
+          print("Tüm importlar karşılanıyor.")
+          PY
 
       - name: Kaynak havuzunu oluştur
         run: python kaynak_havuzu_olustur.py
@@ -58,11 +96,32 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add kaynaklar.json
-          git add kaynak_havuzu_raporu.json
-          git add kaynak_havuzu_ilerleme.json
-          git add kaynak_dogrulama_raporu.json
-          git add kaynak_envanter_raporu.json
+          for f in kaynaklar.json kaynak_havuzu_raporu.json kaynak_havuzu_ilerleme.json kaynak_dogrulama_raporu.json kaynak_envanter_raporu.json; do
+            if [ -f "$f" ]; then
+              git add -- "$f"
+            else
+              echo "Dosya yok, atlandı: $f"
+            fi
+          done
 
-          git diff --cached --quiet || git commit -m "MİHVER kaynak envanteri güncellendi"
-          git push
+          if git diff --cached --quiet; then
+            echo "Değişiklik yok"
+            exit 0
+          fi
+
+          git commit -m "MİHVER kaynak envanteri güncellendi"
+
+          for i in 1 2 3; do
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+
+            echo "Push reddedildi, yeniden deneniyor ($i/3)"
+            git pull --rebase origin main || {
+              git rebase --abort || true
+              exit 1
+            }
+          done
+
+          echo "Push 3 denemede başarısız oldu"
+          exit 1
