@@ -1,0 +1,48 @@
+
+name: MIHVER Otomatik Haber Toplama
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mihver-haber-toplama
+  cancel-in-progress: false
+
+jobs:
+  haber-topla:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Depoyu indir
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Haberleri topla
+        run: python haberler_toplama.py
+
+      - name: Değişiklikleri kaydet
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add haberler.json tarama_durumu.json
+
+          if git diff --cached --quiet; then
+            echo "Yeni haber bulunamadı."
+            exit 0
+          fi
+
+          git commit -m "MİHVER haberleri otomatik güncellendi"
+          git push origin HEAD:main
