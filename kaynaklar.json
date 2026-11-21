@@ -5042,7 +5042,107 @@
       "alan": "www.ilgazetesi.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-8cabbac3e382e53891e4",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T09:59:12.772214+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:59:12.772214+00:00",
+      "rss_adresleri": [
+        "https://www.ilgazetesi.com.tr/service/rss.php"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.ilgazetesi.com.tr",
+        "eski_alan": "ilgazetesi.com.tr",
+        "yeni_alan": "ilgazetesi.com.tr",
+        "rss_adresleri": [
+          "https://www.ilgazetesi.com.tr/service/rss.php"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.ilgazetesi.com.tr/service/rss.php",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.ilgazetesi.com.tr/service/rss.php",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://www.ilgazetesi.com.tr/feed",
+            "durum": "erisilemedi",
+            "http_kodu": 410,
+            "son_url": "https://www.ilgazetesi.com.tr/feed"
+          },
+          {
+            "adres": "https://www.ilgazetesi.com.tr/feed/",
+            "durum": "erisilemedi",
+            "http_kodu": 410,
+            "son_url": "https://www.ilgazetesi.com.tr/feed/"
+          },
+          {
+            "adres": "https://www.ilgazetesi.com.tr/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.ilgazetesi.com.tr/service/rss.php",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://www.ilgazetesi.com.tr/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.ilgazetesi.com.tr/service/rss.php",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://www.ilgazetesi.com.tr/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 410,
+            "son_url": "https://www.ilgazetesi.com.tr/rss.xml"
+          },
+          {
+            "adres": "https://www.ilgazetesi.com.tr/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 410,
+            "son_url": "https://www.ilgazetesi.com.tr/feed.xml"
+          },
+          {
+            "adres": "https://www.ilgazetesi.com.tr/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 410,
+            "son_url": "https://www.ilgazetesi.com.tr/atom.xml"
+          },
+          {
+            "adres": "https://www.ilgazetesi.com.tr/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 410,
+            "son_url": "https://www.ilgazetesi.com.tr/feeds/posts/default"
+          },
+          {
+            "adres": "https://www.ilgazetesi.com.tr/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.ilgazetesi.com.tr/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.ilgazetesi.com.tr/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Ankara",
@@ -5051,7 +5151,30 @@
       "alan": "www.internethaber.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-fa46b9764131e56ccf05",
+      "dogrulama": {
+        "adres": "erisime_engel",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T09:59:29.327737+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:59:29.327737+00:00",
+      "rss_adresleri": [],
+      "kontrol_raporu": {
+        "http_kodu": 403,
+        "erisim": "erisime_engel",
+        "yonlendirme": null,
+        "son_url": null,
+        "eski_alan": "internethaber.com",
+        "yeni_alan": null,
+        "rss_adresleri": [],
+        "rss_testleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots": null,
+        "hata": "HTTP 403"
+      }
     },
     {
       "il": "Antalya",
@@ -5060,7 +5183,107 @@
       "alan": "www.akdenizgercek.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "kimlik": "mihver-2761098c273135b1b3db",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T09:59:30.458689+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:59:30.458689+00:00",
+      "rss_adresleri": [
+        "https://www.akdenizgercek.com.tr/rss/news"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.akdenizgercek.com.tr",
+        "eski_alan": "akdenizgercek.com.tr",
+        "yeni_alan": "akdenizgercek.com.tr",
+        "rss_adresleri": [
+          "https://www.akdenizgercek.com.tr/rss/news"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.akdenizgercek.com.tr/rss/news",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.akdenizgercek.com.tr/rss/news",
+            "tur": "rss",
+            "kayit_sayisi": 50
+          },
+          {
+            "adres": "https://www.akdenizgercek.com.tr/feed",
+            "durum": "erisilemedi",
+            "http_kodu": 410,
+            "son_url": "https://www.akdenizgercek.com.tr/feed"
+          },
+          {
+            "adres": "https://www.akdenizgercek.com.tr/feed/",
+            "durum": "erisilemedi",
+            "http_kodu": 410,
+            "son_url": "https://www.akdenizgercek.com.tr/feed"
+          },
+          {
+            "adres": "https://www.akdenizgercek.com.tr/rss",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.akdenizgercek.com.tr/rss",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.akdenizgercek.com.tr/rss/",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.akdenizgercek.com.tr/rss",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.akdenizgercek.com.tr/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.akdenizgercek.com.tr/service/rss.php"
+          },
+          {
+            "adres": "https://www.akdenizgercek.com.tr/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 410,
+            "son_url": "https://www.akdenizgercek.com.tr/feed.xml"
+          },
+          {
+            "adres": "https://www.akdenizgercek.com.tr/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 410,
+            "son_url": "https://www.akdenizgercek.com.tr/atom.xml"
+          },
+          {
+            "adres": "https://www.akdenizgercek.com.tr/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 410,
+            "son_url": "https://www.akdenizgercek.com.tr/feeds/posts/default"
+          },
+          {
+            "adres": "https://www.akdenizgercek.com.tr/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.akdenizgercek.com.tr/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.akdenizgercek.com.tr/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Antalya",
@@ -5069,7 +5292,30 @@
       "alan": "www.ulusal.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "kimlik": "mihver-a11e2e0f1be528549840",
+      "dogrulama": {
+        "adres": "erisime_engel",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T09:59:43.188346+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:59:43.188346+00:00",
+      "rss_adresleri": [],
+      "kontrol_raporu": {
+        "http_kodu": 403,
+        "erisim": "erisime_engel",
+        "yonlendirme": null,
+        "son_url": null,
+        "eski_alan": "ulusal.com.tr",
+        "yeni_alan": null,
+        "rss_adresleri": [],
+        "rss_testleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots": null,
+        "hata": "HTTP 403"
+      }
     },
     {
       "il": "Artvin",
@@ -5078,7 +5324,101 @@
       "alan": "www.gundemartvin.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-cbff62e3b66a7398146b",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T09:59:44.371419+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:59:44.371419+00:00",
+      "rss_adresleri": [
+        "https://www.gundemartvin.com/rss",
+        "https://www.gundemartvin.com/rss/"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.gundemartvin.com",
+        "eski_alan": "gundemartvin.com",
+        "yeni_alan": "gundemartvin.com",
+        "rss_adresleri": [
+          "https://www.gundemartvin.com/rss",
+          "https://www.gundemartvin.com/rss/"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.gundemartvin.com/feed",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.gundemartvin.com/feed"
+          },
+          {
+            "adres": "https://www.gundemartvin.com/feed/",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.gundemartvin.com/feed/"
+          },
+          {
+            "adres": "https://www.gundemartvin.com/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.gundemartvin.com/rss",
+            "tur": "rss",
+            "kayit_sayisi": 30
+          },
+          {
+            "adres": "https://www.gundemartvin.com/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.gundemartvin.com/rss/",
+            "tur": "rss",
+            "kayit_sayisi": 30
+          },
+          {
+            "adres": "https://www.gundemartvin.com/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.gundemartvin.com/rss.xml"
+          },
+          {
+            "adres": "https://www.gundemartvin.com/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.gundemartvin.com/feed.xml"
+          },
+          {
+            "adres": "https://www.gundemartvin.com/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.gundemartvin.com/atom.xml"
+          },
+          {
+            "adres": "https://www.gundemartvin.com/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.gundemartvin.com/feeds/posts/default"
+          },
+          {
+            "adres": "https://www.gundemartvin.com/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.gundemartvin.com/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.gundemartvin.com/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Artvin",
@@ -5087,7 +5427,119 @@
       "alan": "politikahaber.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-834f9f8b8e0f3903d2c9",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T09:59:49.751240+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T09:59:49.751240+00:00",
+      "rss_adresleri": [
+        "https://politikahaber.com/feed/"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://politikahaber.com",
+        "eski_alan": "politikahaber.com",
+        "yeni_alan": "politikahaber.com",
+        "rss_adresleri": [
+          "https://politikahaber.com/feed/"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://politikahaber.com/feed/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://politikahaber.com/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 10
+          },
+          {
+            "adres": "https://politikahaber.com/comments/feed/",
+            "durum": "besleme_bos",
+            "http_kodu": 200,
+            "son_url": "https://politikahaber.com/comments/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://politikahaber.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpolitikahaber.com%2F&format=xml",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://politikahaber.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpolitikahaber.com%2F&format=xml",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://politikahaber.com/feed",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://politikahaber.com/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 10
+          },
+          {
+            "adres": "https://politikahaber.com/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://politikahaber.com/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 10
+          },
+          {
+            "adres": "https://politikahaber.com/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://politikahaber.com/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 10
+          },
+          {
+            "adres": "https://politikahaber.com/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://politikahaber.com/rss.xml"
+          },
+          {
+            "adres": "https://politikahaber.com/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://politikahaber.com/feed.xml"
+          },
+          {
+            "adres": "https://politikahaber.com/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://politikahaber.com/atom.xml"
+          },
+          {
+            "adres": "https://politikahaber.com/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://politikahaber.com/feeds/posts/default"
+          },
+          {
+            "adres": "https://politikahaber.com/?feed=rss2",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://politikahaber.com/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 10
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://politikahaber.com/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Aydın",
@@ -5096,7 +5548,121 @@
       "alan": "haberton.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "kimlik": "mihver-53be7a9a121e413c9668",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:00:19.078248+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:00:19.078248+00:00",
+      "rss_adresleri": [
+        "https://haberton.com/feed/",
+        "https://haberton.com/comments/feed/"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://haberton.com",
+        "eski_alan": "haberton.com",
+        "yeni_alan": "haberton.com",
+        "rss_adresleri": [
+          "https://haberton.com/feed/",
+          "https://haberton.com/comments/feed/"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://haberton.com/feed/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://haberton.com/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 12
+          },
+          {
+            "adres": "https://haberton.com/comments/feed/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://haberton.com/comments/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 12
+          },
+          {
+            "adres": "https://haberton.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhaberton.com%2F&format=xml",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://haberton.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhaberton.com%2F&format=xml",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://haberton.com/feed",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://haberton.com/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 12
+          },
+          {
+            "adres": "https://haberton.com/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://haberton.com/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 12
+          },
+          {
+            "adres": "https://haberton.com/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://haberton.com/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 12
+          },
+          {
+            "adres": "https://haberton.com/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://haberton.com/rss.xml"
+          },
+          {
+            "adres": "https://haberton.com/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://haberton.com/feed.xml"
+          },
+          {
+            "adres": "https://haberton.com/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://haberton.com/atom.xml"
+          },
+          {
+            "adres": "https://haberton.com/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://haberton.com/feeds/posts/default"
+          },
+          {
+            "adres": "https://haberton.com/?feed=rss2",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://haberton.com/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 12
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://haberton.com/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Aydın",
@@ -5105,7 +5671,30 @@
       "alan": "www.mansetaydin.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "kimlik": "mihver-bc089ff0eebfe2e81e1f",
+      "dogrulama": {
+        "adres": "erisime_engel",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T10:00:39.673069+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:00:39.673069+00:00",
+      "rss_adresleri": [],
+      "kontrol_raporu": {
+        "http_kodu": 403,
+        "erisim": "erisime_engel",
+        "yonlendirme": null,
+        "son_url": null,
+        "eski_alan": "mansetaydin.com",
+        "yeni_alan": null,
+        "rss_adresleri": [],
+        "rss_testleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots": null,
+        "hata": "HTTP 403"
+      }
     },
     {
       "il": "Aydın",
@@ -5114,7 +5703,91 @@
       "alan": "www.aydindenge.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-56a095cc493d9d493152",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "gecerli_besleme_bulunamadi",
+        "son_kontrol": "2026-11-21T10:00:40.766049+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:00:40.766049+00:00",
+      "rss_adresleri": [],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.aydindenge.com.tr",
+        "eski_alan": "aydindenge.com.tr",
+        "yeni_alan": "aydindenge.com.tr",
+        "rss_adresleri": [],
+        "rss_testleri": [
+          {
+            "adres": "https://www.aydindenge.com.tr/feed",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.aydindenge.com.tr/feed"
+          },
+          {
+            "adres": "https://www.aydindenge.com.tr/feed/",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.aydindenge.com.tr/feed/"
+          },
+          {
+            "adres": "https://www.aydindenge.com.tr/rss",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.aydindenge.com.tr/rss"
+          },
+          {
+            "adres": "https://www.aydindenge.com.tr/rss/",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.aydindenge.com.tr/rss/"
+          },
+          {
+            "adres": "https://www.aydindenge.com.tr/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.aydindenge.com.tr/rss.xml"
+          },
+          {
+            "adres": "https://www.aydindenge.com.tr/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.aydindenge.com.tr/feed.xml"
+          },
+          {
+            "adres": "https://www.aydindenge.com.tr/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.aydindenge.com.tr/atom.xml"
+          },
+          {
+            "adres": "https://www.aydindenge.com.tr/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.aydindenge.com.tr/feeds/posts/default"
+          },
+          {
+            "adres": "https://www.aydindenge.com.tr/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.aydindenge.com.tr/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "gecerli_besleme_bulunamadi",
+        "robots": {
+          "adres": "https://www.aydindenge.com.tr/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Aydın",
@@ -5123,7 +5796,71 @@
       "alan": "www.instagram.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-027b9d033853d78891ba",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "robots_nedeniyle_test_edilemedi",
+        "son_kontrol": "2026-11-21T10:00:48.076059+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:00:48.076059+00:00",
+      "rss_adresleri": [],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.instagram.com",
+        "eski_alan": "instagram.com",
+        "yeni_alan": "instagram.com",
+        "rss_adresleri": [],
+        "rss_testleri": [
+          {
+            "adres": "https://www.instagram.com/feed",
+            "durum": "robots_izin_vermedi_veya_belirsiz"
+          },
+          {
+            "adres": "https://www.instagram.com/feed/",
+            "durum": "robots_izin_vermedi_veya_belirsiz"
+          },
+          {
+            "adres": "https://www.instagram.com/rss",
+            "durum": "robots_izin_vermedi_veya_belirsiz"
+          },
+          {
+            "adres": "https://www.instagram.com/rss/",
+            "durum": "robots_izin_vermedi_veya_belirsiz"
+          },
+          {
+            "adres": "https://www.instagram.com/rss.xml",
+            "durum": "robots_izin_vermedi_veya_belirsiz"
+          },
+          {
+            "adres": "https://www.instagram.com/feed.xml",
+            "durum": "robots_izin_vermedi_veya_belirsiz"
+          },
+          {
+            "adres": "https://www.instagram.com/atom.xml",
+            "durum": "robots_izin_vermedi_veya_belirsiz"
+          },
+          {
+            "adres": "https://www.instagram.com/feeds/posts/default",
+            "durum": "robots_izin_vermedi_veya_belirsiz"
+          },
+          {
+            "adres": "https://www.instagram.com/?feed=rss2",
+            "durum": "robots_izin_vermedi_veya_belirsiz"
+          }
+        ],
+        "rss_durumu": "robots_nedeniyle_test_edilemedi",
+        "robots": {
+          "adres": "https://www.instagram.com/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Aydın",
@@ -5132,7 +5869,101 @@
       "alan": "www.aydinkulis.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-746f1f0d4b02881f9813",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:00:49.976230+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:00:49.976230+00:00",
+      "rss_adresleri": [
+        "https://www.aydinkulis.com/rss",
+        "https://www.aydinkulis.com/rss/"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.aydinkulis.com",
+        "eski_alan": "aydinkulis.com",
+        "yeni_alan": "aydinkulis.com",
+        "rss_adresleri": [
+          "https://www.aydinkulis.com/rss",
+          "https://www.aydinkulis.com/rss/"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.aydinkulis.com/feed",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.aydinkulis.com/feed"
+          },
+          {
+            "adres": "https://www.aydinkulis.com/feed/",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.aydinkulis.com/feed/"
+          },
+          {
+            "adres": "https://www.aydinkulis.com/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.aydinkulis.com/rss",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://www.aydinkulis.com/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.aydinkulis.com/rss/",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://www.aydinkulis.com/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.aydinkulis.com/rss.xml"
+          },
+          {
+            "adres": "https://www.aydinkulis.com/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.aydinkulis.com/feed.xml"
+          },
+          {
+            "adres": "https://www.aydinkulis.com/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.aydinkulis.com/atom.xml"
+          },
+          {
+            "adres": "https://www.aydinkulis.com/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.aydinkulis.com/feeds/posts/default"
+          },
+          {
+            "adres": "https://www.aydinkulis.com/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.aydinkulis.com/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.aydinkulis.com/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Aydın",
@@ -5141,7 +5972,101 @@
       "alan": "www.canakkalehaber.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-3f9d5abae586c6dd2f12",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:00:55.095321+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:00:55.095321+00:00",
+      "rss_adresleri": [
+        "https://www.canakkalehaber.com/rss"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.canakkalehaber.com",
+        "eski_alan": "canakkalehaber.com",
+        "yeni_alan": "canakkalehaber.com",
+        "rss_adresleri": [
+          "https://www.canakkalehaber.com/rss"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.canakkalehaber.com/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.canakkalehaber.com/rss",
+            "tur": "rss",
+            "kayit_sayisi": 20
+          },
+          {
+            "adres": "https://www.canakkalehaber.com/feed",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.canakkalehaber.com/feed"
+          },
+          {
+            "adres": "https://www.canakkalehaber.com/feed/",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.canakkalehaber.com/feed"
+          },
+          {
+            "adres": "https://www.canakkalehaber.com/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.canakkalehaber.com/rss",
+            "tur": "rss",
+            "kayit_sayisi": 20
+          },
+          {
+            "adres": "https://www.canakkalehaber.com/rss.xml",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.canakkalehaber.com/rss",
+            "tur": "rss",
+            "kayit_sayisi": 20
+          },
+          {
+            "adres": "https://www.canakkalehaber.com/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.canakkalehaber.com/feed.xml"
+          },
+          {
+            "adres": "https://www.canakkalehaber.com/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.canakkalehaber.com/atom.xml"
+          },
+          {
+            "adres": "https://www.canakkalehaber.com/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.canakkalehaber.com/feeds/posts/default"
+          },
+          {
+            "adres": "https://www.canakkalehaber.com/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.canakkalehaber.com/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.canakkalehaber.com/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Aydın",
@@ -5150,7 +6075,101 @@
       "alan": "www.aydinhedef.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-9cfd758e0d66c87be80f",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:01:08.783422+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:01:08.783422+00:00",
+      "rss_adresleri": [
+        "https://www.aydinhedef.com.tr/rss",
+        "https://www.aydinhedef.com.tr/rss/"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.aydinhedef.com.tr",
+        "eski_alan": "aydinhedef.com.tr",
+        "yeni_alan": "aydinhedef.com.tr",
+        "rss_adresleri": [
+          "https://www.aydinhedef.com.tr/rss",
+          "https://www.aydinhedef.com.tr/rss/"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.aydinhedef.com.tr/feed",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.aydinhedef.com.tr/feed"
+          },
+          {
+            "adres": "https://www.aydinhedef.com.tr/feed/",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.aydinhedef.com.tr/feed/"
+          },
+          {
+            "adres": "https://www.aydinhedef.com.tr/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.aydinhedef.com.tr/rss",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://www.aydinhedef.com.tr/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.aydinhedef.com.tr/rss/",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://www.aydinhedef.com.tr/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.aydinhedef.com.tr/rss.xml"
+          },
+          {
+            "adres": "https://www.aydinhedef.com.tr/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.aydinhedef.com.tr/feed.xml"
+          },
+          {
+            "adres": "https://www.aydinhedef.com.tr/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.aydinhedef.com.tr/atom.xml"
+          },
+          {
+            "adres": "https://www.aydinhedef.com.tr/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.aydinhedef.com.tr/feeds/posts/default"
+          },
+          {
+            "adres": "https://www.aydinhedef.com.tr/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.aydinhedef.com.tr/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.aydinhedef.com.tr/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Aydın",
@@ -5159,7 +6178,107 @@
       "alan": "www.bursadabugun.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-d5006c4d745039d382fd",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:01:14.099785+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:01:14.099785+00:00",
+      "rss_adresleri": [
+        "https://www.bursadabugun.com/rss/?feed=haberler"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.bursadabugun.com",
+        "eski_alan": "bursadabugun.com",
+        "yeni_alan": "bursadabugun.com",
+        "rss_adresleri": [
+          "https://www.bursadabugun.com/rss/?feed=haberler"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.bursadabugun.com/rss/?feed=haberler",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.bursadabugun.com/rss/?feed=haberler",
+            "tur": "rss",
+            "kayit_sayisi": 100
+          },
+          {
+            "adres": "https://www.bursadabugun.com/feed",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bursadabugun.com/feed"
+          },
+          {
+            "adres": "https://www.bursadabugun.com/feed/",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bursadabugun.com/feed/"
+          },
+          {
+            "adres": "https://www.bursadabugun.com/rss",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.bursadabugun.com/",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.bursadabugun.com/rss/",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.bursadabugun.com/",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.bursadabugun.com/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bursadabugun.com/rss.xml"
+          },
+          {
+            "adres": "https://www.bursadabugun.com/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bursadabugun.com/feed.xml"
+          },
+          {
+            "adres": "https://www.bursadabugun.com/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bursadabugun.com/atom.xml"
+          },
+          {
+            "adres": "https://www.bursadabugun.com/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bursadabugun.com/feeds/posts/default"
+          },
+          {
+            "adres": "https://www.bursadabugun.com/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.bursadabugun.com/",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.bursadabugun.com/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Balıkesir",
@@ -5168,7 +6287,105 @@
       "alan": "www.egesaati.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "kimlik": "mihver-a6724d71e32d92e9a36d",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:01:20.803239+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:01:20.803239+00:00",
+      "rss_adresleri": [
+        "https://www.egesaati.com.tr/rss",
+        "https://www.egesaati.com.tr/rss/"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.egesaati.com.tr",
+        "eski_alan": "egesaati.com.tr",
+        "yeni_alan": "egesaati.com.tr",
+        "rss_adresleri": [
+          "https://www.egesaati.com.tr/rss",
+          "https://www.egesaati.com.tr/rss/"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.egesaati.com.tr/feed",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.egesaati.com.tr/rss",
+            "tur": "rss",
+            "kayit_sayisi": 33
+          },
+          {
+            "adres": "https://www.egesaati.com.tr/feed/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.egesaati.com.tr/rss",
+            "tur": "rss",
+            "kayit_sayisi": 33
+          },
+          {
+            "adres": "https://www.egesaati.com.tr/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.egesaati.com.tr/rss",
+            "tur": "rss",
+            "kayit_sayisi": 33
+          },
+          {
+            "adres": "https://www.egesaati.com.tr/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.egesaati.com.tr/rss/",
+            "tur": "rss",
+            "kayit_sayisi": 33
+          },
+          {
+            "adres": "https://www.egesaati.com.tr/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.egesaati.com.tr/rss.xml"
+          },
+          {
+            "adres": "https://www.egesaati.com.tr/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.egesaati.com.tr/feed.xml"
+          },
+          {
+            "adres": "https://www.egesaati.com.tr/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.egesaati.com.tr/atom.xml"
+          },
+          {
+            "adres": "https://www.egesaati.com.tr/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.egesaati.com.tr/feeds/posts/default"
+          },
+          {
+            "adres": "https://www.egesaati.com.tr/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.egesaati.com.tr/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.egesaati.com.tr/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Balıkesir",
@@ -5177,7 +6394,115 @@
       "alan": "tekha.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-88b791015dc3c915b7eb",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:01:25.953819+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:01:25.953819+00:00",
+      "rss_adresleri": [
+        "https://tekha.com.tr/feed"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://tekha.com.tr",
+        "eski_alan": "tekha.com.tr",
+        "yeni_alan": "tekha.com.tr",
+        "rss_adresleri": [
+          "https://tekha.com.tr/feed"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://tekha.com.tr/feed",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://tekha.com.tr/feed",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://tekha.com.tr/comments/feed",
+            "durum": "besleme_bos",
+            "http_kodu": 200,
+            "son_url": "https://tekha.com.tr/comments/feed",
+            "tur": "rss",
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://tekha.com.tr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftekha.com.tr%2F&format=xml",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://tekha.com.tr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftekha.com.tr%2F&format=xml",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://tekha.com.tr/feed/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://tekha.com.tr/feed",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://tekha.com.tr/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://tekha.com.tr/feed",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://tekha.com.tr/rss/",
+            "durum": "erisilemedi",
+            "http_kodu": 429,
+            "son_url": "https://tekha.com.tr/rss/"
+          },
+          {
+            "adres": "https://tekha.com.tr/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 429,
+            "son_url": "https://tekha.com.tr/rss.xml"
+          },
+          {
+            "adres": "https://tekha.com.tr/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 429,
+            "son_url": "https://tekha.com.tr/feed.xml"
+          },
+          {
+            "adres": "https://tekha.com.tr/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 429,
+            "son_url": "https://tekha.com.tr/atom.xml"
+          },
+          {
+            "adres": "https://tekha.com.tr/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 429,
+            "son_url": "https://tekha.com.tr/feeds/posts/default"
+          },
+          {
+            "adres": "https://tekha.com.tr/?feed=rss2",
+            "durum": "erisilemedi",
+            "http_kodu": 429,
+            "son_url": "https://tekha.com.tr/?feed=rss2"
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://tekha.com.tr/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Balıkesir",
@@ -5186,7 +6511,107 @@
       "alan": "onedio.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-d1a8b3a07c2806e34602",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:01:43.837184+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:01:43.837184+00:00",
+      "rss_adresleri": [
+        "https://onedio.com/Publisher/publisher-daily.rss"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://onedio.com",
+        "eski_alan": "onedio.com",
+        "yeni_alan": "onedio.com",
+        "rss_adresleri": [
+          "https://onedio.com/Publisher/publisher-daily.rss"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://onedio.com/Publisher/publisher-daily.rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://onedio.com/Publisher/publisher-daily.rss",
+            "tur": "rss",
+            "kayit_sayisi": 172
+          },
+          {
+            "adres": "https://onedio.com/feed",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://onedio.com/feed"
+          },
+          {
+            "adres": "https://onedio.com/feed/",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://onedio.com/feed/"
+          },
+          {
+            "adres": "https://onedio.com/rss",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://onedio.com/rss",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://onedio.com/rss/",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://onedio.com/rss/",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://onedio.com/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://onedio.com/rss.xml"
+          },
+          {
+            "adres": "https://onedio.com/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://onedio.com/feed.xml"
+          },
+          {
+            "adres": "https://onedio.com/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://onedio.com/atom.xml"
+          },
+          {
+            "adres": "https://onedio.com/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://onedio.com/feeds/posts/default"
+          },
+          {
+            "adres": "https://onedio.com/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://onedio.com/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://onedio.com/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Balıkesir",
@@ -5195,7 +6620,30 @@
       "alan": "gazetemerhaba.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-7a269a97efe8faf3906a",
+      "dogrulama": {
+        "adres": "erisime_engel",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T10:01:49.417977+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:01:49.417977+00:00",
+      "rss_adresleri": [],
+      "kontrol_raporu": {
+        "http_kodu": 403,
+        "erisim": "erisime_engel",
+        "yonlendirme": null,
+        "son_url": null,
+        "eski_alan": "gazetemerhaba.com",
+        "yeni_alan": null,
+        "rss_adresleri": [],
+        "rss_testleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots": null,
+        "hata": "HTTP 403"
+      }
     },
     {
       "il": "Balıkesir",
@@ -5204,7 +6652,101 @@
       "alan": "www.balikesirim.net",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-62b5913ba7fdfb8f0c34",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:01:50.521613+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:01:50.521613+00:00",
+      "rss_adresleri": [
+        "https://www.balikesirim.net/rss",
+        "https://www.balikesirim.net/rss/"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.balikesirim.net",
+        "eski_alan": "balikesirim.net",
+        "yeni_alan": "balikesirim.net",
+        "rss_adresleri": [
+          "https://www.balikesirim.net/rss",
+          "https://www.balikesirim.net/rss/"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.balikesirim.net/feed",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.balikesirim.net/feed"
+          },
+          {
+            "adres": "https://www.balikesirim.net/feed/",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.balikesirim.net/feed/"
+          },
+          {
+            "adres": "https://www.balikesirim.net/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.balikesirim.net/rss",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://www.balikesirim.net/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.balikesirim.net/rss/",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://www.balikesirim.net/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.balikesirim.net/rss.xml"
+          },
+          {
+            "adres": "https://www.balikesirim.net/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.balikesirim.net/feed.xml"
+          },
+          {
+            "adres": "https://www.balikesirim.net/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.balikesirim.net/atom.xml"
+          },
+          {
+            "adres": "https://www.balikesirim.net/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.balikesirim.net/feeds/posts/default"
+          },
+          {
+            "adres": "https://www.balikesirim.net/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.balikesirim.net/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.balikesirim.net/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Bilecik",
@@ -5213,7 +6755,105 @@
       "alan": "www.bilecikhaber.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "kimlik": "mihver-75bd798ab06e1317fe5c",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:01:55.691549+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:01:55.691549+00:00",
+      "rss_adresleri": [
+        "https://www.bilecikhaber.com.tr/service/rss.php"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.bilecikhaber.com.tr",
+        "eski_alan": "bilecikhaber.com.tr",
+        "yeni_alan": "bilecikhaber.com.tr",
+        "rss_adresleri": [
+          "https://www.bilecikhaber.com.tr/service/rss.php"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.bilecikhaber.com.tr/service/rss.php",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.bilecikhaber.com.tr/service/rss.php",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://www.bilecikhaber.com.tr/feed",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bilecikhaber.com.tr/feed"
+          },
+          {
+            "adres": "https://www.bilecikhaber.com.tr/feed/",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bilecikhaber.com.tr/feed/"
+          },
+          {
+            "adres": "https://www.bilecikhaber.com.tr/rss",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.bilecikhaber.com.tr/rss.php",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.bilecikhaber.com.tr/rss/",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bilecikhaber.com.tr/rss/rss.php"
+          },
+          {
+            "adres": "https://www.bilecikhaber.com.tr/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bilecikhaber.com.tr/rss.xml"
+          },
+          {
+            "adres": "https://www.bilecikhaber.com.tr/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bilecikhaber.com.tr/feed.xml"
+          },
+          {
+            "adres": "https://www.bilecikhaber.com.tr/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bilecikhaber.com.tr/atom.xml"
+          },
+          {
+            "adres": "https://www.bilecikhaber.com.tr/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bilecikhaber.com.tr/feeds/posts/default"
+          },
+          {
+            "adres": "https://www.bilecikhaber.com.tr/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.bilecikhaber.com.tr/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.bilecikhaber.com.tr/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Bilecik",
@@ -5222,7 +6862,111 @@
       "alan": "bilecik11.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-42c922013e2c9f1cb538",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:02:06.114903+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:02:06.114903+00:00",
+      "rss_adresleri": [
+        "https://bilecik11.com/feed/"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://bilecik11.com",
+        "eski_alan": "bilecik11.com",
+        "yeni_alan": "bilecik11.com",
+        "rss_adresleri": [
+          "https://bilecik11.com/feed/"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://bilecik11.com/feed/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://bilecik11.com/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 50
+          },
+          {
+            "adres": "https://bilecik11.com/comments/feed/",
+            "durum": "besleme_bos",
+            "http_kodu": 200,
+            "son_url": "https://bilecik11.com/comments/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://bilecik11.com/feed",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://bilecik11.com/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 50
+          },
+          {
+            "adres": "https://bilecik11.com/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://bilecik11.com/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 50
+          },
+          {
+            "adres": "https://bilecik11.com/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://bilecik11.com/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 50
+          },
+          {
+            "adres": "https://bilecik11.com/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://bilecik11.com/rss.xml"
+          },
+          {
+            "adres": "https://bilecik11.com/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://bilecik11.com/feed.xml"
+          },
+          {
+            "adres": "https://bilecik11.com/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://bilecik11.com/atom.xml"
+          },
+          {
+            "adres": "https://bilecik11.com/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://bilecik11.com/feeds/posts/default"
+          },
+          {
+            "adres": "https://bilecik11.com/?feed=rss2",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://bilecik11.com/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 50
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://bilecik11.com/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Bilecik",
@@ -5231,7 +6975,103 @@
       "alan": "www.bilecikolay.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-1ad044c9f6e15b68ca14",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:02:25.133675+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:02:25.133675+00:00",
+      "rss_adresleri": [
+        "https://www.bilecikolay.com/rss",
+        "https://www.bilecikolay.com/rss/"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.bilecikolay.com",
+        "eski_alan": "bilecikolay.com",
+        "yeni_alan": "bilecikolay.com",
+        "rss_adresleri": [
+          "https://www.bilecikolay.com/rss",
+          "https://www.bilecikolay.com/rss/"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.bilecikolay.com/feed",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bilecikolay.com/feed"
+          },
+          {
+            "adres": "https://www.bilecikolay.com/feed/",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.bilecikolay.com/feed/",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.bilecikolay.com/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.bilecikolay.com/rss",
+            "tur": "rss",
+            "kayit_sayisi": 30
+          },
+          {
+            "adres": "https://www.bilecikolay.com/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.bilecikolay.com/rss/",
+            "tur": "rss",
+            "kayit_sayisi": 30
+          },
+          {
+            "adres": "https://www.bilecikolay.com/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bilecikolay.com/rss.xml"
+          },
+          {
+            "adres": "https://www.bilecikolay.com/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bilecikolay.com/feed.xml"
+          },
+          {
+            "adres": "https://www.bilecikolay.com/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bilecikolay.com/atom.xml"
+          },
+          {
+            "adres": "https://www.bilecikolay.com/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bilecikolay.com/feeds/posts/default"
+          },
+          {
+            "adres": "https://www.bilecikolay.com/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.bilecikolay.com/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.bilecikolay.com/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Bilecik",
@@ -5240,7 +7080,103 @@
       "alan": "www.yarin11.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-80951030608372eb3edb",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:02:29.982497+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:02:29.982497+00:00",
+      "rss_adresleri": [
+        "https://www.yarin11.com/rss",
+        "https://www.yarin11.com/rss/"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.yarin11.com",
+        "eski_alan": "yarin11.com",
+        "yeni_alan": "yarin11.com",
+        "rss_adresleri": [
+          "https://www.yarin11.com/rss",
+          "https://www.yarin11.com/rss/"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.yarin11.com/feed",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.yarin11.com/feed"
+          },
+          {
+            "adres": "https://www.yarin11.com/feed/",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.yarin11.com/feed/",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.yarin11.com/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.yarin11.com/rss",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://www.yarin11.com/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.yarin11.com/rss/",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://www.yarin11.com/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.yarin11.com/rss.xml"
+          },
+          {
+            "adres": "https://www.yarin11.com/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.yarin11.com/feed.xml"
+          },
+          {
+            "adres": "https://www.yarin11.com/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.yarin11.com/atom.xml"
+          },
+          {
+            "adres": "https://www.yarin11.com/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.yarin11.com/feeds/posts/default"
+          },
+          {
+            "adres": "https://www.yarin11.com/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.yarin11.com/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.yarin11.com/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Bilecik",
@@ -5249,7 +7185,101 @@
       "alan": "www.bozuyukhaber.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-56525583ba7477131374",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:02:35.011331+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:02:35.011331+00:00",
+      "rss_adresleri": [
+        "https://www.bozuyukhaber.com.tr/rss/",
+        "https://www.bozuyukhaber.com.tr/rss"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.bozuyukhaber.com.tr",
+        "eski_alan": "bozuyukhaber.com.tr",
+        "yeni_alan": "bozuyukhaber.com.tr",
+        "rss_adresleri": [
+          "https://www.bozuyukhaber.com.tr/rss/",
+          "https://www.bozuyukhaber.com.tr/rss"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.bozuyukhaber.com.tr/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.bozuyukhaber.com.tr/rss/",
+            "tur": "rss",
+            "kayit_sayisi": 8
+          },
+          {
+            "adres": "https://www.bozuyukhaber.com.tr/feed",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bozuyukhaber.com.tr/feed"
+          },
+          {
+            "adres": "https://www.bozuyukhaber.com.tr/feed/",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bozuyukhaber.com.tr/feed/"
+          },
+          {
+            "adres": "https://www.bozuyukhaber.com.tr/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.bozuyukhaber.com.tr/rss",
+            "tur": "rss",
+            "kayit_sayisi": 8
+          },
+          {
+            "adres": "https://www.bozuyukhaber.com.tr/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bozuyukhaber.com.tr/rss.xml"
+          },
+          {
+            "adres": "https://www.bozuyukhaber.com.tr/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bozuyukhaber.com.tr/feed.xml"
+          },
+          {
+            "adres": "https://www.bozuyukhaber.com.tr/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bozuyukhaber.com.tr/atom.xml"
+          },
+          {
+            "adres": "https://www.bozuyukhaber.com.tr/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bozuyukhaber.com.tr/feeds/posts/default"
+          },
+          {
+            "adres": "https://www.bozuyukhaber.com.tr/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.bozuyukhaber.com.tr/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.bozuyukhaber.com.tr/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Bingöl",
@@ -5258,7 +7288,95 @@
       "alan": "www.iha.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "kimlik": "mihver-6bc0f5f720ec1ca1d2e8",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "gecerli_besleme_bulunamadi",
+        "son_kontrol": "2026-11-21T10:02:41.827252+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:02:41.827252+00:00",
+      "rss_adresleri": [],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.iha.com.tr",
+        "eski_alan": "iha.com.tr",
+        "yeni_alan": "iha.com.tr",
+        "rss_adresleri": [],
+        "rss_testleri": [
+          {
+            "adres": "https://www.iha.com.tr/feed",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.iha.com.tr/feed"
+          },
+          {
+            "adres": "https://www.iha.com.tr/feed/",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.iha.com.tr/feed/"
+          },
+          {
+            "adres": "https://www.iha.com.tr/rss",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.iha.com.tr/rss",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.iha.com.tr/rss/",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.iha.com.tr/rss",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.iha.com.tr/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.iha.com.tr/rss.xml"
+          },
+          {
+            "adres": "https://www.iha.com.tr/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.iha.com.tr/feed.xml"
+          },
+          {
+            "adres": "https://www.iha.com.tr/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.iha.com.tr/atom.xml"
+          },
+          {
+            "adres": "https://www.iha.com.tr/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.iha.com.tr/feeds/posts/default"
+          },
+          {
+            "adres": "https://www.iha.com.tr/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.iha.com.tr/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "gecerli_besleme_bulunamadi",
+        "robots": {
+          "adres": "https://www.iha.com.tr/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Bingöl",
@@ -5267,7 +7385,101 @@
       "alan": "www.elazigsonhaber.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-b20ba811a71e6b096f70",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:02:48.303614+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:02:48.303614+00:00",
+      "rss_adresleri": [
+        "https://www.elazigsonhaber.com/rss",
+        "https://www.elazigsonhaber.com/rss/"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.elazigsonhaber.com",
+        "eski_alan": "elazigsonhaber.com",
+        "yeni_alan": "elazigsonhaber.com",
+        "rss_adresleri": [
+          "https://www.elazigsonhaber.com/rss",
+          "https://www.elazigsonhaber.com/rss/"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.elazigsonhaber.com/feed",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.elazigsonhaber.com/feed"
+          },
+          {
+            "adres": "https://www.elazigsonhaber.com/feed/",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.elazigsonhaber.com/feed/"
+          },
+          {
+            "adres": "https://www.elazigsonhaber.com/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.elazigsonhaber.com/rss",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://www.elazigsonhaber.com/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.elazigsonhaber.com/rss/",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://www.elazigsonhaber.com/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.elazigsonhaber.com/rss.xml"
+          },
+          {
+            "adres": "https://www.elazigsonhaber.com/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.elazigsonhaber.com/feed.xml"
+          },
+          {
+            "adres": "https://www.elazigsonhaber.com/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.elazigsonhaber.com/atom.xml"
+          },
+          {
+            "adres": "https://www.elazigsonhaber.com/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.elazigsonhaber.com/feeds/posts/default"
+          },
+          {
+            "adres": "https://www.elazigsonhaber.com/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.elazigsonhaber.com/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.elazigsonhaber.com/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Bingöl",
@@ -5276,7 +7488,123 @@
       "alan": "www.diken.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-715efdd177f0e86c29cf",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:02:53.660361+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:02:53.660361+00:00",
+      "rss_adresleri": [
+        "https://www.diken.com.tr/feed/",
+        "https://www.diken.com.tr/sitemap.rss"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.diken.com.tr",
+        "eski_alan": "diken.com.tr",
+        "yeni_alan": "diken.com.tr",
+        "rss_adresleri": [
+          "https://www.diken.com.tr/feed/",
+          "https://www.diken.com.tr/sitemap.rss"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.diken.com.tr/feed/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.diken.com.tr/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 30
+          },
+          {
+            "adres": "https://www.diken.com.tr/comments/feed/",
+            "durum": "besleme_bos",
+            "http_kodu": 200,
+            "son_url": "https://www.diken.com.tr/comments/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.diken.com.tr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.diken.com.tr%2F&format=xml",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.diken.com.tr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.diken.com.tr%2F&format=xml",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.diken.com.tr/feed",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.diken.com.tr/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 30
+          },
+          {
+            "adres": "https://www.diken.com.tr/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.diken.com.tr/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 30
+          },
+          {
+            "adres": "https://www.diken.com.tr/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.diken.com.tr/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 30
+          },
+          {
+            "adres": "https://www.diken.com.tr/rss.xml",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.diken.com.tr/sitemap.rss",
+            "tur": "rss",
+            "kayit_sayisi": 50
+          },
+          {
+            "adres": "https://www.diken.com.tr/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.diken.com.tr/feed.xml"
+          },
+          {
+            "adres": "https://www.diken.com.tr/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.diken.com.tr/atom.xml"
+          },
+          {
+            "adres": "https://www.diken.com.tr/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.diken.com.tr/feeds/posts/default"
+          },
+          {
+            "adres": "https://www.diken.com.tr/?feed=rss2",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.diken.com.tr/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 30
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.diken.com.tr/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Bingöl",
@@ -5285,7 +7613,101 @@
       "alan": "dokuzeylul.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-adb49fb52ee1f24b7dd8",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:03:08.318705+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:03:08.318705+00:00",
+      "rss_adresleri": [
+        "https://dokuzeylul.com/rss",
+        "https://dokuzeylul.com/rss/"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://dokuzeylul.com",
+        "eski_alan": "dokuzeylul.com",
+        "yeni_alan": "dokuzeylul.com",
+        "rss_adresleri": [
+          "https://dokuzeylul.com/rss",
+          "https://dokuzeylul.com/rss/"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://dokuzeylul.com/feed",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://dokuzeylul.com/feed"
+          },
+          {
+            "adres": "https://dokuzeylul.com/feed/",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://dokuzeylul.com/feed/"
+          },
+          {
+            "adres": "https://dokuzeylul.com/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://dokuzeylul.com/rss",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://dokuzeylul.com/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://dokuzeylul.com/rss/",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://dokuzeylul.com/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://dokuzeylul.com/rss.xml"
+          },
+          {
+            "adres": "https://dokuzeylul.com/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://dokuzeylul.com/feed.xml"
+          },
+          {
+            "adres": "https://dokuzeylul.com/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://dokuzeylul.com/atom.xml"
+          },
+          {
+            "adres": "https://dokuzeylul.com/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://dokuzeylul.com/feeds/posts/default"
+          },
+          {
+            "adres": "https://dokuzeylul.com/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://dokuzeylul.com/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://dokuzeylul.com/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Bingöl",
@@ -5294,7 +7716,30 @@
       "alan": "www.bakishaber.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-3b2ee0b765058a666aa6",
+      "dogrulama": {
+        "adres": "erisime_engel",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T10:03:13.442251+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:03:13.442251+00:00",
+      "rss_adresleri": [],
+      "kontrol_raporu": {
+        "http_kodu": 403,
+        "erisim": "erisime_engel",
+        "yonlendirme": null,
+        "son_url": null,
+        "eski_alan": "bakishaber.com",
+        "yeni_alan": null,
+        "rss_adresleri": [],
+        "rss_testleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots": null,
+        "hata": "HTTP 403"
+      }
     },
     {
       "il": "Bitlis",
@@ -5303,7 +7748,101 @@
       "alan": "www.bitlishaber13.net",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-b81bf7dd70bf5f91ae0f",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:03:14.533320+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:03:14.533320+00:00",
+      "rss_adresleri": [
+        "https://www.bitlishaber13.net/rss",
+        "https://www.bitlishaber13.net/rss/"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.bitlishaber13.net",
+        "eski_alan": "bitlishaber13.net",
+        "yeni_alan": "bitlishaber13.net",
+        "rss_adresleri": [
+          "https://www.bitlishaber13.net/rss",
+          "https://www.bitlishaber13.net/rss/"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.bitlishaber13.net/feed",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bitlishaber13.net/feed"
+          },
+          {
+            "adres": "https://www.bitlishaber13.net/feed/",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bitlishaber13.net/feed/"
+          },
+          {
+            "adres": "https://www.bitlishaber13.net/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.bitlishaber13.net/rss",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://www.bitlishaber13.net/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.bitlishaber13.net/rss/",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://www.bitlishaber13.net/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bitlishaber13.net/rss.xml"
+          },
+          {
+            "adres": "https://www.bitlishaber13.net/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bitlishaber13.net/feed.xml"
+          },
+          {
+            "adres": "https://www.bitlishaber13.net/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bitlishaber13.net/atom.xml"
+          },
+          {
+            "adres": "https://www.bitlishaber13.net/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bitlishaber13.net/feeds/posts/default"
+          },
+          {
+            "adres": "https://www.bitlishaber13.net/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.bitlishaber13.net/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.bitlishaber13.net/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Bitlis",
@@ -5312,7 +7851,71 @@
       "alan": "www.bitlisbulten.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-af91561795dd8cf0904d",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "robots_nedeniyle_test_edilemedi",
+        "son_kontrol": "2026-11-21T10:03:19.623607+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:03:19.623607+00:00",
+      "rss_adresleri": [],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.bitlisbulten.com",
+        "eski_alan": "bitlisbulten.com",
+        "yeni_alan": "bitlisbulten.com",
+        "rss_adresleri": [],
+        "rss_testleri": [
+          {
+            "adres": "https://www.bitlisbulten.com/feed",
+            "durum": "robots_izin_vermedi_veya_belirsiz"
+          },
+          {
+            "adres": "https://www.bitlisbulten.com/feed/",
+            "durum": "robots_izin_vermedi_veya_belirsiz"
+          },
+          {
+            "adres": "https://www.bitlisbulten.com/rss",
+            "durum": "robots_izin_vermedi_veya_belirsiz"
+          },
+          {
+            "adres": "https://www.bitlisbulten.com/rss/",
+            "durum": "robots_izin_vermedi_veya_belirsiz"
+          },
+          {
+            "adres": "https://www.bitlisbulten.com/rss.xml",
+            "durum": "robots_izin_vermedi_veya_belirsiz"
+          },
+          {
+            "adres": "https://www.bitlisbulten.com/feed.xml",
+            "durum": "robots_izin_vermedi_veya_belirsiz"
+          },
+          {
+            "adres": "https://www.bitlisbulten.com/atom.xml",
+            "durum": "robots_izin_vermedi_veya_belirsiz"
+          },
+          {
+            "adres": "https://www.bitlisbulten.com/feeds/posts/default",
+            "durum": "robots_izin_vermedi_veya_belirsiz"
+          },
+          {
+            "adres": "https://www.bitlisbulten.com/?feed=rss2",
+            "durum": "robots_izin_vermedi_veya_belirsiz"
+          }
+        ],
+        "rss_durumu": "robots_nedeniyle_test_edilemedi",
+        "robots": {
+          "adres": "https://www.bitlisbulten.com/robots.txt",
+          "durum": "robots_dosyasi_yok",
+          "izin_durumu": "bilinmiyor"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Bitlis",
@@ -5321,7 +7924,107 @@
       "alan": "www.karshakimiyet.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-bb2ea7b61bd2d56ea7d1",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:03:22.723738+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:03:22.723738+00:00",
+      "rss_adresleri": [
+        "https://www.karshakimiyet.com/service/rss.php"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.karshakimiyet.com",
+        "eski_alan": "karshakimiyet.com",
+        "yeni_alan": "karshakimiyet.com",
+        "rss_adresleri": [
+          "https://www.karshakimiyet.com/service/rss.php"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.karshakimiyet.com/service/rss.php",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.karshakimiyet.com/service/rss.php",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://www.karshakimiyet.com/feed",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.karshakimiyet.com/feed"
+          },
+          {
+            "adres": "https://www.karshakimiyet.com/feed/",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.karshakimiyet.com/feed/"
+          },
+          {
+            "adres": "https://www.karshakimiyet.com/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.karshakimiyet.com/service/rss.php",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://www.karshakimiyet.com/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.karshakimiyet.com/service/rss.php",
+            "tur": "rss",
+            "kayit_sayisi": 40
+          },
+          {
+            "adres": "https://www.karshakimiyet.com/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.karshakimiyet.com/rss.xml"
+          },
+          {
+            "adres": "https://www.karshakimiyet.com/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.karshakimiyet.com/feed.xml"
+          },
+          {
+            "adres": "https://www.karshakimiyet.com/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.karshakimiyet.com/atom.xml"
+          },
+          {
+            "adres": "https://www.karshakimiyet.com/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.karshakimiyet.com/feeds/posts/default"
+          },
+          {
+            "adres": "https://www.karshakimiyet.com/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.karshakimiyet.com/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.karshakimiyet.com/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Bitlis",
@@ -5330,7 +8033,105 @@
       "alan": "www.nnchaber.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-cd052d0684c617ef5ce6",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:03:30.223531+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:03:30.223531+00:00",
+      "rss_adresleri": [
+        "https://www.nnchaber.com/rss/"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.nnchaber.com",
+        "eski_alan": "nnchaber.com",
+        "yeni_alan": "nnchaber.com",
+        "rss_adresleri": [
+          "https://www.nnchaber.com/rss/"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.nnchaber.com/feed",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.nnchaber.com/404",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.nnchaber.com/feed/",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.nnchaber.com/404",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.nnchaber.com/rss",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.nnchaber.com/404",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.nnchaber.com/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.nnchaber.com/rss/",
+            "tur": "rss",
+            "kayit_sayisi": 100
+          },
+          {
+            "adres": "https://www.nnchaber.com/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.nnchaber.com/rss.xml"
+          },
+          {
+            "adres": "https://www.nnchaber.com/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.nnchaber.com/feed.xml"
+          },
+          {
+            "adres": "https://www.nnchaber.com/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.nnchaber.com/atom.xml"
+          },
+          {
+            "adres": "https://www.nnchaber.com/feeds/posts/default",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.nnchaber.com/404",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.nnchaber.com/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.nnchaber.com/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.nnchaber.com/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Bolu",
@@ -5339,7 +8140,119 @@
       "alan": "www.bolu.bel.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "kimlik": "mihver-be97028731bf0f92fb3a",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:03:46.714646+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:03:46.714646+00:00",
+      "rss_adresleri": [
+        "https://www.bolu.bel.tr/feed/"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.bolu.bel.tr",
+        "eski_alan": "bolu.bel.tr",
+        "yeni_alan": "bolu.bel.tr",
+        "rss_adresleri": [
+          "https://www.bolu.bel.tr/feed/"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.bolu.bel.tr/feed/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.bolu.bel.tr/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 10
+          },
+          {
+            "adres": "https://www.bolu.bel.tr/comments/feed/",
+            "durum": "besleme_bos",
+            "http_kodu": 200,
+            "son_url": "https://www.bolu.bel.tr/comments/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.bolu.bel.tr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.bolu.bel.tr%2F&format=xml",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.bolu.bel.tr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.bolu.bel.tr%2F&format=xml",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.bolu.bel.tr/feed",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.bolu.bel.tr/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 10
+          },
+          {
+            "adres": "https://www.bolu.bel.tr/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.bolu.bel.tr/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 10
+          },
+          {
+            "adres": "https://www.bolu.bel.tr/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.bolu.bel.tr/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 10
+          },
+          {
+            "adres": "https://www.bolu.bel.tr/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bolu.bel.tr/rss.xml"
+          },
+          {
+            "adres": "https://www.bolu.bel.tr/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bolu.bel.tr/feed.xml"
+          },
+          {
+            "adres": "https://www.bolu.bel.tr/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bolu.bel.tr/atom.xml"
+          },
+          {
+            "adres": "https://www.bolu.bel.tr/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.bolu.bel.tr/feeds/posts/default"
+          },
+          {
+            "adres": "https://www.bolu.bel.tr/?feed=rss2",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.bolu.bel.tr/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 10
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.bolu.bel.tr/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Bolu",
@@ -5348,7 +8261,113 @@
       "alan": "www.geredemedyatakip.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "kimlik": "mihver-0e4d256f8fd143645b56",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:04:11.492234+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:04:11.492234+00:00",
+      "rss_adresleri": [
+        "https://www.geredemedyatakip.com.tr/feed",
+        "https://www.geredemedyatakip.com.tr/comments/feed"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.geredemedyatakip.com.tr",
+        "eski_alan": "geredemedyatakip.com.tr",
+        "yeni_alan": "geredemedyatakip.com.tr",
+        "rss_adresleri": [
+          "https://www.geredemedyatakip.com.tr/feed",
+          "https://www.geredemedyatakip.com.tr/comments/feed"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.geredemedyatakip.com.tr/feed",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.geredemedyatakip.com.tr/feed",
+            "tur": "rss",
+            "kayit_sayisi": 30
+          },
+          {
+            "adres": "https://www.geredemedyatakip.com.tr/comments/feed",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.geredemedyatakip.com.tr/comments/feed",
+            "tur": "rss",
+            "kayit_sayisi": 30
+          },
+          {
+            "adres": "https://www.geredemedyatakip.com.tr/feed/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.geredemedyatakip.com.tr/feed",
+            "tur": "rss",
+            "kayit_sayisi": 30
+          },
+          {
+            "adres": "https://www.geredemedyatakip.com.tr/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.geredemedyatakip.com.tr/feed",
+            "tur": "rss",
+            "kayit_sayisi": 30
+          },
+          {
+            "adres": "https://www.geredemedyatakip.com.tr/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.geredemedyatakip.com.tr/feed",
+            "tur": "rss",
+            "kayit_sayisi": 30
+          },
+          {
+            "adres": "https://www.geredemedyatakip.com.tr/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.geredemedyatakip.com.tr/rss.xml"
+          },
+          {
+            "adres": "https://www.geredemedyatakip.com.tr/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.geredemedyatakip.com.tr/feed.xml"
+          },
+          {
+            "adres": "https://www.geredemedyatakip.com.tr/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.geredemedyatakip.com.tr/atom.xml"
+          },
+          {
+            "adres": "https://www.geredemedyatakip.com.tr/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.geredemedyatakip.com.tr/feeds/posts/default"
+          },
+          {
+            "adres": "https://www.geredemedyatakip.com.tr/?feed=rss2",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.geredemedyatakip.com.tr/feed",
+            "tur": "rss",
+            "kayit_sayisi": 30
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.geredemedyatakip.com.tr/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Bolu",
@@ -5357,7 +8376,117 @@
       "alan": "tvbolu.com.tr",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "kimlik": "mihver-6a2d3eba2d9cedea33cb",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:04:36.636912+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:04:36.636912+00:00",
+      "rss_adresleri": [
+        "https://tvbolu.com.tr/feed",
+        "https://tvbolu.com.tr/feed/",
+        "https://tvbolu.com.tr/feed.xml",
+        "https://tvbolu.com.tr/feeds/posts/default"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://tvbolu.com.tr",
+        "eski_alan": "tvbolu.com.tr",
+        "yeni_alan": "tvbolu.com.tr",
+        "rss_adresleri": [
+          "https://tvbolu.com.tr/feed",
+          "https://tvbolu.com.tr/feed/",
+          "https://tvbolu.com.tr/feed.xml",
+          "https://tvbolu.com.tr/feeds/posts/default"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://tvbolu.com.tr/rss",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://tvbolu.com.tr/404.html",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://tvbolu.com.tr/feed",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://tvbolu.com.tr/feed",
+            "tur": "rss",
+            "kayit_sayisi": 20
+          },
+          {
+            "adres": "https://tvbolu.com.tr/feed/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://tvbolu.com.tr/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 20
+          },
+          {
+            "adres": "https://tvbolu.com.tr/rss/",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://tvbolu.com.tr/kayit-bulunamadi",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://tvbolu.com.tr/rss.xml",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://tvbolu.com.tr/kayit-bulunamadi",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://tvbolu.com.tr/feed.xml",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://tvbolu.com.tr/feed.xml",
+            "tur": "rss",
+            "kayit_sayisi": 20
+          },
+          {
+            "adres": "https://tvbolu.com.tr/atom.xml",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://tvbolu.com.tr/kayit-bulunamadi",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://tvbolu.com.tr/feeds/posts/default",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://tvbolu.com.tr/feeds/posts/default",
+            "tur": "rss",
+            "kayit_sayisi": 20
+          },
+          {
+            "adres": "https://tvbolu.com.tr/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://tvbolu.com.tr/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://tvbolu.com.tr/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Bolu",
@@ -5366,7 +8495,117 @@
       "alan": "www.ozgurbolu.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "yerel haber"
+      "arama": "yerel haber",
+      "kimlik": "mihver-79da822d8c863fcdf9e1",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:04:47.376628+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:04:47.376628+00:00",
+      "rss_adresleri": [
+        "https://www.ozgurbolu.com/feed",
+        "https://www.ozgurbolu.com/feed/",
+        "https://www.ozgurbolu.com/feed.xml",
+        "https://www.ozgurbolu.com/feeds/posts/default"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.ozgurbolu.com",
+        "eski_alan": "ozgurbolu.com",
+        "yeni_alan": "ozgurbolu.com",
+        "rss_adresleri": [
+          "https://www.ozgurbolu.com/feed",
+          "https://www.ozgurbolu.com/feed/",
+          "https://www.ozgurbolu.com/feed.xml",
+          "https://www.ozgurbolu.com/feeds/posts/default"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.ozgurbolu.com/rss",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.ozgurbolu.com/kayit-bulunamadi",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.ozgurbolu.com/feed",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.ozgurbolu.com/feed",
+            "tur": "rss",
+            "kayit_sayisi": 50
+          },
+          {
+            "adres": "https://www.ozgurbolu.com/feed/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.ozgurbolu.com/feed/",
+            "tur": "rss",
+            "kayit_sayisi": 50
+          },
+          {
+            "adres": "https://www.ozgurbolu.com/rss/",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.ozgurbolu.com/kayit-bulunamadi",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.ozgurbolu.com/rss.xml",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.ozgurbolu.com/kayit-bulunamadi",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.ozgurbolu.com/feed.xml",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.ozgurbolu.com/feed.xml",
+            "tur": "rss",
+            "kayit_sayisi": 50
+          },
+          {
+            "adres": "https://www.ozgurbolu.com/atom.xml",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.ozgurbolu.com/kayit-bulunamadi",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.ozgurbolu.com/feeds/posts/default",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.ozgurbolu.com/feeds/posts/default",
+            "tur": "rss",
+            "kayit_sayisi": 50
+          },
+          {
+            "adres": "https://www.ozgurbolu.com/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.ozgurbolu.com/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.ozgurbolu.com/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Bolu",
@@ -5375,7 +8614,103 @@
       "alan": "www.koroglugazetesi.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-92291f51b2dea2a2d848",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:05:09.117569+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:05:09.117569+00:00",
+      "rss_adresleri": [
+        "https://www.koroglugazetesi.com/rss",
+        "https://www.koroglugazetesi.com/rss/"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.koroglugazetesi.com",
+        "eski_alan": "koroglugazetesi.com",
+        "yeni_alan": "koroglugazetesi.com",
+        "rss_adresleri": [
+          "https://www.koroglugazetesi.com/rss",
+          "https://www.koroglugazetesi.com/rss/"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.koroglugazetesi.com/feed",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.koroglugazetesi.com/feed",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.koroglugazetesi.com/feed/",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.koroglugazetesi.com/feed/"
+          },
+          {
+            "adres": "https://www.koroglugazetesi.com/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.koroglugazetesi.com/rss",
+            "tur": "rss",
+            "kayit_sayisi": 30
+          },
+          {
+            "adres": "https://www.koroglugazetesi.com/rss/",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.koroglugazetesi.com/rss/",
+            "tur": "rss",
+            "kayit_sayisi": 30
+          },
+          {
+            "adres": "https://www.koroglugazetesi.com/rss.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.koroglugazetesi.com/rss.xml"
+          },
+          {
+            "adres": "https://www.koroglugazetesi.com/feed.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.koroglugazetesi.com/feed.xml"
+          },
+          {
+            "adres": "https://www.koroglugazetesi.com/atom.xml",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.koroglugazetesi.com/atom.xml"
+          },
+          {
+            "adres": "https://www.koroglugazetesi.com/feeds/posts/default",
+            "durum": "erisilemedi",
+            "http_kodu": 404,
+            "son_url": "https://www.koroglugazetesi.com/default"
+          },
+          {
+            "adres": "https://www.koroglugazetesi.com/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.koroglugazetesi.com/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.koroglugazetesi.com/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Bolu",
@@ -5384,7 +8719,111 @@
       "alan": "www.bolununsesi.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-418a0eab7e7eee30ccc2",
+      "dogrulama": {
+        "adres": "erisilebilir",
+        "rss": "icerik_dogrulandi",
+        "son_kontrol": "2026-11-21T10:05:14.816852+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:05:14.816852+00:00",
+      "rss_adresleri": [
+        "https://www.bolununsesi.com/rss"
+      ],
+      "kontrol_raporu": {
+        "http_kodu": 200,
+        "erisim": "erisilebilir",
+        "yonlendirme": "yok",
+        "son_url": "https://www.bolununsesi.com",
+        "eski_alan": "bolununsesi.com",
+        "yeni_alan": "bolununsesi.com",
+        "rss_adresleri": [
+          "https://www.bolununsesi.com/rss"
+        ],
+        "rss_testleri": [
+          {
+            "adres": "https://www.bolununsesi.com/rss",
+            "durum": "rss_atom_icerigi_gecerli",
+            "http_kodu": 200,
+            "son_url": "https://www.bolununsesi.com/rss",
+            "tur": "rss",
+            "kayit_sayisi": 20
+          },
+          {
+            "adres": "https://www.bolununsesi.com/feed",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.bolununsesi.com/feed",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.bolununsesi.com/feed/",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.bolununsesi.com/feed/",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.bolununsesi.com/rss/",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.bolununsesi.com/rss/",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.bolununsesi.com/rss.xml",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.bolununsesi.com/rss.xml",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.bolununsesi.com/feed.xml",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.bolununsesi.com/feed.xml",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.bolununsesi.com/atom.xml",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.bolununsesi.com/atom.xml",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.bolununsesi.com/feeds/posts/default",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.bolununsesi.com/feeds/posts/default",
+            "tur": null,
+            "kayit_sayisi": 0
+          },
+          {
+            "adres": "https://www.bolununsesi.com/?feed=rss2",
+            "durum": "gecerli_besleme_degil",
+            "http_kodu": 200,
+            "son_url": "https://www.bolununsesi.com/?feed=rss2",
+            "tur": null,
+            "kayit_sayisi": 0
+          }
+        ],
+        "rss_durumu": "icerik_dogrulandi",
+        "robots": {
+          "adres": "https://www.bolununsesi.com/robots.txt",
+          "durum": "robots_dosyasi_bulundu",
+          "izin_durumu": "kurallar_yuklendi"
+        },
+        "hata": null
+      }
     },
     {
       "il": "Bolu",
@@ -5393,7 +8832,30 @@
       "alan": "www.bolugundem.com",
       "tur": "Google Haberler RSS",
       "durum": "aday",
-      "arama": "adliye mahkeme duruşma"
+      "arama": "adliye mahkeme duruşma",
+      "kimlik": "mihver-aa194a3c2f93be44edc9",
+      "dogrulama": {
+        "adres": "erisime_engel",
+        "rss": "bulunamadi",
+        "son_kontrol": "2026-11-21T10:05:25.202010+00:00",
+        "il": "manuel_dogrulama_gerekli",
+        "ilce": "manuel_dogrulama_gerekli"
+      },
+      "son_kontrol": "2026-11-21T10:05:25.202010+00:00",
+      "rss_adresleri": [],
+      "kontrol_raporu": {
+        "http_kodu": 403,
+        "erisim": "erisime_engel",
+        "yonlendirme": null,
+        "son_url": null,
+        "eski_alan": "bolugundem.com",
+        "yeni_alan": null,
+        "rss_adresleri": [],
+        "rss_testleri": [],
+        "rss_durumu": "bulunamadi",
+        "robots": null,
+        "hata": "HTTP 403"
+      }
     },
     {
       "il": "Bolu",
@@ -17427,6 +20889,33 @@
       "tur": "Google Haberler RSS",
       "durum": "aday",
       "arama": "adliye mahkeme duruşma"
+    },
+    {
+      "il": "Denizli",
+      "ad": "Denizli Post",
+      "url": "https://denizlipost.com",
+      "alan": "denizlipost.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Denizli",
+      "ad": "Denizli Hizmet Gazetesi",
+      "url": "https://www.hizmetgazetesi.com.tr",
+      "alan": "www.hizmetgazetesi.com.tr",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Muğla",
+      "ad": "bodrum haber merkezi",
+      "url": "https://www.bodrumhabermerkezi.com",
+      "alan": "www.bodrumhabermerkezi.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
     }
   ]
 }

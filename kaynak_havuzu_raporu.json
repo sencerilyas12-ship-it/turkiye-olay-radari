@@ -1,13 +1,13 @@
 {
   "proje": "MİHVER",
   "surum": "2.0.0",
-  "olusturulma": "2026-11-21T09:46:03.564562+00:00",
+  "olusturulma": "2026-11-21T09:55:40.456725+00:00",
   "il_sayisi": 81,
   "ilce_hedefi": 922,
   "ilce_listesi_durumu": "resmi_veri_entegrasyonu_bekleniyor",
   "arama_adayi_sayisi": 567,
-  "yeni_aday_sayisi": 567,
-  "mevcut_kaynak_sayisi": 623,
-  "toplam_kayit_sayisi": 1190,
+  "yeni_aday_sayisi": 0,
+  "mevcut_kaynak_sayisi": 1205,
+  "toplam_kayit_sayisi": 1205,
   "not": "Oluşturulan kayıtlar arama adaylarıdır; doğrulanmış yayıncı veya haber kaynağı değildir. İlçe listesi resmî veriden ayrıca alınmalıdır."
 }
