@@ -1,11 +1,11 @@
 {
   "arama_sirasi": 200,
-  "son_calisma": "2026-11-22T09:11:08.995574+00:00",
-  "son_eklenen_haber": 0,
-  "toplam_haber": 58882,
+  "son_calisma": "2026-11-22T09:53:40.758694+00:00",
+  "son_eklenen_haber": 1478,
+  "toplam_haber": 60360,
   "rss_kaynak_sayisi": 0,
   "otomatik_yayin": true,
-  "ilce_arama_sirasi": 2600,
+  "ilce_arama_sirasi": 2700,
   "ilce_sayisi": 922,
   "toplam_ilce_konu_sorgusu": 5532,
   "bu_calisma_sorgu_sayisi": 100
