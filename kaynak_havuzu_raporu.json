@@ -1,20 +1,14 @@
 {
   "surum": "5.0.0",
-  "rapor_tarihi": "2026-11-22T21:36:32.821788+00:00",
+  "rapor_tarihi": "2026-11-22T22:37:31.020308+00:00",
   "toplam_il": 81,
   "toplam_ilce": 922,
-  "bu_calistirmada_taranan_ilce": 39,
-  "basarili_ilce": 38,
-  "basarisiz_ilce": 1,
+  "bu_calistirmada_taranan_ilce": 12,
+  "basarili_ilce": 12,
+  "basarisiz_ilce": 0,
   "yeni_aday_kaynak": 1,
-  "toplam_kaynak": 2111,
-  "tam_tur_tamamlandi": false,
-  "hatalar": [
-    {
-      "il": "OSMANİYE",
-      "ilce": "SUMBAS",
-      "hata": "HTTP Error 429: Too Many Requests"
-    }
-  ],
+  "toplam_kaynak": 2113,
+  "tam_tur_tamamlandi": true,
+  "hatalar": [],
   "haberler_json_degistirildi": false
 }
