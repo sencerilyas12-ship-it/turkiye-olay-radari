@@ -1,8 +1,8 @@
 {
   "surum": "2.0",
-  "tarih": "2026-11-22T08:19:15.834691+00:00",
-  "toplam_kaynak": 2041,
-  "url_olan_kaynak": 1474,
+  "tarih": "2026-11-22T09:51:12.799899+00:00",
+  "toplam_kaynak": 2046,
+  "url_olan_kaynak": 1479,
   "bu_calisma_kontrol_edilen": 40,
   "erisilebilir": 35,
   "erisime_engel": 4,
@@ -16,7 +16,7 @@
       "il": "Bolu",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:12:48.232435+00:00",
+        "kontrol_tarihi": "2026-11-22T09:45:36.604257+00:00",
         "url": "https://www.gazeteilksayfa.com",
         "eski_alan": "gazeteilksayfa.com",
         "erisim": "erisilebilir",
@@ -112,7 +112,7 @@
       "il": "Burdur",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:12:59.853492+00:00",
+        "kontrol_tarihi": "2026-11-22T09:45:46.555433+00:00",
         "url": "https://www.bomba15.com",
         "eski_alan": "bomba15.com",
         "erisim": "erisilebilir",
@@ -201,7 +201,7 @@
       "il": "Burdur",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:13:05.131375+00:00",
+        "kontrol_tarihi": "2026-11-22T09:45:51.129393+00:00",
         "url": "https://www.burdurgazetesi.com",
         "eski_alan": "burdurgazetesi.com",
         "erisim": "erisime_engel",
@@ -222,7 +222,7 @@
       "il": "Burdur",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:13:06.223496+00:00",
+        "kontrol_tarihi": "2026-11-22T09:45:52.167763+00:00",
         "url": "https://www.saraymedya.com",
         "eski_alan": "saraymedya.com",
         "erisim": "erisilebilir",
@@ -314,7 +314,7 @@
       "il": "Burdur",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:13:13.128521+00:00",
+        "kontrol_tarihi": "2026-11-22T09:45:57.469598+00:00",
         "url": "https://www.burdurweb.com",
         "eski_alan": "burdurweb.com",
         "erisim": "erisilebilir",
@@ -394,7 +394,7 @@
       "il": "Burdur",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:13:24.516993+00:00",
+        "kontrol_tarihi": "2026-11-22T09:46:05.332358+00:00",
         "url": "https://beyazgazete.com",
         "eski_alan": "beyazgazete.com",
         "erisim": "erisilebilir",
@@ -486,7 +486,7 @@
       "il": "Bursa",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:13:32.218741+00:00",
+        "kontrol_tarihi": "2026-11-22T09:46:13.040612+00:00",
         "url": "https://www.haberizma.com",
         "eski_alan": "haberizma.com",
         "erisim": "erisilebilir",
@@ -595,7 +595,7 @@
       "il": "Bursa",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:13:59.606533+00:00",
+        "kontrol_tarihi": "2026-11-22T09:46:32.927812+00:00",
         "url": "https://www.bursatv.com.tr",
         "eski_alan": "bursatv.com.tr",
         "erisim": "erisilebilir",
@@ -684,7 +684,7 @@
       "il": "Bursa",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:14:05.092502+00:00",
+        "kontrol_tarihi": "2026-11-22T09:46:37.777764+00:00",
         "url": "https://tr.euronews.com",
         "eski_alan": "tr.euronews.com",
         "erisim": "erisilebilir",
@@ -772,7 +772,7 @@
       "il": "Bursa",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:14:10.576735+00:00",
+        "kontrol_tarihi": "2026-11-22T09:46:42.067404+00:00",
         "url": "https://kisadalga.net",
         "eski_alan": "kisadalga.net",
         "erisim": "erisilebilir",
@@ -870,7 +870,7 @@
       "il": "Bursa",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:14:20.793107+00:00",
+        "kontrol_tarihi": "2026-11-22T09:46:50.400976+00:00",
         "url": "https://www.turkiyegazetesi.com.tr",
         "eski_alan": "turkiyegazetesi.com.tr",
         "erisim": "erisilebilir",
@@ -980,7 +980,7 @@
       "il": "Çanakkale",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:14:35.234843+00:00",
+        "kontrol_tarihi": "2026-11-22T09:47:07.166594+00:00",
         "url": "https://www.canakkaleolay.com",
         "eski_alan": "canakkaleolay.com",
         "erisim": "erisilebilir",
@@ -1012,7 +1012,7 @@
             "http_kodu": 200,
             "son_url": "https://www.canakkaleolay.com/rss",
             "tur": "rss",
-            "kayit_sayisi": 197
+            "kayit_sayisi": 198
           },
           {
             "adres": "https://www.canakkaleolay.com/rss/",
@@ -1020,7 +1020,7 @@
             "http_kodu": 200,
             "son_url": "https://www.canakkaleolay.com/rss/",
             "tur": "rss",
-            "kayit_sayisi": 197
+            "kayit_sayisi": 198
           },
           {
             "adres": "https://www.canakkaleolay.com/rss.xml",
@@ -1034,7 +1034,7 @@
             "http_kodu": 200,
             "son_url": "https://www.canakkaleolay.com/feed.xml",
             "tur": "rss",
-            "kayit_sayisi": 197
+            "kayit_sayisi": 198
           },
           {
             "adres": "https://www.canakkaleolay.com/atom.xml",
@@ -1072,7 +1072,7 @@
       "il": "Çanakkale",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:14:51.878873+00:00",
+        "kontrol_tarihi": "2026-11-22T09:47:22.816081+00:00",
         "url": "https://www.medyalokum.com",
         "eski_alan": "medyalokum.com",
         "erisim": "erisilebilir",
@@ -1161,7 +1161,7 @@
       "il": "Çanakkale",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:14:57.424027+00:00",
+        "kontrol_tarihi": "2026-11-22T09:47:27.842855+00:00",
         "url": "https://www.canakkalekalem.com",
         "eski_alan": "canakkalekalem.com",
         "erisim": "erisime_engel",
@@ -1182,7 +1182,7 @@
       "il": "Çankırı",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:14:58.539655+00:00",
+        "kontrol_tarihi": "2026-11-22T09:47:28.922723+00:00",
         "url": "https://www.haberci18.com",
         "eski_alan": "haberci18.com",
         "erisim": "erisilebilir",
@@ -1270,7 +1270,7 @@
       "il": "Çankırı",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:15:11.902675+00:00",
+        "kontrol_tarihi": "2026-11-22T09:47:41.007761+00:00",
         "url": "https://www.sozcu.com.tr",
         "eski_alan": "sozcu.com.tr",
         "erisim": "erisilebilir",
@@ -1290,7 +1290,7 @@
             "http_kodu": 200,
             "son_url": "https://www.sozcu.com.tr/feeds/rsssubpub",
             "tur": "rss",
-            "kayit_sayisi": 409
+            "kayit_sayisi": 400
           },
           {
             "adres": "https://www.sozcu.com.tr/feed",
@@ -1372,7 +1372,7 @@
       "il": "Çankırı",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:15:18.060780+00:00",
+        "kontrol_tarihi": "2026-11-22T09:47:46.464281+00:00",
         "url": "https://www.haber18.com",
         "eski_alan": "haber18.com",
         "erisim": "erisilebilir",
@@ -1462,7 +1462,7 @@
       "il": "Çankırı",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:15:36.331922+00:00",
+        "kontrol_tarihi": "2026-11-22T09:48:01.951449+00:00",
         "url": "https://www.sozcu18.com",
         "eski_alan": "sozcu18.com",
         "erisim": "erisilebilir",
@@ -1558,7 +1558,7 @@
       "il": "Çorum",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:15:45.708074+00:00",
+        "kontrol_tarihi": "2026-11-22T09:48:11.314573+00:00",
         "url": "https://www.yaylahaber.com.tr",
         "eski_alan": "yaylahaber.com.tr",
         "erisim": "erisilebilir",
@@ -1655,7 +1655,7 @@
       "il": "Çorum",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:15:51.914640+00:00",
+        "kontrol_tarihi": "2026-11-22T09:48:16.570585+00:00",
         "url": "https://www.habercim19.com",
         "eski_alan": "habercim19.com",
         "erisim": "erisilebilir",
@@ -1753,7 +1753,7 @@
       "il": "Çorum",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:16:04.131377+00:00",
+        "kontrol_tarihi": "2026-11-22T09:48:25.737781+00:00",
         "url": "https://www.corumtime.com",
         "eski_alan": "corumtime.com",
         "erisim": "erisilebilir",
@@ -1855,7 +1855,7 @@
       "il": "Çorum",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:16:16.244192+00:00",
+        "kontrol_tarihi": "2026-11-22T09:48:32.497797+00:00",
         "url": "https://www.dikgazete.com",
         "eski_alan": "dikgazete.com",
         "erisim": "erisime_engel",
@@ -1876,7 +1876,7 @@
       "il": "Çorum",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:16:17.354105+00:00",
+        "kontrol_tarihi": "2026-11-22T09:48:33.568831+00:00",
         "url": "https://dosyahaber.com",
         "eski_alan": "dosyahaber.com",
         "erisim": "erisilebilir",
@@ -2011,7 +2011,7 @@
       "il": "Çorum",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:16:30.110533+00:00",
+        "kontrol_tarihi": "2026-11-22T09:48:46.777406+00:00",
         "url": "https://basin.adalet.gov.tr",
         "eski_alan": "basin.adalet.gov.tr",
         "erisim": "erisilebilir",
@@ -2101,7 +2101,7 @@
       "il": "Çorum",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:16:45.759458+00:00",
+        "kontrol_tarihi": "2026-11-22T09:49:00.508819+00:00",
         "url": "https://corumhaber.net",
         "eski_alan": "corumhaber.net",
         "erisim": "erisilebilir",
@@ -2194,7 +2194,7 @@
       "il": "Çorum",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:16:50.868002+00:00",
+        "kontrol_tarihi": "2026-11-22T09:49:04.777210+00:00",
         "url": "https://www.corumhakimiyet.net",
         "eski_alan": "corumhakimiyet.net",
         "erisim": "erisilebilir",
@@ -2285,7 +2285,7 @@
       "il": "Denizli",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:16:55.941414+00:00",
+        "kontrol_tarihi": "2026-11-22T09:49:09.325309+00:00",
         "url": "https://denizliyeniolay.com",
         "eski_alan": "denizliyeniolay.com",
         "erisim": "erisilebilir",
@@ -2315,7 +2315,7 @@
             "http_kodu": 200,
             "son_url": "https://denizliyeniolay.com/rss",
             "tur": "rss",
-            "kayit_sayisi": 10
+            "kayit_sayisi": 14
           },
           {
             "adres": "https://denizliyeniolay.com/rss/",
@@ -2373,7 +2373,7 @@
       "il": "Denizli",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:17:05.387008+00:00",
+        "kontrol_tarihi": "2026-11-22T09:49:17.122444+00:00",
         "url": "https://www.denizlihaber.com",
         "eski_alan": "denizlihaber.com",
         "erisim": "erisilebilir",
@@ -2474,7 +2474,7 @@
       "il": "Denizli",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:17:21.650915+00:00",
+        "kontrol_tarihi": "2026-11-22T09:49:32.200508+00:00",
         "url": "https://adalet.gov.tr",
         "eski_alan": "adalet.gov.tr",
         "erisim": "erisilebilir",
@@ -2572,7 +2572,7 @@
       "il": "Denizli",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:17:42.945970+00:00",
+        "kontrol_tarihi": "2026-11-22T09:49:51.120346+00:00",
         "url": "https://www.gazetevatan.com",
         "eski_alan": "gazetevatan.com",
         "erisim": "erisilebilir",
@@ -2654,7 +2654,7 @@
       "il": "Denizli",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:17:48.711781+00:00",
+        "kontrol_tarihi": "2026-11-22T09:49:56.573030+00:00",
         "url": "https://www.egeyonhaber.com",
         "eski_alan": "egeyonhaber.com",
         "erisim": "erisilemedi",
@@ -2675,7 +2675,7 @@
       "il": "Denizli",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:17:59.736018+00:00",
+        "kontrol_tarihi": "2026-11-22T09:50:07.593388+00:00",
         "url": "https://www.haberdenizli.com",
         "eski_alan": "haberdenizli.com",
         "erisim": "erisilebilir",
@@ -2765,7 +2765,7 @@
       "il": "Diyarbakır",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:18:04.238388+00:00",
+        "kontrol_tarihi": "2026-11-22T09:50:11.663945+00:00",
         "url": "https://amidahaber.com",
         "eski_alan": "amidahaber.com",
         "erisim": "erisilebilir",
@@ -2869,7 +2869,7 @@
       "il": "Diyarbakır",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:18:14.580384+00:00",
+        "kontrol_tarihi": "2026-11-22T09:50:19.203379+00:00",
         "url": "https://www.tigrishaber.com",
         "eski_alan": "tigrishaber.com",
         "erisim": "erisilebilir",
@@ -2965,7 +2965,7 @@
       "il": "Diyarbakır",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:18:23.978255+00:00",
+        "kontrol_tarihi": "2026-11-22T09:50:27.193021+00:00",
         "url": "https://www.diyarbakir.net",
         "eski_alan": "diyarbakir.net",
         "erisim": "erisilebilir",
@@ -3065,7 +3065,7 @@
       "il": "Diyarbakır",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:18:35.190825+00:00",
+        "kontrol_tarihi": "2026-11-22T09:50:35.925617+00:00",
         "url": "https://ajansnews.com.tr",
         "eski_alan": "ajansnews.com.tr",
         "erisim": "erisilebilir",
@@ -3157,7 +3157,7 @@
       "il": "Diyarbakır",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:18:56.410662+00:00",
+        "kontrol_tarihi": "2026-11-22T09:50:56.245027+00:00",
         "url": "https://www.mucadelegazetesi.com.tr",
         "eski_alan": "mucadelegazetesi.com.tr",
         "erisim": "erisilebilir",
@@ -3248,7 +3248,7 @@
       "il": "Diyarbakır",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:19:01.532021+00:00",
+        "kontrol_tarihi": "2026-11-22T09:51:00.721665+00:00",
         "url": "https://mardinhaber.com.tr",
         "eski_alan": "mardinhaber.com.tr",
         "erisim": "erisime_engel",
@@ -3269,7 +3269,7 @@
       "il": "Diyarbakır",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:19:02.767699+00:00",
+        "kontrol_tarihi": "2026-11-22T09:51:01.761090+00:00",
         "url": "https://www.hukukihaber.net",
         "eski_alan": "hukukihaber.net",
         "erisim": "erisilebilir",
@@ -3358,7 +3358,7 @@
       "il": "Edirne",
       "ilce": null,
       "rapor": {
-        "kontrol_tarihi": "2026-11-22T08:19:08.431853+00:00",
+        "kontrol_tarihi": "2026-11-22T09:51:06.324383+00:00",
         "url": "https://edirnesonhaber.com",
         "eski_alan": "edirnesonhaber.com",
         "erisim": "erisilebilir",
