@@ -1,14 +1,90 @@
 {
   "surum": "5.0.0",
-  "rapor_tarihi": "2026-11-23T20:00:53.594722+00:00",
+  "rapor_tarihi": "2026-11-23T20:56:04.224857+00:00",
   "toplam_il": 81,
   "toplam_ilce": 922,
-  "bu_calistirmada_taranan_ilce": 60,
-  "basarili_ilce": 60,
-  "basarisiz_ilce": 0,
-  "yeni_aday_kaynak": 5,
+  "bu_calistirmada_taranan_ilce": 15,
+  "basarili_ilce": 0,
+  "basarisiz_ilce": 15,
+  "yeni_aday_kaynak": 0,
   "toplam_kaynak": 2197,
   "tam_tur_tamamlandi": false,
-  "hatalar": [],
+  "hatalar": [
+    {
+      "il": "KİLİS",
+      "ilce": "MUSABEYLİ",
+      "hata": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "il": "KİLİS",
+      "ilce": "POLATELİ",
+      "hata": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "il": "OSMANİYE",
+      "ilce": "BAHÇE",
+      "hata": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "il": "OSMANİYE",
+      "ilce": "SUMBAS",
+      "hata": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "il": "OSMANİYE",
+      "ilce": "DÜZİÇİ",
+      "hata": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "il": "OSMANİYE",
+      "ilce": "TOPRAKKALE",
+      "hata": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "il": "OSMANİYE",
+      "ilce": "HASANBEYLİ",
+      "hata": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "il": "OSMANİYE",
+      "ilce": "KADİRLİ",
+      "hata": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "il": "DÜZCE",
+      "ilce": "AKÇAKOCA",
+      "hata": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "il": "DÜZCE",
+      "ilce": "GÜMÜŞOVA",
+      "hata": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "il": "DÜZCE",
+      "ilce": "CUMAYERİ",
+      "hata": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "il": "DÜZCE",
+      "ilce": "KAYNAŞLI",
+      "hata": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "il": "DÜZCE",
+      "ilce": "ÇİLİMLİ",
+      "hata": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "il": "DÜZCE",
+      "ilce": "YIĞILCA",
+      "hata": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "il": "DÜZCE",
+      "ilce": "GÖLYAKA",
+      "hata": "HTTP Error 503: Service Unavailable"
+    }
+  ],
   "haberler_json_degistirildi": false
 }
