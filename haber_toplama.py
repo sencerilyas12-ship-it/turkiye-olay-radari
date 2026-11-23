@@ -6,28 +6,30 @@ import time
 import hashlib
 import urllib.parse
 import urllib.request
-import urllib.robotparser
 import xml.etree.ElementTree as ET
 
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from html import unescape
-from urllib.parse import urlparse
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 
-ENVANTER_DOSYASI = os.path.join(BASE, "kaynaklar_ek.json")
-ESKI_KAYNAK_DOSYASI = os.path.join(BASE, "kaynaklar.json")
-HABER_DOSYASI = os.path.join(BASE, "haberler.json")
-DURUM_DOSYASI = os.path.join(BASE, "tarama_durumu.json")
-ILCELER_DOSYASI = os.path.join(BASE, "ilceler.json")
+DOSYALAR = {
+    "envanter": os.path.join(BASE, "kaynaklar_ek.json"),
+    "kaynaklar": os.path.join(BASE, "kaynaklar.json"),
+    "haberler": os.path.join(BASE, "haberler.json"),
+    "durum": os.path.join(BASE, "tarama_durumu.json"),
+    "ilceler": os.path.join(BASE, "ilceler.json"),
+}
 
-USER_AGENT = "MIHVER-NewsMonitor/1.2"
+USER_AGENT = "MIHVER-NewsMonitor/2.0"
 TIMEOUT = 20
 
-MAX_RSS_KAYNAK = 150
-MAX_ILCE_SORGU = 100
-MAX_HABER_KAYNAK_BASI = 30
+# Her çalışmada taranacak ilçe-konu sorgusu
+MAX_SORGU = 300
+
+# İstekler arasında kısa bekleme
+BEKLEME = 0.25
 
 KONULAR = [
     '"mahkeme" OR "duruşma" OR "adliye" OR "başsavcılık"',
@@ -44,17 +46,17 @@ HARIC_TERIMLER = [
 ]
 
 
-def oku_json(dosya, varsayilan):
+def oku(dosya, varsayilan):
     try:
         with open(dosya, "r", encoding="utf-8") as f:
             return json.load(f)
     except FileNotFoundError:
         return varsayilan
     except json.JSONDecodeError as hata:
-        raise RuntimeError(f"{dosya} bozuk JSON içeriyor: {hata}")
+        raise RuntimeError(f"JSON hatası: {dosya}: {hata}")
 
 
-def yaz_json(dosya, veri):
+def yaz(dosya, veri):
     gecici = dosya + ".tmp"
     with open(gecici, "w", encoding="utf-8") as f:
         json.dump(veri, f, ensure_ascii=False, indent=2)
@@ -66,7 +68,7 @@ def indir(url):
         url,
         headers={
             "User-Agent": USER_AGENT,
-            "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml"
+            "Accept": "application/rss+xml, application/xml, text/xml"
         }
     )
     with urllib.request.urlopen(istek, timeout=TIMEOUT) as cevap:
@@ -76,8 +78,7 @@ def indir(url):
 def temizle(metin):
     metin = unescape(metin or "")
     metin = re.sub(r"<[^>]+>", " ", metin)
-    metin = re.sub(r"\s+", " ", metin)
-    return metin.strip()
+    return re.sub(r"\s+", " ", metin).strip()
 
 
 def tarih_duzenle(deger):
@@ -101,38 +102,84 @@ def tarih_duzenle(deger):
         return datetime.now(timezone.utc).isoformat()
 
 
-def haber_kimligi(link, baslik):
+def kimlik(link, baslik):
     veri = (link or baslik).strip().lower()
     return hashlib.sha256(veri.encode("utf-8")).hexdigest()
 
 
-def robots_izinli(url):
-    try:
-        parca = urlparse(url)
-        robots_url = f"{parca.scheme}://{parca.netloc}/robots.txt"
-
-        robot = urllib.robotparser.RobotFileParser()
-        robot.set_url(robots_url)
-        robot.read()
-
-        return robot.can_fetch(USER_AGENT, url)
-    except Exception:
-        return False
-
-
-def uygun_haber(baslik, aciklama):
+def kategori(baslik, aciklama):
     metin = (baslik + " " + aciklama).lower()
 
-    if len(baslik.strip()) < 12:
-        return False
+    if any(x in metin for x in ["duruşma", "mahkeme", "karar açıklandı"]):
+        return "Mahkeme ve Duruşma"
+    if any(x in metin for x in ["belediye", "meclis", "imar"]):
+        return "Yerel Yönetim"
+    if any(x in metin for x in ["ihale", "kamu zararı", "yolsuzluk"]):
+        return "Kamu ve İhale"
+    if any(x in metin for x in ["tutuklama", "gözaltı", "başsavcılık"]):
+        return "Adli Gelişmeler"
+    if any(x in metin for x in ["cinayet", "şüpheli ölüm"]):
+        return "Asayiş ve Adli Olaylar"
 
-    if any(terim in metin for terim in HARIC_TERIMLER):
-        return False
-
-    return True
+    return "Yerel Gündem"
 
 
-def google_haber_rss(il, ilce, konu):
+def uygun(baslik, aciklama):
+    metin = (baslik + " " + aciklama).lower()
+    return (
+        len(baslik.strip()) >= 12
+        and not any(x in metin for x in HARIC_TERIMLER)
+    )
+
+
+def ilceleri_yukle():
+    veri = oku(DOSYALAR["ilceler"], None)
+
+    if not isinstance(veri, dict):
+        raise RuntimeError("ilceler.json okunamadı.")
+
+    sehirler = veri.get("cities", [])
+    ilceler = veri.get("districts", [])
+
+    sehir_esleme = {}
+
+    for sehir in sehirler:
+        try:
+            sehir_esleme[int(sehir["Id"])] = str(
+                sehir["name"]
+            ).strip()
+        except (KeyError, TypeError, ValueError):
+            continue
+
+    sonuc = []
+    gorulen = set()
+
+    for kayit in ilceler:
+        try:
+            il = sehir_esleme[int(kayit["cityId"])]
+            ilce = str(kayit["name"]).strip()
+        except (KeyError, TypeError, ValueError):
+            continue
+
+        anahtar = (il.casefold(), ilce.casefold())
+
+        if ilce and anahtar not in gorulen:
+            sonuc.append({"il": il, "ilce": ilce})
+            gorulen.add(anahtar)
+
+    if not sonuc:
+        raise RuntimeError("İlçe listesi boş.")
+
+    print("Şehir sayısı:", len(sehir_esleme))
+    print("Okunan benzersiz ilçe sayısı:", len(sonuc))
+
+    if len(sonuc) != 922:
+        print("UYARI: İlçe listesi 922 değil:", len(sonuc))
+
+    return sonuc
+
+
+def google_url(il, ilce, konu):
     sorgu = f'"{ilce}" "{il}" {konu}'
 
     parametre = urllib.parse.urlencode({
@@ -145,66 +192,27 @@ def google_haber_rss(il, ilce, konu):
     return "https://news.google.com/rss/search?" + parametre
 
 
-def kategori_belirle(baslik, aciklama):
-    metin = (baslik + " " + aciklama).lower()
-
-    if any(x in metin for x in ["duruşma", "mahkeme", "karar açıklandı"]):
-        return "Mahkeme ve Duruşma"
-
-    if any(x in metin for x in ["belediye", "meclis", "imar"]):
-        return "Yerel Yönetim"
-
-    if any(x in metin for x in ["ihale", "kamu zararı", "yolsuzluk"]):
-        return "Kamu ve İhale"
-
-    if any(x in metin for x in ["tutuklama", "gözaltı", "başsavcılık"]):
-        return "Adli Gelişmeler"
-
-    if any(x in metin for x in ["cinayet", "şüpheli ölüm"]):
-        return "Asayiş ve Adli Olaylar"
-
-    return "Yerel Gündem"
-
-
-def haber_kaydi(
-    baslik, link, aciklama, tarih,
-    il, ilce, kaynak_adi, kaynak_durumu
-):
+def haber_olustur(baslik, link, aciklama, tarih, il, ilce, kaynak):
     return {
         "baslik": baslik,
         "aciklama": aciklama[:1200],
-        "il": il or "Türkiye",
-        "ilce": ilce or "",
-        "kategori": kategori_belirle(baslik, aciklama),
-        "kaynak": kaynak_adi,
+        "il": il,
+        "ilce": ilce,
+        "kategori": kategori(baslik, aciklama),
+        "kaynak": kaynak,
         "tarih": tarih_duzenle(tarih),
         "link": link,
-        "durum": (
-            "doğrulanmadı"
-            if kaynak_durumu != "doğrulandı"
-            else "doğrulandı"
-        ),
+        "durum": "doğrulanmadı",
         "yayinda": True,
-        "kimlik": haber_kimligi(link, baslik)
+        "kimlik": kimlik(link, baslik)
     }
 
 
-def rss_oku(
-    url, il, ilce, kaynak_adi,
-    kaynak_durumu, robots_kontrol=True
-):
-    bulunanlar = []
-
-    if not url.startswith(("https://", "http://")):
-        return bulunanlar
-
-    if robots_kontrol and not robots_izinli(url):
-        print("Robots.txt izni yok veya kontrol edilemedi:", url)
-        return bulunanlar
+def rss_oku(url, il, ilce, kaynak):
+    bulunan = []
 
     try:
-        icerik = indir(url)
-        kok = ET.fromstring(icerik)
+        kok = ET.fromstring(indir(url))
 
         for item in kok.findall(".//item"):
             baslik = temizle(item.findtext("title", ""))
@@ -212,16 +220,13 @@ def rss_oku(
             aciklama = temizle(item.findtext("description", ""))
             tarih = item.findtext("pubDate", "")
 
-            if not baslik or not link:
+            if not baslik or not link or not uygun(baslik, aciklama):
                 continue
 
-            if not uygun_haber(baslik, aciklama):
-                continue
-
-            bulunanlar.append(
-                haber_kaydi(
+            bulunan.append(
+                haber_olustur(
                     baslik, link, aciklama, tarih,
-                    il, ilce, kaynak_adi, kaynak_durumu
+                    il, ilce, kaynak
                 )
             )
 
@@ -231,299 +236,182 @@ def rss_oku(
             baslik = temizle(entry.findtext("a:title", "", ns))
             aciklama = temizle(entry.findtext("a:summary", "", ns))
             tarih = entry.findtext("a:updated", "", ns)
-
             link_elemani = entry.find("a:link", ns)
+
             link = (
                 link_elemani.attrib.get("href", "")
                 if link_elemani is not None else ""
             )
 
-            if not baslik or not link:
+            if not baslik or not link or not uygun(baslik, aciklama):
                 continue
 
-            if not uygun_haber(baslik, aciklama):
-                continue
-
-            bulunanlar.append(
-                haber_kaydi(
+            bulunan.append(
+                haber_olustur(
                     baslik, link, aciklama, tarih,
-                    il, ilce, kaynak_adi, kaynak_durumu
+                    il, ilce, kaynak
                 )
             )
 
     except Exception as hata:
-        print("RSS okunamadı:", url, str(hata)[:180])
+        print("RSS okunamadı:", str(hata)[:160])
 
-    return bulunanlar[:MAX_HABER_KAYNAK_BASI]
+    return bulunan
 
 
-def ilceleri_yukle():
-    veri = oku_json(ILCELER_DOSYASI, None)
+def kaynaklari_yukle(envanter):
+    eski = oku(DOSYALAR["kaynaklar"], [])
 
-    if not isinstance(veri, dict):
-        raise RuntimeError(
-            "ilceler.json bulunamadı veya beklenen JSON yapısında değil."
-        )
-
-    sehirler = veri.get("cities", [])
-    ilceler = veri.get("districts", [])
-
-    if not isinstance(sehirler, list) or not isinstance(ilceler, list):
-        raise RuntimeError(
-            "ilceler.json içinde cities ve districts listeleri bulunmalı."
-        )
-
-    sehir_esleme = {}
-
-    for sehir in sehirler:
-        if not isinstance(sehir, dict):
-            continue
-
-        try:
-            sehir_id = int(sehir["Id"])
-            sehir_adi = str(sehir["name"]).strip()
-        except (KeyError, TypeError, ValueError):
-            continue
-
-        if sehir_adi:
-            sehir_esleme[sehir_id] = sehir_adi
+    if not isinstance(eski, list):
+        eski = []
 
     sonuc = []
-    gorulen = set()
 
-    for ilce in ilceler:
-        if not isinstance(ilce, dict):
-            continue
-
-        try:
-            sehir_id = int(ilce["cityId"])
-            ilce_adi = str(ilce["name"]).strip()
-        except (KeyError, TypeError, ValueError):
-            continue
-
-        il_adi = sehir_esleme.get(sehir_id)
-
-        if not il_adi or not ilce_adi:
-            continue
-
-        anahtar = (il_adi.casefold(), ilce_adi.casefold())
-
-        if anahtar in gorulen:
-            continue
-
-        gorulen.add(anahtar)
-
-        sonuc.append({
-            "il": il_adi,
-            "ilce": ilce_adi
-        })
-
-    if not sonuc:
-        raise RuntimeError("ilceler.json içinden ilçe okunamadı.")
-
-    print("Şehir sayısı:", len(sehir_esleme))
-    print("Okunan benzersiz ilçe sayısı:", len(sonuc))
-
-    if len(sehir_esleme) != 81:
-        print("UYARI: Şehir listesinde 81 şehir bulunmuyor.")
-
-    if len(sonuc) != 922:
-        print(
-            "UYARI: İlçe sayısı 922 değil. "
-            "Mevcut listedeki ilçeler taranacak."
-        )
-
-    return sonuc
-
-
-def kaynaklari_birlestir(eski_kaynaklar, ek_envanter):
-    sonuc = []
-
-    for kaynak in eski_kaynaklar:
-        if isinstance(kaynak, dict):
+    for kaynak in eski:
+        if isinstance(kaynak, dict) and kaynak.get("rss"):
             sonuc.append(kaynak)
 
-    for kaynak in ek_envanter.get("kaynaklar", []):
+    for kaynak in envanter.get("kaynaklar", []):
         if not isinstance(kaynak, dict):
             continue
 
-        rss = kaynak.get("rss") or kaynak.get("rss_url") or ""
+        rss = kaynak.get("rss") or kaynak.get("rss_url")
 
-        if not rss:
-            continue
+        if rss:
+            sonuc.append({
+                "ad": kaynak.get("ad") or kaynak.get("isim") or "Ek kaynak",
+                "il": kaynak.get("il") or "Türkiye",
+                "ilce": kaynak.get("ilce") or "",
+                "rss": rss,
+                "kaynak_durumu": kaynak.get("dogrulama", "doğrulanmadı")
+            })
 
-        sonuc.append({
-            "id": kaynak.get("id"),
-            "ad": kaynak.get("ad") or kaynak.get("isim") or "Ek kaynak",
-            "il": kaynak.get("il") or "Türkiye",
-            "rss": rss,
-            "durum": kaynak.get("durum", "aday"),
-            "kaynak_durumu": kaynak.get(
-                "dogrulama", "doğrulanmadı"
-            )
-        })
+    # Aynı RSS adresini iki kere çalıştırma.
+    benzersiz = {}
+    for kaynak in sonuc:
+        benzersiz[str(kaynak.get("rss", "")).strip()] = kaynak
 
-    return sonuc
+    return list(benzersiz.values())[:150]
 
 
 def ana_islem():
-    envanter = oku_json(ENVANTER_DOSYASI, {})
-    eski_kaynaklar = oku_json(ESKI_KAYNAK_DOSYASI, [])
-    haberler = oku_json(HABER_DOSYASI, [])
-    durum = oku_json(
-        DURUM_DOSYASI,
-        {"ilce_arama_sirasi": 0}
-    )
+    envanter = oku(DOSYALAR["envanter"], {})
+    haberler = oku(DOSYALAR["haberler"], [])
+    durum = oku(DOSYALAR["durum"], {"ilce_arama_sirasi": 0})
 
     if not isinstance(envanter, dict):
         raise RuntimeError("kaynaklar_ek.json biçimi hatalı.")
 
-    if not isinstance(eski_kaynaklar, list):
-        eski_kaynaklar = []
-
     if not isinstance(haberler, list):
-        raise RuntimeError(
-            "haberler.json liste biçiminde değil. "
-            "Dosya korunarak işlem durduruldu."
-        )
+        raise RuntimeError("haberler.json liste değil; dosya korunuyor.")
 
-    ilce_listesi = ilceleri_yukle()
+    ilceler = ilceleri_yukle()
+    konular = KONULAR
+    toplam = len(ilceler) * len(konular)
 
-    ayarlar = envanter.get("ayarlar", {})
-    yayin_ayarlari = envanter.get("haber_toplama_kapsami", {})
-    dogrulama = envanter.get("dogrulama_kurallari", {})
-
-    otomatik_yayin = (
-        ayarlar.get("haberleri_otomatik_yayinla", False)
-        and yayin_ayarlari.get("otomatik_yayin", False)
-        and yayin_ayarlari.get("dogrulanmamis_haber_yayini", False)
-    )
-
-    robots_kontrol = dogrulama.get("robots_txt_kontrolu", True)
-
-    kaynaklar = kaynaklari_birlestir(eski_kaynaklar, envanter)
-
-    rss_kaynaklari = [
-        kaynak for kaynak in kaynaklar
-        if kaynak.get("rss")
-    ][:MAX_RSS_KAYNAK]
+    baslangic = int(durum.get("ilce_arama_sirasi", 0)) % toplam
+    sorgu_adedi = min(MAX_SORGU, toplam)
 
     kimlikler = set()
 
     for haber in haberler:
         if isinstance(haber, dict):
-            kimlik = haber.get("kimlik") or haber_kimligi(
-                haber.get("link", ""),
-                haber.get("baslik", "")
+            kimlikler.add(
+                haber.get("kimlik") or kimlik(
+                    haber.get("link", ""),
+                    haber.get("baslik", "")
+                )
             )
-            kimlikler.add(kimlik)
 
     yeni_haberler = []
 
-    # Mevcut RSS kaynaklarını koru.
-    for kaynak in rss_kaynaklari:
+    # Mevcut RSS kaynaklarını da taramaya devam et.
+    kaynaklar = kaynaklari_yukle(envanter)
+
+    for kaynak in kaynaklar:
         url = str(kaynak.get("rss", "")).strip()
 
-        if not url:
+        if not url.startswith(("http://", "https://")):
             continue
 
         sonuc = rss_oku(
             url,
             kaynak.get("il", "Türkiye"),
             kaynak.get("ilce", ""),
-            kaynak.get("ad", "Yerel kaynak"),
-            kaynak.get(
-                "kaynak_durumu",
-                kaynak.get("durum", "doğrulanmadı")
-            ),
-            robots_kontrol
+            kaynak.get("ad", "Yerel RSS")
         )
-
         yeni_haberler.extend(sonuc)
 
     # İlçe ve konu taraması.
-    toplam_sorgu = len(ilce_listesi) * len(KONULAR)
+    for i in range(sorgu_adedi):
+        sira = (baslangic + i) % toplam
 
-    baslangic = (
-        int(durum.get("ilce_arama_sirasi", 0))
-        % toplam_sorgu
-    )
+        ilce_index = sira // len(konular)
+        konu_index = sira % len(konular)
 
-    sorgu_sayisi = min(MAX_ILCE_SORGU, toplam_sorgu)
-
-    for i in range(sorgu_sayisi):
-        sira = (baslangic + i) % toplam_sorgu
-
-        ilce_index = sira // len(KONULAR)
-        konu_index = sira % len(KONULAR)
-
-        il = ilce_listesi[ilce_index]["il"]
-        ilce = ilce_listesi[ilce_index]["ilce"]
-        konu = KONULAR[konu_index]
+        il = ilceler[ilce_index]["il"]
+        ilce = ilceler[ilce_index]["ilce"]
+        konu = konular[konu_index]
 
         print(
             f"İlçe taranıyor: {il} / {ilce} "
-            f"({i + 1}/{sorgu_sayisi})"
+            f"({i + 1}/{sorgu_adedi})"
         )
 
-        url = google_haber_rss(il, ilce, konu)
+        url = google_url(il, ilce, konu)
 
-        sonuc = rss_oku(
-            url,
-            il,
-            ilce,
-            "Google Haberler RSS",
-            "doğrulanmadı",
-            robots_kontrol=False
+        yeni_haberler.extend(
+            rss_oku(
+                url, il, ilce, "Google Haberler RSS"
+            )
         )
 
-        yeni_haberler.extend(sonuc)
-        time.sleep(1)
+        time.sleep(BEKLEME)
 
     eklenen = 0
 
     for haber in yeni_haberler:
-        kimlik = haber.get("kimlik")
+        haber_id = haber.get("kimlik")
 
-        if not kimlik or kimlik in kimlikler:
+        if not haber_id or haber_id in kimlikler:
             continue
 
-        haber["yayinda"] = bool(otomatik_yayin)
-
         haberler.append(haber)
-        kimlikler.add(kimlik)
+        kimlikler.add(haber_id)
         eklenen += 1
 
-    # Eski haberleri silme veya 50.000 kayıtla sınırlama.
+    # Eski haberleri silme ve kayıt sayısını sınırlama.
     haberler.sort(
-        key=lambda x: x.get("tarih", "") if isinstance(x, dict) else "",
+        key=lambda x: x.get("tarih", "")
+        if isinstance(x, dict) else "",
         reverse=True
     )
 
     durum["ilce_arama_sirasi"] = (
-        baslangic + sorgu_sayisi
-    ) % toplam_sorgu
+        baslangic + sorgu_adedi
+    ) % toplam
 
     durum["son_calisma"] = datetime.now(timezone.utc).isoformat()
     durum["son_eklenen_haber"] = eklenen
     durum["toplam_haber"] = len(haberler)
-    durum["rss_kaynak_sayisi"] = len(rss_kaynaklari)
-    durum["ilce_sayisi"] = len(ilce_listesi)
-    durum["toplam_ilce_konu_sorgusu"] = toplam_sorgu
-    durum["bu_calisma_sorgu_sayisi"] = sorgu_sayisi
-    durum["otomatik_yayin"] = bool(otomatik_yayin)
+    durum["ilce_sayisi"] = len(ilceler)
+    durum["toplam_sorgu"] = toplam
+    durum["bu_calisma_sorgu"] = sorgu_adedi
+    durum["tam_tarama_tamamlandi"] = (
+        durum["ilce_arama_sirasi"] == 0
+    )
 
-    yaz_json(HABER_DOSYASI, haberler)
-    yaz_json(DURUM_DOSYASI, durum)
+    yaz(DOSYALAR["haberler"], haberler)
+    yaz(DOSYALAR["durum"], durum)
 
-    print("MİHVER ilçe taraması tamamlandı.")
-    print("İlçe sayısı:", len(ilce_listesi))
-    print("Bu çalışmadaki sorgu:", sorgu_sayisi)
-    print("Toplam ilçe/konu sorgusu:", toplam_sorgu)
-    print("RSS kaynak sayısı:", len(rss_kaynaklari))
+    print("MİHVER taraması tamamlandı.")
+    print("İlçe sayısı:", len(ilceler))
+    print("Bu çalışmadaki sorgu:", sorgu_adedi)
+    print("Toplam sorgu:", toplam)
     print("Yeni haber sayısı:", eklenen)
-    print("Toplam haber sayısı:", len(haberler))
-    print("Otomatik yayın ayarı:", otomatik_yayin)
+    print("Toplam haber:", len(haberler))
+    print("Sonraki tarama sırası:", durum["ilce_arama_sirasi"])
+    print("Tam tarama turu tamamlandı:", durum["tam_tarama_tamamlandi"])
 
 
 if __name__ == "__main__":
