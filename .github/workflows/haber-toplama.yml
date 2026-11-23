@@ -17,7 +17,7 @@ jobs:
   haberler:
     name: MIHVER Haberleri Topla
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 45
 
     steps:
       - name: Depoyu indir
