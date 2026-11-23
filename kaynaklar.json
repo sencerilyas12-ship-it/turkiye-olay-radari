@@ -8869,11 +8869,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:03:52.558208+00:00",
+        "son_kontrol": "2026-11-23T17:03:53.864489+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:03:52.558208+00:00",
+      "son_kontrol": "2026-11-23T17:03:53.864489+00:00",
       "rss_adresleri": [
         "https://www.gazeteilksayfa.com/service/rss.php"
       ],
@@ -8978,11 +8978,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:04:04.011971+00:00",
+        "son_kontrol": "2026-11-23T17:04:07.482997+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:04:04.011971+00:00",
+      "son_kontrol": "2026-11-23T17:04:07.482997+00:00",
       "rss_adresleri": [
         "https://www.bomba15.com/rss",
         "https://www.bomba15.com/rss/"
@@ -9042,7 +9042,7 @@
           {
             "adres": "https://www.bomba15.com/atom.xml",
             "durum": "erisilemedi",
-            "http_kodu": 404,
+            "http_kodu": null,
             "son_url": "https://www.bomba15.com/atom.xml"
           },
           {
@@ -9081,11 +9081,11 @@
       "dogrulama": {
         "adres": "erisime_engel",
         "rss": "bulunamadi",
-        "son_kontrol": "2026-11-23T16:04:10.162646+00:00",
+        "son_kontrol": "2026-11-23T17:04:28.856806+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:04:10.162646+00:00",
+      "son_kontrol": "2026-11-23T17:04:28.856806+00:00",
       "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": 403,
@@ -9112,15 +9112,13 @@
       "kimlik": "mihver-306f080419cae170c10f",
       "dogrulama": {
         "adres": "erisilebilir",
-        "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:04:11.269098+00:00",
+        "rss": "gecerli_besleme_bulunamadi",
+        "son_kontrol": "2026-11-23T17:04:29.951162+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:04:11.269098+00:00",
-      "rss_adresleri": [
-        "https://www.saraymedya.com/xml/rss/"
-      ],
+      "son_kontrol": "2026-11-23T17:04:29.951162+00:00",
+      "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": 200,
         "erisim": "erisilebilir",
@@ -9128,17 +9126,13 @@
         "son_url": "https://www.saraymedya.com",
         "eski_alan": "saraymedya.com",
         "yeni_alan": "saraymedya.com",
-        "rss_adresleri": [
-          "https://www.saraymedya.com/xml/rss/"
-        ],
+        "rss_adresleri": [],
         "rss_testleri": [
           {
             "adres": "https://www.saraymedya.com/xml/rss/",
-            "durum": "rss_atom_icerigi_gecerli",
-            "http_kodu": 200,
-            "son_url": "https://www.saraymedya.com/xml/rss/",
-            "tur": "rss",
-            "kayit_sayisi": 50
+            "durum": "erisilemedi",
+            "http_kodu": null,
+            "son_url": "https://www.saraymedya.com/xml/rss/"
           },
           {
             "adres": "https://www.saraymedya.com/feed",
@@ -9197,7 +9191,7 @@
             "kayit_sayisi": 0
           }
         ],
-        "rss_durumu": "icerik_dogrulandi",
+        "rss_durumu": "gecerli_besleme_bulunamadi",
         "robots": {
           "adres": "https://www.saraymedya.com/robots.txt",
           "durum": "robots_dosyasi_bulundu",
@@ -9218,11 +9212,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "gecerli_besleme_bulunamadi",
-        "son_kontrol": "2026-11-23T16:04:17.361641+00:00",
+        "son_kontrol": "2026-11-23T17:05:04.016862+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:04:17.361641+00:00",
+      "son_kontrol": "2026-11-23T17:05:04.016862+00:00",
       "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": 200,
@@ -9309,11 +9303,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:04:30.725188+00:00",
+        "son_kontrol": "2026-11-23T17:05:32.696805+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:04:30.725188+00:00",
+      "son_kontrol": "2026-11-23T17:05:32.696805+00:00",
       "rss_adresleri": [
         "https://beyazgazete.com/rss/guncel.xml"
       ],
@@ -9414,11 +9408,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:04:37.933657+00:00",
+        "son_kontrol": "2026-11-23T17:05:47.579623+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:04:37.933657+00:00",
+      "son_kontrol": "2026-11-23T17:05:47.579623+00:00",
       "rss_adresleri": [
         "https://www.haberizma.com/feed/",
         "https://www.haberizma.com/comments/feed/"
@@ -9537,11 +9531,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:05:02.415582+00:00",
+        "son_kontrol": "2026-11-23T17:06:13.609036+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:05:02.415582+00:00",
+      "son_kontrol": "2026-11-23T17:06:13.609036+00:00",
       "rss_adresleri": [
         "https://www.bursatv.com.tr/rss",
         "https://www.bursatv.com.tr/rss/"
@@ -9640,11 +9634,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:05:09.493833+00:00",
+        "son_kontrol": "2026-11-23T17:06:19.848450+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:05:09.493833+00:00",
+      "son_kontrol": "2026-11-23T17:06:19.848450+00:00",
       "rss_adresleri": [
         "https://tr.euronews.com/rss"
       ],
@@ -9741,11 +9735,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:05:14.007851+00:00",
+        "son_kontrol": "2026-11-23T17:06:25.022025+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:05:14.007851+00:00",
+      "son_kontrol": "2026-11-23T17:06:25.022025+00:00",
       "rss_adresleri": [
         "https://kisadalga.net/service/rss.php"
       ],
@@ -9852,11 +9846,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:05:23.009805+00:00",
+        "son_kontrol": "2026-11-23T17:06:33.297739+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:05:23.009805+00:00",
+      "son_kontrol": "2026-11-23T17:06:33.297739+00:00",
       "rss_adresleri": [
         "https://www.turkiyegazetesi.com.tr/rss/son-dakika-haberleri",
         "https://www.turkiyegazetesi.com.tr/feed",
@@ -9979,11 +9973,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:05:37.454456+00:00",
+        "son_kontrol": "2026-11-23T17:06:51.727425+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:05:37.454456+00:00",
+      "son_kontrol": "2026-11-23T17:06:51.727425+00:00",
       "rss_adresleri": [
         "https://www.canakkaleolay.com/rss",
         "https://www.canakkaleolay.com/rss/",
@@ -10086,11 +10080,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:05:49.370312+00:00",
+        "son_kontrol": "2026-11-23T17:07:07.501969+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:05:49.370312+00:00",
+      "son_kontrol": "2026-11-23T17:07:07.501969+00:00",
       "rss_adresleri": [
         "https://www.medyalokum.com/rss",
         "https://www.medyalokum.com/rss/"
@@ -10189,11 +10183,11 @@
       "dogrulama": {
         "adres": "erisime_engel",
         "rss": "bulunamadi",
-        "son_kontrol": "2026-11-23T16:05:55.532570+00:00",
+        "son_kontrol": "2026-11-23T17:07:13.505455+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:05:55.532570+00:00",
+      "son_kontrol": "2026-11-23T17:07:13.505455+00:00",
       "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": 403,
@@ -10221,11 +10215,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:05:56.624204+00:00",
+        "son_kontrol": "2026-11-23T17:07:14.582465+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:05:56.624204+00:00",
+      "son_kontrol": "2026-11-23T17:07:14.582465+00:00",
       "rss_adresleri": [
         "https://www.haberci18.com/rss.xml"
       ],
@@ -10322,11 +10316,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:06:06.728821+00:00",
+        "son_kontrol": "2026-11-23T17:07:28.616799+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:06:06.728821+00:00",
+      "son_kontrol": "2026-11-23T17:07:28.616799+00:00",
       "rss_adresleri": [
         "https://www.sozcu.com.tr/feeds/rsssubpub",
         "https://www.sozcu.com.tr/rss/",
@@ -10351,7 +10345,7 @@
             "http_kodu": 200,
             "son_url": "https://www.sozcu.com.tr/feeds/rsssubpub",
             "tur": "rss",
-            "kayit_sayisi": 515
+            "kayit_sayisi": 517
           },
           {
             "adres": "https://www.sozcu.com.tr/feed",
@@ -10439,11 +10433,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "gecerli_besleme_bulunamadi",
-        "son_kontrol": "2026-11-23T16:06:14.446382+00:00",
+        "son_kontrol": "2026-11-23T17:07:34.679212+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:06:14.446382+00:00",
+      "son_kontrol": "2026-11-23T17:07:34.679212+00:00",
       "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": 200,
@@ -10540,11 +10534,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:06:30.252415+00:00",
+        "son_kontrol": "2026-11-23T17:07:53.326409+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:06:30.252415+00:00",
+      "son_kontrol": "2026-11-23T17:07:53.326409+00:00",
       "rss_adresleri": [
         "https://www.sozcu18.com/service/rss.php"
       ],
@@ -10649,11 +10643,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:06:38.599739+00:00",
+        "son_kontrol": "2026-11-23T17:08:00.797953+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:06:38.599739+00:00",
+      "son_kontrol": "2026-11-23T17:08:00.797953+00:00",
       "rss_adresleri": [
         "https://www.yaylahaber.com.tr/rss",
         "https://www.yaylahaber.com.tr/rss/"
@@ -10760,11 +10754,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:06:44.963990+00:00",
+        "son_kontrol": "2026-11-23T17:08:07.593015+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:06:44.963990+00:00",
+      "son_kontrol": "2026-11-23T17:08:07.593015+00:00",
       "rss_adresleri": [
         "https://www.habercim19.com/rss"
       ],
@@ -10871,11 +10865,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:06:55.201584+00:00",
+        "son_kontrol": "2026-11-23T17:08:16.748675+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:06:55.201584+00:00",
+      "son_kontrol": "2026-11-23T17:08:16.748675+00:00",
       "rss_adresleri": [
         "https://www.corumtime.com/feed",
         "https://www.corumtime.com/feed/atom",
@@ -10988,11 +10982,11 @@
       "dogrulama": {
         "adres": "erisime_engel",
         "rss": "bulunamadi",
-        "son_kontrol": "2026-11-23T16:07:02.925908+00:00",
+        "son_kontrol": "2026-11-23T17:08:32.513244+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:07:02.925908+00:00",
+      "son_kontrol": "2026-11-23T17:08:32.513244+00:00",
       "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": 403,
@@ -11020,11 +11014,11 @@
       "dogrulama": {
         "adres": "erisime_engel",
         "rss": "bulunamadi",
-        "son_kontrol": "2026-11-23T16:07:04.050524+00:00",
+        "son_kontrol": "2026-11-23T17:08:33.604141+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:07:04.050524+00:00",
+      "son_kontrol": "2026-11-23T17:08:33.604141+00:00",
       "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": 403,
@@ -11052,11 +11046,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "gecerli_besleme_bulunamadi",
-        "son_kontrol": "2026-11-23T16:07:05.234256+00:00",
+        "son_kontrol": "2026-11-23T17:08:34.707602+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:07:05.234256+00:00",
+      "son_kontrol": "2026-11-23T17:08:34.707602+00:00",
       "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": 200,
@@ -11153,11 +11147,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:07:16.116693+00:00",
+        "son_kontrol": "2026-11-23T17:08:49.816464+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:07:16.116693+00:00",
+      "son_kontrol": "2026-11-23T17:08:49.816464+00:00",
       "rss_adresleri": [
         "https://corumhaber.net/rss",
         "https://corumhaber.net/rss/"
@@ -11260,11 +11254,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:07:21.129897+00:00",
+        "son_kontrol": "2026-11-23T17:08:54.586139+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:07:21.129897+00:00",
+      "son_kontrol": "2026-11-23T17:08:54.586139+00:00",
       "rss_adresleri": [
         "https://www.corumhakimiyet.net/rss",
         "https://www.corumhakimiyet.net/rss/"
@@ -11365,11 +11359,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:07:26.437547+00:00",
+        "son_kontrol": "2026-11-23T17:08:59.944633+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:07:26.437547+00:00",
+      "son_kontrol": "2026-11-23T17:08:59.944633+00:00",
       "rss_adresleri": [
         "https://denizliyeniolay.com/rss"
       ],
@@ -11466,11 +11460,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:07:34.699637+00:00",
+        "son_kontrol": "2026-11-23T17:09:11.382559+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:07:34.699637+00:00",
+      "son_kontrol": "2026-11-23T17:09:11.382559+00:00",
       "rss_adresleri": [
         "https://www.denizlihaber.com/feed/",
         "https://www.denizlihaber.com/comments/feed/"
@@ -11581,11 +11575,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "gecerli_besleme_bulunamadi",
-        "son_kontrol": "2026-11-23T16:07:49.811596+00:00",
+        "son_kontrol": "2026-11-23T17:09:39.464894+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:07:49.811596+00:00",
+      "son_kontrol": "2026-11-23T17:09:39.464894+00:00",
       "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": 200,
@@ -11690,11 +11684,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "gecerli_besleme_bulunamadi",
-        "son_kontrol": "2026-11-23T16:08:04.740854+00:00",
+        "son_kontrol": "2026-11-23T17:10:02.264542+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:08:04.740854+00:00",
+      "son_kontrol": "2026-11-23T17:10:02.264542+00:00",
       "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": 200,
@@ -11783,11 +11777,11 @@
       "dogrulama": {
         "adres": "erisilemedi",
         "rss": "bulunamadi",
-        "son_kontrol": "2026-11-23T16:08:07.974409+00:00",
+        "son_kontrol": "2026-11-23T17:10:09.828404+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:08:07.974409+00:00",
+      "son_kontrol": "2026-11-23T17:10:09.828404+00:00",
       "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": null,
@@ -11815,11 +11809,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:08:24.126368+00:00",
+        "son_kontrol": "2026-11-23T17:10:26.078151+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:08:24.126368+00:00",
+      "son_kontrol": "2026-11-23T17:10:26.078151+00:00",
       "rss_adresleri": [
         "https://www.haberdenizli.com/rss/"
       ],
@@ -11914,11 +11908,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:08:29.579735+00:00",
+        "son_kontrol": "2026-11-23T17:10:31.485000+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:08:29.579735+00:00",
+      "son_kontrol": "2026-11-23T17:10:31.485000+00:00",
       "rss_adresleri": [
         "https://amidahaber.com/service/rss.php"
       ],
@@ -12031,11 +12025,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:08:39.023017+00:00",
+        "son_kontrol": "2026-11-23T17:10:41.629890+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:08:39.023017+00:00",
+      "son_kontrol": "2026-11-23T17:10:41.629890+00:00",
       "rss_adresleri": [
         "https://www.tigrishaber.com/service/rss.php"
       ],
@@ -12140,11 +12134,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:08:46.716964+00:00",
+        "son_kontrol": "2026-11-23T17:10:50.566352+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:08:46.716964+00:00",
+      "son_kontrol": "2026-11-23T17:10:50.566352+00:00",
       "rss_adresleri": [
         "https://www.diyarbakir.net/rss/news"
       ],
@@ -12253,11 +12247,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:08:57.543565+00:00",
+        "son_kontrol": "2026-11-23T17:11:00.263662+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:08:57.543565+00:00",
+      "son_kontrol": "2026-11-23T17:11:00.263662+00:00",
       "rss_adresleri": [
         "https://ajansnews.com.tr/feed/"
       ],
@@ -12358,11 +12352,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:09:15.541301+00:00",
+        "son_kontrol": "2026-11-23T17:11:21.615454+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:09:15.541301+00:00",
+      "son_kontrol": "2026-11-23T17:11:21.615454+00:00",
       "rss_adresleri": [
         "https://www.mucadelegazetesi.com.tr/rss",
         "https://www.mucadelegazetesi.com.tr/rss/"
@@ -12463,11 +12457,11 @@
       "dogrulama": {
         "adres": "erisime_engel",
         "rss": "bulunamadi",
-        "son_kontrol": "2026-11-23T16:09:20.811217+00:00",
+        "son_kontrol": "2026-11-23T17:11:27.017478+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:09:20.811217+00:00",
+      "son_kontrol": "2026-11-23T17:11:27.017478+00:00",
       "rss_adresleri": [],
       "kontrol_raporu": {
         "http_kodu": 403,
@@ -12495,11 +12489,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:09:21.998880+00:00",
+        "son_kontrol": "2026-11-23T17:11:28.074561+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:09:21.998880+00:00",
+      "son_kontrol": "2026-11-23T17:11:28.074561+00:00",
       "rss_adresleri": [
         "https://www.hukukihaber.net/rss",
         "https://www.hukukihaber.net/rss/"
@@ -12598,11 +12592,11 @@
       "dogrulama": {
         "adres": "erisilebilir",
         "rss": "icerik_dogrulandi",
-        "son_kontrol": "2026-11-23T16:09:27.939564+00:00",
+        "son_kontrol": "2026-11-23T17:11:33.431307+00:00",
         "il": "manuel_dogrulama_gerekli",
         "ilce": "manuel_dogrulama_gerekli"
       },
-      "son_kontrol": "2026-11-23T16:09:27.939564+00:00",
+      "son_kontrol": "2026-11-23T17:11:33.431307+00:00",
       "rss_adresleri": [
         "https://edirnesonhaber.com/feed"
       ],
@@ -37237,6 +37231,52 @@
       "kesif_tarihi": "2026-11-23T16:00:11.984912+00:00",
       "il": "ORDU",
       "ilce": "KABATAŞ"
+    },
+    {
+      "ad": "https://www.agronews.com.tr/",
+      "url": "https://www.agronews.com.tr",
+      "alan_adi": "agronews.com.tr",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"HENDEK\" \"SAKARYA\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "8. Sakarya Tarım ve Hayvancılık Fuarı Hendek’te kapılarını açtı - https://www.agronews.com.tr/",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOS2FMZW9GejdrSXAybl9uLVhfNW5nem5qVGh6dktxZXN1Nk9FMEdXTC1keHcwdEVvbnpkaXlwM1J5bkUzVW1ySnNxOGV3c1NDNlpDMEZrS2NlaG9TbmIxYlpwa2VWYUdpVU9JaU0xZmV6WVhqbmVjbHBmRjVwOWdxVXF1c2ozUi1iRTZJdmdJTndkLXhuczNQR1VxU1hRU284dW4tYzloWQ?oc=5",
+      "kesif_tarihi": "2026-11-23T16:59:49.808590+00:00",
+      "il": "SAKARYA",
+      "ilce": "HENDEK"
+    },
+    {
+      "ad": "gazetegundem.tr",
+      "url": "https://gazetegundem.tr",
+      "alan_adi": "gazetegundem.tr",
+      "durum": "aday",
+      "tur": "yerel_haber",
+      "kesif_yontemi": "Google News RSS",
+      "arama_sorgusu": "\"KARAPÜRÇEK\" \"SAKARYA\" haber OR gazete OR belediye OR adliye",
+      "ornek_haber_basligi": "Sakarya'da 1 Milyon Kişiye Nefes Aldıracak Karapürçek Millet Bahçesi Projesi Tamamlanıyor - gazetegundem.tr",
+      "ornek_haber_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPU0FhLS1zMkl5NmNUcXRUbWtveGRKcFZwMDNZQ2pOYkZ1SXJwNWhIZDhIcFVqb0p2NWthamQyR3FiZVBTRU1jOUxHaEU1NWNIcHpwb3h0NzJ3YmIxb0pyNjByU2VoYUFhbFdoVUVuYUlvTXJQMjN0bkZHQko3Q29yNFVIeV80VGFwY0F2TGF0NTVwVUxBaV9zdFFBMjQxdFRqSGdmb0FhRlFjS0N3bHVRd29kczZmMFF5N1pkc0RZNUZhd9IBxwFBVV95cUxNbktrckE4Zm1NSVZGZXBsVzQtSzQ4NExETTRVNEpaRDFhSXZ2dWx1MTZjQ1J0a2FlV2s2TjF6RlUtazFyYlB4TVNqeElXSC1VODdOMDhrVXRkSTFwb3lCVGdCQnRJWk5DZm8yTlduY0ZtTjFsaDlkSmh2MVppa3EzaEx6VC1fYUgxUFIwMC1tMzdzRWx4UFZXNW0tRDdBd2lMamtUSTZ6S3ZlTEszaXRDQzRqdnNMaWNSTm9vajhCWWFHSkUtdmlJ?oc=5",
+      "kesif_tarihi": "2026-11-23T16:59:53.233447+00:00",
+      "il": "SAKARYA",
+      "ilce": "KARAPÜRÇEK"
+    },
+    {
+      "il": "Rize",
+      "ad": "Tarımdan Haber",
+      "url": "https://www.tarimdanhaber.com",
+      "alan": "www.tarimdanhaber.com",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
+    },
+    {
+      "il": "Bartın",
+      "ad": "Bartın İnfo",
+      "url": "https://www.bartin.info",
+      "alan": "www.bartin.info",
+      "tur": "Google Haberler RSS",
+      "durum": "aday",
+      "arama": "yerel haber"
     }
   ]
 }
