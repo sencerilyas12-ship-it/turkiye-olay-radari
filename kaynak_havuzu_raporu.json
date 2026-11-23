@@ -1,14 +1,20 @@
 {
   "surum": "5.0.0",
-  "rapor_tarihi": "2026-11-23T11:55:08.965750+00:00",
+  "rapor_tarihi": "2026-11-23T13:03:07.028454+00:00",
   "toplam_il": 81,
   "toplam_ilce": 922,
   "bu_calistirmada_taranan_ilce": 60,
-  "basarili_ilce": 60,
-  "basarisiz_ilce": 0,
+  "basarili_ilce": 59,
+  "basarisiz_ilce": 1,
   "yeni_aday_kaynak": 4,
-  "toplam_kaynak": 2158,
+  "toplam_kaynak": 2164,
   "tam_tur_tamamlandi": false,
-  "hatalar": [],
+  "hatalar": [
+    {
+      "il": "KONYA",
+      "ilce": "DERBENT",
+      "hata": "HTTP Error 429: Too Many Requests"
+    }
+  ],
   "haberler_json_degistirildi": false
 }

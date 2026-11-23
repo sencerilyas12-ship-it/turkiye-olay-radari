@@ -1,10 +1,10 @@
 {
   "surum": "5.0.0",
-  "son_calistirma": "2026-11-23T11:55:08.964999+00:00",
-  "next_index": 540,
+  "son_calistirma": "2026-11-23T13:03:07.027494+00:00",
+  "next_index": 547,
   "toplam_il": 81,
   "toplam_ilce": 922,
-  "basarili_ilce": 60,
-  "basarisiz_ilce": 0,
+  "basarili_ilce": 59,
+  "basarisiz_ilce": 1,
   "tam_tur_tamamlandi": false
 }
