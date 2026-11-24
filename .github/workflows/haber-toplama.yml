@@ -1,5 +1,5 @@
 
-name: MIHVER 15 Dakikalık Haber Toplama
+name: MIHVER Otomatik Haber Toplama
 
 on:
   workflow_dispatch:
@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  haberler:
+  haber-topla:
     name: MIHVER Haberleri Topla
     runs-on: ubuntu-latest
     timeout-minutes: 45
@@ -31,7 +31,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Haber toplama kodunu kontrol et
+      - name: Python dosyasını kontrol et
         run: python -m py_compile haber_toplama.py
 
       - name: Haberleri topla
@@ -42,11 +42,11 @@ jobs:
           git fetch origin main
 
           if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
-            echo "GitHub verisi değişmiş. Güvenli kayıt için işlem durduruldu."
+            echo "Depoda yeni değişiklik var. Güvenli kayıt için işlem durduruldu."
             exit 1
           fi
 
-      - name: Yeni haberleri kaydet
+      - name: Haberleri kaydet
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -56,6 +56,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Yeni haber bulunamadı."
           else
-            git commit -m "MIHVER yeni haberleri güncelledi"
+            git commit -m "MIHVER haber arşivi güncellendi"
             git push origin HEAD:main
           fi
