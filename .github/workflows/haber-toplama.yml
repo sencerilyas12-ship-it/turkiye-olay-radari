@@ -17,7 +17,7 @@ jobs:
   haber-topla:
     name: haber-topla
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
 
     steps:
       - name: Depoyu indir
@@ -30,10 +30,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Dosya adını doğrula
+      - name: Dosyaları kontrol et
         run: |
-          echo "Depodaki Python dosyaları:"
+          echo "Python dosyaları:"
           ls -la *.py
+          echo "Çalıştırılacak dosya: haber_toplama.py"
           test -f haber_toplama.py
           python -m py_compile haber_toplama.py
 
@@ -45,19 +46,25 @@ jobs:
         run: |
           python - <<'PY'
           import json
+          import os
+
           for name in ("haberler.json", "tarama_durumu.json"):
+              if not os.path.exists(name):
+                  raise SystemExit(f"Dosya bulunamadı: {name}")
               with open(name, encoding="utf-8") as f:
                   json.load(f)
-              print(name, "OK")
+              print(f"{name}: OK")
           PY
 
       - name: Değişiklikleri kaydet
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add haberler.json tarama_durumu.json
+
           if git diff --cached --quiet; then
-            echo "Yeni haber verisi yok."
+            echo "Kaydedilecek yeni haber verisi yok."
           else
             git commit -m "MİHVER haber verilerini güncelle"
             git pull --rebase origin main
