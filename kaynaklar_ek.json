@@ -1,4 +1,3 @@
-
 {
   "surum": "1.1.0",
   "proje": "MIHVER",
@@ -27,87 +26,330 @@
     "id_cakismasinda": "mevcut_kaydi_degistirme_yeni_kaydi_atla_ve_raporla"
   },
   "iller": [
-    {"plaka": 1, "ad": "Adana"},
-    {"plaka": 2, "ad": "Adıyaman"},
-    {"plaka": 3, "ad": "Afyonkarahisar"},
-    {"plaka": 4, "ad": "Ağrı"},
-    {"plaka": 5, "ad": "Amasya"},
-    {"plaka": 6, "ad": "Ankara"},
-    {"plaka": 7, "ad": "Antalya"},
-    {"plaka": 8, "ad": "Artvin"},
-    {"plaka": 9, "ad": "Aydın"},
-    {"plaka": 10, "ad": "Balıkesir"},
-    {"plaka": 11, "ad": "Bilecik"},
-    {"plaka": 12, "ad": "Bingöl"},
-    {"plaka": 13, "ad": "Bitlis"},
-    {"plaka": 14, "ad": "Bolu"},
-    {"plaka": 15, "ad": "Burdur"},
-    {"plaka": 16, "ad": "Bursa"},
-    {"plaka": 17, "ad": "Çanakkale"},
-    {"plaka": 18, "ad": "Çankırı"},
-    {"plaka": 19, "ad": "Çorum"},
-    {"plaka": 20, "ad": "Denizli"},
-    {"plaka": 21, "ad": "Diyarbakır"},
-    {"plaka": 22, "ad": "Edirne"},
-    {"plaka": 23, "ad": "Elazığ"},
-    {"plaka": 24, "ad": "Erzincan"},
-    {"plaka": 25, "ad": "Erzurum"},
-    {"plaka": 26, "ad": "Eskişehir"},
-    {"plaka": 27, "ad": "Gaziantep"},
-    {"plaka": 28, "ad": "Giresun"},
-    {"plaka": 29, "ad": "Gümüşhane"},
-    {"plaka": 30, "ad": "Hakkari"},
-    {"plaka": 31, "ad": "Hatay"},
-    {"plaka": 32, "ad": "Isparta"},
-    {"plaka": 33, "ad": "Mersin"},
-    {"plaka": 34, "ad": "İstanbul"},
-    {"plaka": 35, "ad": "İzmir"},
-    {"plaka": 36, "ad": "Kars"},
-    {"plaka": 37, "ad": "Kastamonu"},
-    {"plaka": 38, "ad": "Kayseri"},
-    {"plaka": 39, "ad": "Kırklareli"},
-    {"plaka": 40, "ad": "Kırşehir"},
-    {"plaka": 41, "ad": "Kocaeli"},
-    {"plaka": 42, "ad": "Konya"},
-    {"plaka": 43, "ad": "Kütahya"},
-    {"plaka": 44, "ad": "Malatya"},
-    {"plaka": 45, "ad": "Manisa"},
-    {"plaka": 46, "ad": "Kahramanmaraş"},
-    {"plaka": 47, "ad": "Mardin"},
-    {"plaka": 48, "ad": "Muğla"},
-    {"plaka": 49, "ad": "Muş"},
-    {"plaka": 50, "ad": "Nevşehir"},
-    {"plaka": 51, "ad": "Niğde"},
-    {"plaka": 52, "ad": "Ordu"},
-    {"plaka": 53, "ad": "Rize"},
-    {"plaka": 54, "ad": "Sakarya"},
-    {"plaka": 55, "ad": "Samsun"},
-    {"plaka": 56, "ad": "Siirt"},
-    {"plaka": 57, "ad": "Sinop"},
-    {"plaka": 58, "ad": "Sivas"},
-    {"plaka": 59, "ad": "Tekirdağ"},
-    {"plaka": 60, "ad": "Tokat"},
-    {"plaka": 61, "ad": "Trabzon"},
-    {"plaka": 62, "ad": "Tunceli"},
-    {"plaka": 63, "ad": "Şanlıurfa"},
-    {"plaka": 64, "ad": "Uşak"},
-    {"plaka": 65, "ad": "Van"},
-    {"plaka": 66, "ad": "Yozgat"},
-    {"plaka": 67, "ad": "Zonguldak"},
-    {"plaka": 68, "ad": "Aksaray"},
-    {"plaka": 69, "ad": "Bayburt"},
-    {"plaka": 70, "ad": "Karaman"},
-    {"plaka": 71, "ad": "Kırıkkale"},
-    {"plaka": 72, "ad": "Batman"},
-    {"plaka": 73, "ad": "Şırnak"},
-    {"plaka": 74, "ad": "Bartın"},
-    {"plaka": 75, "ad": "Ardahan"},
-    {"plaka": 76, "ad": "Iğdır"},
-    {"plaka": 77, "ad": "Yalova"},
-    {"plaka": 78, "ad": "Karabük"},
-    {"plaka": 79, "ad": "Kilis"},
-    {"plaka": 80, "ad": "Osmaniye"},
-    {"plaka": 81, "ad": "Düzce"}
+    {
+      "plaka": 1,
+      "ad": "Adana"
+    },
+    {
+      "plaka": 2,
+      "ad": "Adıyaman"
+    },
+    {
+      "plaka": 3,
+      "ad": "Afyonkarahisar"
+    },
+    {
+      "plaka": 4,
+      "ad": "Ağrı"
+    },
+    {
+      "plaka": 5,
+      "ad": "Amasya"
+    },
+    {
+      "plaka": 6,
+      "ad": "Ankara"
+    },
+    {
+      "plaka": 7,
+      "ad": "Antalya"
+    },
+    {
+      "plaka": 8,
+      "ad": "Artvin"
+    },
+    {
+      "plaka": 9,
+      "ad": "Aydın"
+    },
+    {
+      "plaka": 10,
+      "ad": "Balıkesir"
+    },
+    {
+      "plaka": 11,
+      "ad": "Bilecik"
+    },
+    {
+      "plaka": 12,
+      "ad": "Bingöl"
+    },
+    {
+      "plaka": 13,
+      "ad": "Bitlis"
+    },
+    {
+      "plaka": 14,
+      "ad": "Bolu"
+    },
+    {
+      "plaka": 15,
+      "ad": "Burdur"
+    },
+    {
+      "plaka": 16,
+      "ad": "Bursa"
+    },
+    {
+      "plaka": 17,
+      "ad": "Çanakkale"
+    },
+    {
+      "plaka": 18,
+      "ad": "Çankırı"
+    },
+    {
+      "plaka": 19,
+      "ad": "Çorum"
+    },
+    {
+      "plaka": 20,
+      "ad": "Denizli"
+    },
+    {
+      "plaka": 21,
+      "ad": "Diyarbakır"
+    },
+    {
+      "plaka": 22,
+      "ad": "Edirne"
+    },
+    {
+      "plaka": 23,
+      "ad": "Elazığ"
+    },
+    {
+      "plaka": 24,
+      "ad": "Erzincan"
+    },
+    {
+      "plaka": 25,
+      "ad": "Erzurum"
+    },
+    {
+      "plaka": 26,
+      "ad": "Eskişehir"
+    },
+    {
+      "plaka": 27,
+      "ad": "Gaziantep"
+    },
+    {
+      "plaka": 28,
+      "ad": "Giresun"
+    },
+    {
+      "plaka": 29,
+      "ad": "Gümüşhane"
+    },
+    {
+      "plaka": 30,
+      "ad": "Hakkari"
+    },
+    {
+      "plaka": 31,
+      "ad": "Hatay"
+    },
+    {
+      "plaka": 32,
+      "ad": "Isparta"
+    },
+    {
+      "plaka": 33,
+      "ad": "Mersin"
+    },
+    {
+      "plaka": 34,
+      "ad": "İstanbul"
+    },
+    {
+      "plaka": 35,
+      "ad": "İzmir"
+    },
+    {
+      "plaka": 36,
+      "ad": "Kars"
+    },
+    {
+      "plaka": 37,
+      "ad": "Kastamonu"
+    },
+    {
+      "plaka": 38,
+      "ad": "Kayseri"
+    },
+    {
+      "plaka": 39,
+      "ad": "Kırklareli"
+    },
+    {
+      "plaka": 40,
+      "ad": "Kırşehir"
+    },
+    {
+      "plaka": 41,
+      "ad": "Kocaeli"
+    },
+    {
+      "plaka": 42,
+      "ad": "Konya"
+    },
+    {
+      "plaka": 43,
+      "ad": "Kütahya"
+    },
+    {
+      "plaka": 44,
+      "ad": "Malatya"
+    },
+    {
+      "plaka": 45,
+      "ad": "Manisa"
+    },
+    {
+      "plaka": 46,
+      "ad": "Kahramanmaraş"
+    },
+    {
+      "plaka": 47,
+      "ad": "Mardin"
+    },
+    {
+      "plaka": 48,
+      "ad": "Muğla"
+    },
+    {
+      "plaka": 49,
+      "ad": "Muş"
+    },
+    {
+      "plaka": 50,
+      "ad": "Nevşehir"
+    },
+    {
+      "plaka": 51,
+      "ad": "Niğde"
+    },
+    {
+      "plaka": 52,
+      "ad": "Ordu"
+    },
+    {
+      "plaka": 53,
+      "ad": "Rize"
+    },
+    {
+      "plaka": 54,
+      "ad": "Sakarya"
+    },
+    {
+      "plaka": 55,
+      "ad": "Samsun"
+    },
+    {
+      "plaka": 56,
+      "ad": "Siirt"
+    },
+    {
+      "plaka": 57,
+      "ad": "Sinop"
+    },
+    {
+      "plaka": 58,
+      "ad": "Sivas"
+    },
+    {
+      "plaka": 59,
+      "ad": "Tekirdağ"
+    },
+    {
+      "plaka": 60,
+      "ad": "Tokat"
+    },
+    {
+      "plaka": 61,
+      "ad": "Trabzon"
+    },
+    {
+      "plaka": 62,
+      "ad": "Tunceli"
+    },
+    {
+      "plaka": 63,
+      "ad": "Şanlıurfa"
+    },
+    {
+      "plaka": 64,
+      "ad": "Uşak"
+    },
+    {
+      "plaka": 65,
+      "ad": "Van"
+    },
+    {
+      "plaka": 66,
+      "ad": "Yozgat"
+    },
+    {
+      "plaka": 67,
+      "ad": "Zonguldak"
+    },
+    {
+      "plaka": 68,
+      "ad": "Aksaray"
+    },
+    {
+      "plaka": 69,
+      "ad": "Bayburt"
+    },
+    {
+      "plaka": 70,
+      "ad": "Karaman"
+    },
+    {
+      "plaka": 71,
+      "ad": "Kırıkkale"
+    },
+    {
+      "plaka": 72,
+      "ad": "Batman"
+    },
+    {
+      "plaka": 73,
+      "ad": "Şırnak"
+    },
+    {
+      "plaka": 74,
+      "ad": "Bartın"
+    },
+    {
+      "plaka": 75,
+      "ad": "Ardahan"
+    },
+    {
+      "plaka": 76,
+      "ad": "Iğdır"
+    },
+    {
+      "plaka": 77,
+      "ad": "Yalova"
+    },
+    {
+      "plaka": 78,
+      "ad": "Karabük"
+    },
+    {
+      "plaka": 79,
+      "ad": "Kilis"
+    },
+    {
+      "plaka": 80,
+      "ad": "Osmaniye"
+    },
+    {
+      "plaka": 81,
+      "ad": "Düzce"
+    }
   ],
   "kaynak_turleri": [
     "yerel_gazete",
@@ -145,8 +387,19 @@
       "tur": "resmi_yayinci_dizini",
       "kurum": "Basın İlan Kurumu",
       "url": "https://ilanbis.bik.gov.tr/Uygulamalar/AylikListe",
-      "kapsam": ["81 il", "yerel gazeteler", "ilçe gazeteleri", "internet haber siteleri", "ulusal yayıncılar"],
-      "veri_turleri": ["resmi_ilan_yayinlayan_gazeteler", "resmi_ilan_yayinlayan_internet_haber_siteleri", "bekleme_suresindeki_yayinlar", "reklam_yayinlayan_yayinlar"],
+      "kapsam": [
+        "81 il",
+        "yerel gazeteler",
+        "ilçe gazeteleri",
+        "internet haber siteleri",
+        "ulusal yayıncılar"
+      ],
+      "veri_turleri": [
+        "resmi_ilan_yayinlayan_gazeteler",
+        "resmi_ilan_yayinlayan_internet_haber_siteleri",
+        "bekleme_suresindeki_yayinlar",
+        "reklam_yayinlayan_yayinlar"
+      ],
       "ilce_bilgisi": true,
       "otomatik_veri_cekme": false,
       "durum": "aday",
@@ -158,7 +411,10 @@
       "tur": "resmi_kurum_dizini",
       "kurum": "İçişleri Bakanlığı",
       "url": "https://www.icisleri.gov.tr/valilikler",
-      "kapsam": ["81 valilik", "922 kaymakamlık"],
+      "kapsam": [
+        "81 valilik",
+        "922 kaymakamlık"
+      ],
       "ilce_bilgisi": true,
       "otomatik_veri_cekme": false,
       "durum": "aday",
@@ -170,7 +426,11 @@
       "tur": "resmi_adliye_dizini",
       "kurum": "Adalet Bakanlığı",
       "url": "https://adalet.gov.tr/Birimler/ACM",
-      "kapsam": ["il adliyeleri", "ilçe adliyeleri", "merkez adliyeler"],
+      "kapsam": [
+        "il adliyeleri",
+        "ilçe adliyeleri",
+        "merkez adliyeler"
+      ],
       "ilce_bilgisi": true,
       "otomatik_veri_cekme": false,
       "durum": "aday",
@@ -182,7 +442,10 @@
       "tur": "resmi_yargi_dizini",
       "kurum": "Adalet Bakanlığı",
       "url": "https://adalet.gov.tr/Birimler/BAM",
-      "kapsam": ["istinaf mahkemeleri", "bölge adliye mahkemeleri"],
+      "kapsam": [
+        "istinaf mahkemeleri",
+        "bölge adliye mahkemeleri"
+      ],
       "ilce_bilgisi": false,
       "otomatik_veri_cekme": false,
       "durum": "aday",
@@ -194,14 +457,920 @@
       "tur": "resmi_meslek_orgutu_dizini",
       "kurum": "Türkiye Barolar Birliği",
       "url": "https://www.barobirlik.org.tr/",
-      "kapsam": ["barolar", "baro_duyurulari", "mesleki_aciklamalar", "hukuki_gelismeler"],
+      "kapsam": [
+        "barolar",
+        "baro_duyurulari",
+        "mesleki_aciklamalar",
+        "hukuki_gelismeler"
+      ],
       "ilce_bilgisi": false,
       "otomatik_veri_cekme": false,
       "durum": "aday",
       "dogrulama": "kurum_ana_sayfasi"
     }
   ],
-  "kaynaklar": [],
+  "kaynaklar": [
+    {
+      "ad": "Cumhuriyet",
+      "il": "Adana",
+      "ilce": "",
+      "site": "https://www.cumhuriyet.com.tr",
+      "rss": "https://www.cumhuriyet.com.tr/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Sözcü Gazetesi",
+      "il": "Adana",
+      "ilce": "",
+      "site": "https://www.sozcu.com.tr",
+      "rss": "https://www.sozcu.com.tr/feeds/rsssubpub",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "ObjektifA",
+      "il": "Adana",
+      "ilce": "",
+      "site": "https://www.objektifa.com",
+      "rss": "https://www.objektifa.com/rss.xml",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Habertürk",
+      "il": "Adana",
+      "ilce": "",
+      "site": "https://www.haberturk.com",
+      "rss": "https://www.haberturk.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "İstanbul Ticaret Gazetesi",
+      "il": "Adana",
+      "ilce": "",
+      "site": "https://istanbulticaretgazetesi.com",
+      "rss": "https://istanbulticaretgazetesi.com/rss.xml",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Haber 7",
+      "il": "Adana",
+      "ilce": "",
+      "site": "https://www.haber7.com",
+      "rss": "https://i12.haber7.net/sondakika/newsstand/latest.xml",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Sabah",
+      "il": "Adana",
+      "ilce": "",
+      "site": "https://www.sabah.com.tr",
+      "rss": "https://www.sabah.com.tr/rss/anasayfa.xml",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "https://www.ensondakika.com.tr/",
+      "il": "Adana",
+      "ilce": "",
+      "site": "https://www.ensondakika.com.tr",
+      "rss": "https://www.ensondakika.com.tr/rss.xml",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Çukurova Metropol",
+      "il": "Adana",
+      "ilce": "",
+      "site": "https://www.cukurovametropol.com.tr",
+      "rss": "https://www.cukurovametropol.com.tr/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Son Dakika",
+      "il": "Adana",
+      "ilce": "",
+      "site": "https://www.sondakika.com",
+      "rss": "https://rss.sondakika.com/rssnew.aspx",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "5 Ocak Gazetesi",
+      "il": "Adana",
+      "ilce": "",
+      "site": "https://www.5ocakgazetesi.com",
+      "rss": "https://www.5ocakgazetesi.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Medya Gazete",
+      "il": "Adıyaman",
+      "ilce": "",
+      "site": "https://www.medyagazete.com",
+      "rss": "https://www.medyagazete.com/rss.xml",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Şanlıurfa Gazetesi",
+      "il": "Adıyaman",
+      "ilce": "",
+      "site": "https://www.sanliurfagazetesi.com",
+      "rss": "https://www.sanliurfagazetesi.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Adıyamanlılar Net",
+      "il": "Adıyaman",
+      "ilce": "",
+      "site": "https://www.adiyamanlilar.net",
+      "rss": "https://www.adiyamanlilar.net/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Odakgazetesi",
+      "il": "Afyonkarahisar",
+      "ilce": "",
+      "site": "https://www.odakgazetesi.com",
+      "rss": "https://www.odakgazetesi.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Yeni Asır",
+      "il": "Afyonkarahisar",
+      "ilce": "",
+      "site": "https://www.yeniasir.com.tr",
+      "rss": "https://www.yeniasir.com.tr/rss/anasayfa.xml",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Afyon Postası",
+      "il": "Afyonkarahisar",
+      "ilce": "",
+      "site": "https://www.afyonpostasi.com.tr",
+      "rss": "https://www.afyonpostasi.com.tr/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Afyon Türkeli Gazetesi",
+      "il": "Afyonkarahisar",
+      "ilce": "",
+      "site": "https://www.afyonturkeligazetesi.com",
+      "rss": "https://www.afyonturkeligazetesi.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Afyon Ana Haber",
+      "il": "Afyonkarahisar",
+      "ilce": "",
+      "site": "https://www.afyonanahaber.com.tr",
+      "rss": "https://www.afyonanahaber.com.tr/rss/news",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Doğubayazıt Gazetesi",
+      "il": "Ağrı",
+      "ilce": "",
+      "site": "https://dogubayazitgazetesi.com",
+      "rss": "https://dogubayazitgazetesi.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Diyadinnet",
+      "il": "Ağrı",
+      "ilce": "",
+      "site": "https://www.diyadinnet.com",
+      "rss": "https://www.diyadinnet.com/rss/rss.php",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Van Bölge Gazetesi",
+      "il": "Ağrı",
+      "ilce": "",
+      "site": "https://www.bolgegazetesivan.com",
+      "rss": "https://www.bolgegazetesivan.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Kamu Son Dakika Haberleri",
+      "il": "Amasya",
+      "ilce": "",
+      "site": "https://kamusondakika.net",
+      "rss": "https://kamusondakika.net/service/rss.php",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Aydınses Gazetesi",
+      "il": "Ankara",
+      "ilce": "",
+      "site": "https://www.aydinses.com",
+      "rss": "https://www.aydinses.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Canlı Gaste",
+      "il": "Ankara",
+      "ilce": "",
+      "site": "https://www.canligaste.com",
+      "rss": "https://www.canligaste.com/rss.xml",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Zafer Gazetesi",
+      "il": "Ankara",
+      "ilce": "",
+      "site": "https://zafergazetesi.org",
+      "rss": "https://zafergazetesi.org/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Sonsöz Gazetesi",
+      "il": "Ankara",
+      "ilce": "",
+      "site": "https://sonsoz.com.tr",
+      "rss": "https://sonsoz.com.tr/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Ankara Masası",
+      "il": "Ankara",
+      "ilce": "",
+      "site": "https://www.ankaramasasi.com.tr",
+      "rss": "https://www.ankaramasasi.com.tr/rss.xml",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Ankara Net Haber",
+      "il": "Ankara",
+      "ilce": "",
+      "site": "https://www.ankaranethaber.com",
+      "rss": "https://www.ankaranethaber.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Akdenizmanset",
+      "il": "Antalya",
+      "ilce": "",
+      "site": "https://www.akdenizmanset.com.tr",
+      "rss": "https://www.akdenizmanset.com.tr/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Yeni Alanya",
+      "il": "Antalya",
+      "ilce": "",
+      "site": "https://www.yenialanya.com",
+      "rss": "https://www.yenialanya.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Antalya Gündem Gazetesi",
+      "il": "Antalya",
+      "ilce": "",
+      "site": "https://www.antalyagundem.com.tr",
+      "rss": "https://www.antalyagundem.com.tr/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Enerji Ajansı",
+      "il": "Aydın",
+      "ilce": "",
+      "site": "https://enerjiajansi.com.tr",
+      "rss": "https://enerjiajansi.com.tr/feed/",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "www.aydinhaberleri.com",
+      "il": "Aydın",
+      "ilce": "",
+      "site": "https://www.aydinhaberleri.com",
+      "rss": "https://www.aydinhaberleri.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Aydın Kulis",
+      "il": "Aydın",
+      "ilce": "",
+      "site": "https://www.aydinkulis.com",
+      "rss": "https://www.aydinkulis.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Yeni Şafak",
+      "il": "Aydın",
+      "ilce": "",
+      "site": "https://www.yenisafak.com",
+      "rss": "https://www.yenisafak.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Yeşil Afşin Gazetesi",
+      "il": "Aydın",
+      "ilce": "",
+      "site": "https://www.yesilafsin.com",
+      "rss": "https://www.yesilafsin.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Bloomberght",
+      "il": "Balıkesir",
+      "ilce": "",
+      "site": "https://www.bloomberght.com",
+      "rss": "https://www.bloomberght.com/rss/tum-haberler.xml",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "GazeteRize",
+      "il": "Balıkesir",
+      "ilce": "",
+      "site": "https://www.gazeterize.com",
+      "rss": "https://www.gazeterize.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Marmara Bölge",
+      "il": "Balıkesir",
+      "ilce": "",
+      "site": "https://marmarabolge.com",
+      "rss": "https://marmarabolge.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Çukurova Gazetesi",
+      "il": "Balıkesir",
+      "ilce": "",
+      "site": "https://cukurovagazetesi.com",
+      "rss": "https://cukurovagazetesi.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Lider Haber",
+      "il": "Balıkesir",
+      "ilce": "",
+      "site": "https://www.liderhaber.com.tr",
+      "rss": "https://www.liderhaber.com.tr/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Belekoma Haber",
+      "il": "Bilecik",
+      "ilce": "",
+      "site": "https://www.belekomahaber.com",
+      "rss": "https://www.belekomahaber.com/feed/",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Dumlupınar Gazetesi",
+      "il": "Bilecik",
+      "ilce": "",
+      "site": "https://dumlupinargazetesi.com",
+      "rss": "https://dumlupinargazetesi.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Posta",
+      "il": "Bingöl",
+      "ilce": "",
+      "site": "https://www.posta.com.tr",
+      "rss": "https://www.posta.com.tr/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Çapakcur Gazetesi",
+      "il": "Bingöl",
+      "ilce": "",
+      "site": "https://www.capakcurgazetesi.com.tr",
+      "rss": "https://www.capakcurgazetesi.com.tr/rss.xml",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Bitlis Haber",
+      "il": "Bingöl",
+      "ilce": "",
+      "site": "https://www.bitlishaber13.net",
+      "rss": "https://www.bitlishaber13.net/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "gdh dijital",
+      "il": "Bingöl",
+      "ilce": "",
+      "site": "https://gdhdijital.com",
+      "rss": "https://gdhdijital.com/rss/tum.xml",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Mersin Haber Merkezi",
+      "il": "Bingöl",
+      "ilce": "",
+      "site": "https://www.mersinhabermerkezi.com",
+      "rss": "https://www.mersinhabermerkezi.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Elazığ Son Haber",
+      "il": "Bingöl",
+      "ilce": "",
+      "site": "https://www.elazigsonhaber.com",
+      "rss": "https://www.elazigsonhaber.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Sanayi Gazetesi",
+      "il": "Bingöl",
+      "ilce": "",
+      "site": "https://sanayigazetesi.com.tr",
+      "rss": "https://sanayigazetesi.com.tr/feed/",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "karamanhaber.com",
+      "il": "Bingöl",
+      "ilce": "",
+      "site": "https://www.karamanhaber.com",
+      "rss": "https://www.karamanhaber.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Bitlis Postası",
+      "il": "Bitlis",
+      "ilce": "",
+      "site": "https://www.bitlispostasi.com",
+      "rss": "https://www.bitlispostasi.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "GZT",
+      "il": "Bitlis",
+      "ilce": "",
+      "site": "https://www.gzt.com",
+      "rss": "https://www.gzt.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Köroğlu Gazetesi",
+      "il": "Bolu",
+      "ilce": "",
+      "site": "https://www.koroglugazetesi.com",
+      "rss": "https://www.koroglugazetesi.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Bolu Takip",
+      "il": "Bolu",
+      "ilce": "",
+      "site": "https://www.bolutakip.com",
+      "rss": "https://www.bolutakip.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Aksu TV Haber",
+      "il": "Bolu",
+      "ilce": "",
+      "site": "https://www.aksutvhaber.net",
+      "rss": "https://www.aksutvhaber.net/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Özgür Bolu",
+      "il": "Bolu",
+      "ilce": "",
+      "site": "https://www.ozgurbolu.com",
+      "rss": "https://www.ozgurbolu.com/feed",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Bu Sabah Malatya",
+      "il": "Bolu",
+      "ilce": "",
+      "site": "https://www.busabahmalatya.com",
+      "rss": "https://www.busabahmalatya.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Mynet",
+      "il": "Bolu",
+      "ilce": "",
+      "site": "https://www.mynet.com",
+      "rss": "https://www.mynet.com/rss/publisher-anasayfa.rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Bursa Saati Gazetesi",
+      "il": "Bursa",
+      "ilce": "",
+      "site": "https://www.bursasaati.com.tr",
+      "rss": "https://www.bursasaati.com.tr/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Haberton",
+      "il": "Bursa",
+      "ilce": "",
+      "site": "https://haberton.com",
+      "rss": "https://haberton.com/feed/",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Bursa Basın",
+      "il": "Bursa",
+      "ilce": "",
+      "site": "https://www.bursabasin.com",
+      "rss": "https://www.bursabasin.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "bursa tv",
+      "il": "Bursa",
+      "ilce": "",
+      "site": "https://www.bursatv.com.tr",
+      "rss": "https://www.bursatv.com.tr/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "bursamuhalif.com",
+      "il": "Bursa",
+      "ilce": "",
+      "site": "https://www.bursamuhalif.com",
+      "rss": "https://www.bursamuhalif.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Sabah",
+      "il": "Bursa",
+      "ilce": "",
+      "site": "https://haber.sabah.com.tr",
+      "rss": "https://www.sabah.com.tr/rss/haber.xml",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Çanakkale Biganın Sesi",
+      "il": "Çanakkale",
+      "ilce": "",
+      "site": "https://www.biganinsesi.com",
+      "rss": "https://www.biganinsesi.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Çanakkale Boğaz Gazetesi",
+      "il": "Çanakkale",
+      "ilce": "",
+      "site": "https://www.bogazgazetesi.com.tr",
+      "rss": "https://www.bogazgazetesi.com.tr/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Edirne Haber",
+      "il": "Çanakkale",
+      "ilce": "",
+      "site": "https://edirnesonhaber.com",
+      "rss": "https://edirnesonhaber.com/feed",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "İstanbul Gazetesi",
+      "il": "Çanakkale",
+      "ilce": "",
+      "site": "https://www.istanbulgazetesi.com.tr",
+      "rss": "https://www.istanbulgazetesi.com.tr/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Marmaris Yeni Sayfa",
+      "il": "Çankırı",
+      "ilce": "",
+      "site": "https://www.marmarisyenisayfa.com",
+      "rss": "https://www.marmarisyenisayfa.com/xml/rss.php",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Sözcü18",
+      "il": "Çankırı",
+      "ilce": "",
+      "site": "https://www.sozcu18.com",
+      "rss": "https://www.sozcu18.com/service/rss.php",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Haber Ekspres",
+      "il": "Çankırı",
+      "ilce": "",
+      "site": "https://www.haberekspres.com.tr",
+      "rss": "https://www.haberekspres.com.tr/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "haberci18.com",
+      "il": "Çankırı",
+      "ilce": "",
+      "site": "https://www.haberci18.com",
+      "rss": "https://www.haberci18.com/rss.xml",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Haber71.Net",
+      "il": "Çankırı",
+      "ilce": "",
+      "site": "https://www.haber71.net",
+      "rss": "https://www.haber71.net/feed/",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Ege'de Sonsöz",
+      "il": "Çankırı",
+      "ilce": "",
+      "site": "https://www.egedesonsoz.com",
+      "rss": "https://www.egedesonsoz.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "www.cankirihaber.net",
+      "il": "Çankırı",
+      "ilce": "",
+      "site": "https://www.cankirihaber.net",
+      "rss": "https://www.cankirihaber.net/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Denizli Hizmet Gazetesi",
+      "il": "Denizli",
+      "ilce": "",
+      "site": "https://www.hizmetgazetesi.com.tr",
+      "rss": "https://www.hizmetgazetesi.com.tr/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Egeyön Haber",
+      "il": "Denizli",
+      "ilce": "",
+      "site": "https://www.egeyonhaber.com",
+      "rss": "https://www.egeyonhaber.com/feed/",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Denizliekspres",
+      "il": "Denizli",
+      "ilce": "",
+      "site": "https://www.denizliekspres.com.tr",
+      "rss": "https://www.denizliekspres.com.tr/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "MANŞETİZ",
+      "il": "Denizli",
+      "ilce": "",
+      "site": "https://www.mansetiz.com",
+      "rss": "https://www.mansetiz.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Denizli Haber",
+      "il": "Denizli",
+      "ilce": "",
+      "site": "https://www.denizlihaber.com",
+      "rss": "https://www.denizlihaber.com/feed/",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Gazetedetay",
+      "il": "Diyarbakır",
+      "ilce": "",
+      "site": "https://gazetedetay.com",
+      "rss": "https://gazetedetay.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "https://www.edirneahval.com/",
+      "il": "Edirne",
+      "ilce": "",
+      "site": "https://www.edirneahval.com",
+      "rss": "https://www.edirneahval.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Keşan Online",
+      "il": "Edirne",
+      "ilce": "",
+      "site": "https://kesanonline.com",
+      "rss": "https://kesanonline.com/feed/",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Ege Saati",
+      "il": "Erzincan",
+      "ilce": "",
+      "site": "https://www.egesaati.com.tr",
+      "rss": "https://www.egesaati.com.tr/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Erzincan Birlik Medya",
+      "il": "Erzincan",
+      "ilce": "",
+      "site": "https://www.erzincanbirlikmedya.com",
+      "rss": "https://www.erzincanbirlikmedya.com/feed/",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Gazete Alanya",
+      "il": "Erzincan",
+      "ilce": "",
+      "site": "https://www.gazetealanya.com",
+      "rss": "https://www.gazetealanya.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "KAYSERİ YEREL HABER",
+      "il": "Erzincan",
+      "ilce": "",
+      "site": "https://www.kayseriyerelhaber.com",
+      "rss": "https://www.kayseriyerelhaber.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Samsun Gazetesi",
+      "il": "Erzincan",
+      "ilce": "",
+      "site": "https://www.samsungazetesi.com",
+      "rss": "https://www.samsungazetesi.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "KARAR",
+      "il": "Erzincan",
+      "ilce": "",
+      "site": "https://www.karar.com",
+      "rss": "https://www.karar.com/service/rss.php",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Erzincan Net",
+      "il": "Erzincan",
+      "ilce": "",
+      "site": "https://www.erzincannet.com",
+      "rss": "https://www.erzincannet.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Afyon Haber",
+      "il": "Erzincan",
+      "ilce": "",
+      "site": "https://www.afyonhaber.com",
+      "rss": "https://www.afyonhaber.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Haber Vakti",
+      "il": "Erzincan",
+      "ilce": "",
+      "site": "https://www.habervakti.com",
+      "rss": "https://www.habervakti.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Aksaray Portal",
+      "il": "Erzincan",
+      "ilce": "",
+      "site": "https://aksarayportal.com",
+      "rss": "https://aksarayportal.com/rss.xml",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Erzurum Pusula Gazetesi",
+      "il": "Erzurum",
+      "ilce": "",
+      "site": "https://www.gazetepusula.net",
+      "rss": "https://www.gazetepusula.net/rss.xml",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Esgazete",
+      "il": "Eskişehir",
+      "ilce": "",
+      "site": "https://www.esgazete.com",
+      "rss": "https://www.esgazete.com/rss",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "Gaziantep Postası",
+      "il": "Gaziantep",
+      "ilce": "",
+      "site": "https://www.gazianteppostasi.com",
+      "rss": "https://www.gazianteppostasi.com/rss.xml",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "A Spor",
+      "il": "Gaziantep",
+      "ilce": "",
+      "site": "https://www.aspor.com.tr",
+      "rss": "https://www.aspor.com.tr/rss/anasayfa.xml",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    },
+    {
+      "ad": "https://www.narkozhaber.com/",
+      "il": "Gaziantep",
+      "ilce": "",
+      "site": "https://www.narkozhaber.com",
+      "rss": "https://www.narkozhaber.com/feed/",
+      "kesif_kaynagi": "Google Haberler",
+      "dogrulama": "RSS doğrulandı"
+    }
+  ],
   "ilce_kapsami": {
     "hedef": "Türkiye'deki bütün ilçeler",
     "resmi_referans": "ICISLERI_VALILIK_KAYMAKAMLIK",
@@ -292,5 +1461,8 @@
     "dogrulanmis_kaynak_sayisi": 0,
     "aday_kaynak_sayisi": 0,
     "ilce_adres_kapsami_tamamlandi": false
-  }
+  },
+  "son_kesif": "2026-11-24T09:08:59Z",
+  "son_kesifte_incelenen_site": 265,
+  "son_kesifte_eklenen_kaynak": 100
 }
