@@ -1,6 +1,7 @@
 
 import json
 import time
+import hashlib
 import urllib.request
 import urllib.parse
 import urllib.error
@@ -11,75 +12,69 @@ from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 
 
-BASE_DIR = Path(__file__).resolve().parent
-HABER_DOSYASI = BASE_DIR / "haberler.json"
-DURUM_DOSYASI = BASE_DIR / "tarama_durumu.json"
+BASE = Path(__file__).resolve().parent
 
-USER_AGENT = "MIHVER-TurkiyeHaberRadar/5.0"
-TIMEOUT = 12
-HABER_SURESI_SAAT = 24
+DOSYALAR = {
+    "iller": BASE / "ilceler.json",
+    "haberler": BASE / "haberler.json",
+    "durum": BASE / "tarama_durumu.json",
+}
 
-# Her çalışmada sınırlı sayıda sorgu yapılır.
-# GitHub Actions 5 dakikada bir çalıştığı için tarama
-# zaman içinde bütün illere ve kategorilere yayılır.
+USER_AGENT = "MIHVER-Turkiye-Olay-Radari/6.0"
+TIMEOUT = 15
 MAKS_SORGU = 80
-BEKLEME = 0.15
+HABER_SURESI_SAAT = 24
+BEKLEME = 0.2
 
-ILLER = [
-    "Adana", "Adıyaman", "Afyonkarahisar", "Ağrı", "Amasya",
-    "Ankara", "Antalya", "Artvin", "Aydın", "Balıkesir",
-    "Bilecik", "Bingöl", "Bitlis", "Bolu", "Burdur",
-    "Bursa", "Çanakkale", "Çankırı", "Çorum", "Denizli",
-    "Diyarbakır", "Edirne", "Elazığ", "Erzincan", "Erzurum",
-    "Eskişehir", "Gaziantep", "Giresun", "Gümüşhane", "Hakkari",
-    "Hatay", "Isparta", "Mersin", "İstanbul", "İzmir",
-    "Kars", "Kastamonu", "Kayseri", "Kırklareli", "Kırşehir",
-    "Kocaeli", "Konya", "Kütahya", "Malatya", "Manisa",
-    "Kahramanmaraş", "Mardin", "Muğla", "Muş", "Nevşehir",
-    "Niğde", "Ordu", "Rize", "Sakarya", "Samsun",
-    "Siirt", "Sinop", "Sivas", "Tekirdağ", "Tokat",
-    "Trabzon", "Tunceli", "Şanlıurfa", "Uşak", "Van",
-    "Yozgat", "Zonguldak", "Aksaray", "Bayburt", "Karaman",
-    "Kırıkkale", "Batman", "Şırnak", "Bartın", "Ardahan",
-    "Iğdır", "Yalova", "Karabük", "Kilis", "Osmaniye",
-    "Düzce"
-]
-
-# Genel haber kategorileri
 KATEGORILER = {
-    "Gündem": "Türkiye gündem son dakika",
+    "Gündem": "son dakika gündem",
+    "Siyaset": "siyaset hükümet meclis parti",
+    "Ekonomi": "ekonomi piyasa enflasyon şirket",
     "Asayiş": "asayiş polis jandarma operasyon",
-    "Cinayet": "cinayet öldürüldü şüpheli ölüm",
-    "Kadın cinayetleri": "kadın cinayeti kadın öldürüldü",
-    "Çocuk haberleri": "çocuk haberleri çocuk istismarı",
-    "Adliye": "adliye mahkeme duruşma savcılık",
+    "Adliye": "mahkeme duruşma savcılık adliye",
     "Soruşturma": "soruşturma gözaltı tutuklama tahliye",
-    "Ekonomi": "ekonomi enflasyon döviz faiz piyasa",
-    "İş dünyası": "şirketler iş dünyası yatırım",
-    "Belediye": "belediye meclisi yerel yönetim",
-    "Siyaset": "siyaset açıklama parti hükümet",
-    "Eğitim": "eğitim okul üniversite öğretmen",
-    "Sağlık": "sağlık hastane doktor sağlık sistemi",
-    "Spor": "spor futbol basketbol transfer",
+    "Belediye": "belediye yerel yönetim meclis",
+    "Eğitim": "okul üniversite eğitim öğretmen",
+    "Sağlık": "sağlık hastane doktor",
+    "Spor": "spor futbol basketbol",
     "Teknoloji": "teknoloji bilim yapay zeka",
-    "Kültür sanat": "kültür sanat sinema tiyatro",
-    "Ulaşım": "ulaşım metro otobüs tren uçak",
-    "Trafik kazaları": "trafik kazası yaralı hayatını kaybetti",
-    "Doğal afet": "deprem sel yangın fırtına",
+    "Kültür Sanat": "kültür sanat sinema tiyatro",
+    "Ulaşım": "ulaşım trafik metro otobüs",
+    "Kaza": "trafik kazası iş kazası yaralı",
+    "Afet": "deprem sel yangın fırtına",
     "Uyuşturucu": "uyuşturucu operasyonu ele geçirildi",
-    "Dolandırıcılık": "dolandırıcılık sahte yatırım",
+    "Cinayet": "cinayet öldürüldü şüpheli ölüm",
+    "Dolandırıcılık": "dolandırıcılık sahtecilik",
     "Yolsuzluk": "yolsuzluk rüşvet usulsüzlük",
-    "Çevre": "çevre kirliliği orman çevre",
+    "Çevre": "çevre kirliliği orman",
     "Tarım": "tarım çiftçi hayvancılık",
     "Turizm": "turizm otel tatil",
-    "Dış haberler": "dünya son dakika uluslararası",
+    "Dış Haberler": "dünya uluslararası haberler",
     "Savunma": "savunma sanayi askeri güvenlik",
-    "Çalışma hayatı": "işçi emekli asgari ücret",
+    "Çalışma Hayatı": "işçi emekli istihdam",
     "Vatandaş": "vatandaş mağduriyet şikayet"
 }
 
+
 def simdi():
     return datetime.now(timezone.utc)
+
+
+def json_oku(yol, varsayilan):
+    try:
+        with yol.open("r", encoding="utf-8") as dosya:
+            return json.load(dosya)
+    except (OSError, json.JSONDecodeError):
+        return varsayilan
+
+
+def json_yaz(yol, veri):
+    gecici = yol.with_suffix(".tmp")
+
+    with gecici.open("w", encoding="utf-8") as dosya:
+        json.dump(veri, dosya, ensure_ascii=False, indent=2)
+
+    gecici.replace(yol)
 
 
 def tarih_coz(deger):
@@ -93,82 +88,91 @@ def tarih_coz(deger):
             tarih = tarih.replace(tzinfo=timezone.utc)
 
         return tarih.astimezone(timezone.utc)
+
     except (TypeError, ValueError, OverflowError):
-        return None
+        try:
+            tarih = datetime.fromisoformat(
+                deger.replace("Z", "+00:00")
+            )
+
+            if tarih.tzinfo is None:
+                tarih = tarih.replace(tzinfo=timezone.utc)
+
+            return tarih.astimezone(timezone.utc)
+
+        except (TypeError, ValueError):
+            return None
 
 
-def tarih_iso(deger):
-    tarih = tarih_coz(deger)
+def konumlari_yukle():
+    veri = json_oku(DOSYALAR["iller"], {})
 
-    if tarih is None:
-        return ""
+    iller = veri.get("cities", [])
+    ilceler = veri.get("districts", [])
 
-    return tarih.isoformat()
+    if not isinstance(iller, list) or not isinstance(ilceler, list):
+        raise RuntimeError("ilceler.json biçimi hatalı.")
 
+    konumlar = []
 
-def haberleri_yukle():
-    if not HABER_DOSYASI.exists():
-        return []
+    for il in iller:
+        il_adi = str(il.get("name", "")).strip()
 
-    try:
-        with HABER_DOSYASI.open("r", encoding="utf-8") as dosya:
-            veri = json.load(dosya)
+        if not il_adi:
+            continue
 
-        if isinstance(veri, list):
-            return veri
+        il_id = il.get("Id")
 
-    except (OSError, json.JSONDecodeError) as hata:
-        print("Haber dosyası okunamadı:", hata)
+        eslesenler = [
+            ilce for ilce in ilceler
+            if ilce.get("cityId") == il_id
+        ]
 
-    return []
+        if eslesenler:
+            for ilce in eslesenler:
+                ilce_adi = str(ilce.get("name", "")).strip()
 
+                if ilce_adi:
+                    konumlar.append((il_adi, ilce_adi))
+        else:
+            konumlar.append((il_adi, ""))
 
-def durumu_yukle():
-    if not DURUM_DOSYASI.exists():
-        return {}
+    if not konumlar:
+        raise RuntimeError("Hiçbir il bulunamadı.")
 
-    try:
-        with DURUM_DOSYASI.open("r", encoding="utf-8") as dosya:
-            veri = json.load(dosya)
-
-        return veri if isinstance(veri, dict) else {}
-
-    except (OSError, json.JSONDecodeError):
-        return {}
-
-
-def json_kaydet(dosya_yolu, veri):
-    gecici = dosya_yolu.with_suffix(".tmp")
-
-    with gecici.open("w", encoding="utf-8") as dosya:
-        json.dump(veri, dosya, ensure_ascii=False, indent=2)
-
-    gecici.replace(dosya_yolu)
+    return konumlar
 
 
-def eski_haberleri_temizle(haberler):
-    sinir = simdi() - timedelta(hours=HABER_SURESI_SAAT)
-    temiz = []
+def sorgulari_olustur(konumlar):
+    sorgular = []
 
-    for haber in haberler:
-        tarih = tarih_coz(haber.get("tarih", ""))
+    for il, ilce in konumlar:
+        for kategori, kelimeler in KATEGORILER.items():
+            if ilce:
+                sorgu = f'"{ilce}" "{il}" {kelimeler}'
+            else:
+                sorgu = f'"{il}" {kelimeler}'
 
-        if tarih is None:
-            toplanma = tarih_coz(haber.get("toplanma_tarihi", ""))
-            tarih = toplanma
+            sorgular.append({
+                "il": il,
+                "ilce": ilce,
+                "kategori": kategori,
+                "sorgu": sorgu
+            })
 
-        if tarih and tarih >= sinir:
-            temiz.append(haber)
+    # Türkiye geneli haberleri de ayrıca tara.
+    for kategori, kelimeler in KATEGORILER.items():
+        sorgular.append({
+            "il": "Türkiye",
+            "ilce": "",
+            "kategori": kategori,
+            "sorgu": kelimeler
+        })
 
-    return temiz
+    return sorgular
 
 
-def rss_getir(il, kategori, arama):
-    if il == "Türkiye":
-        sorgu = arama
-    else:
-        sorgu = f'"{il}" ({arama})'
-
+def rss_getir(sorgu):
     adres = (
         "https://news.google.com/rss/search?q="
         + urllib.parse.quote(sorgu)
@@ -181,10 +185,11 @@ def rss_getir(il, kategori, arama):
     )
 
     try:
-        with urllib.request.urlopen(istek, timeout=TIMEOUT) as cevap:
-            icerik = cevap.read()
-
-        return ET.fromstring(icerik)
+        with urllib.request.urlopen(
+            istek,
+            timeout=TIMEOUT
+        ) as cevap:
+            return ET.fromstring(cevap.read())
 
     except (
         urllib.error.URLError,
@@ -193,11 +198,17 @@ def rss_getir(il, kategori, arama):
         TimeoutError,
         OSError
     ) as hata:
-        print(f"RSS hatası: {il} / {kategori}: {hata}")
+        print("RSS erişim hatası:", hata)
         return None
 
 
-def rss_haberlerini_oku(kok, il, kategori):
+def kimlik_uret(link):
+    return hashlib.sha256(
+        link.encode("utf-8")
+    ).hexdigest()
+
+
+def haberleri_oku(kok, sorgu):
     bulunan = []
 
     if kok is None:
@@ -206,6 +217,7 @@ def rss_haberlerini_oku(kok, il, kategori):
     for oge in kok.findall("./channel/item"):
         baslik = oge.findtext("title", "").strip()
         link = oge.findtext("link", "").strip()
+        aciklama = oge.findtext("description", "").strip()
         pub_date = oge.findtext("pubDate", "").strip()
 
         if not baslik or not link:
@@ -213,150 +225,151 @@ def rss_haberlerini_oku(kok, il, kategori):
 
         tarih = tarih_coz(pub_date)
 
-        # Tarihi okunamayan haberleri yanlışlıkla güncel
-        # kabul etmiyoruz.
         if tarih is None:
             continue
 
-        if tarih < simdi() - timedelta(hours=HABER_SURESI_SAAT):
+        if tarih < simdi() - timedelta(
+            hours=HABER_SURESI_SAAT
+        ):
             continue
 
         kaynak_oge = oge.find("source")
 
-        if kaynak_oge is not None and kaynak_oge.text:
-            kaynak = kaynak_oge.text.strip()
-        else:
-            kaynak = "Google Haberler"
+        kaynak = (
+            kaynak_oge.text.strip()
+            if kaynak_oge is not None and kaynak_oge.text
+            else "Google Haberler"
+        )
 
         bulunan.append({
-            "il": il,
-            "kategori": kategori,
+            "kimlik": kimlik_uret(link),
             "baslik": baslik,
+            "aciklama": aciklama,
             "link": link,
             "kaynak": kaynak,
+            "il": sorgu["il"],
+            "ilce": sorgu["ilce"],
+            "kategori": sorgu["kategori"],
             "tarih": tarih.isoformat(),
-            "toplanma_tarihi": simdi().isoformat()
+            "toplanma_tarihi": simdi().isoformat(),
+            "durum": "Kaynak kontrolü gerekli",
+            "yayinda": True
         })
 
     return bulunan
 
 
-def sorgulari_olustur():
-    sorgular = []
+def haberleri_temizle(haberler):
+    sinir = simdi() - timedelta(
+        hours=HABER_SURESI_SAAT
+    )
 
-    # Önce Türkiye genelindeki haberleri tara.
-    for kategori, arama in KATEGORILER.items():
-        sorgular.append(("Türkiye", kategori, arama))
+    sonuc = []
 
-    # Ardından bütün illeri bütün kategorilerle tara.
-    for il in ILLER:
-        for kategori, arama in KATEGORILER.items():
-            sorgular.append((il, kategori, arama))
+    for haber in haberler:
+        tarih = tarih_coz(
+            haber.get("tarih")
+            or haber.get("toplanma_tarihi")
+        )
 
-    return sorgular
+        if tarih and tarih >= sinir:
+            sonuc.append(haber)
+
+    return sonuc
 
 
 def ana():
-    baslangic = time.time()
+    konumlar = konumlari_yukle()
+    sorgular = sorgulari_olustur(konumlar)
 
-    haberler = haberleri_yukle()
-    haberler = eski_haberleri_temizle(haberler)
+    haberler = json_oku(DOSYALAR["haberler"], [])
+    durum = json_oku(DOSYALAR["durum"], {})
 
-    mevcut_linkler = {
-        haber.get("link")
+    if not isinstance(haberler, list):
+        haberler = []
+
+    if not isinstance(durum, dict):
+        durum = {}
+
+    haberler = haberleri_temizle(haberler)
+
+    mevcut = {
+        haber.get("kimlik") or kimlik_uret(haber.get("link", ""))
         for haber in haberler
         if haber.get("link")
     }
 
-    durum = durumu_yukle()
-
-    sorgular = sorgulari_olustur()
-    toplam_sorgu = len(sorgular)
-
-    # Her çalışmada kaldığı yerden devam eder.
     imlec = int(durum.get("sorgu_imleci", 0))
-    imlec = imlec % toplam_sorgu
+    imlec %= len(sorgular)
 
     secilenler = []
 
-    for i in range(min(MAKS_SORGU, toplam_sorgu)):
-        indeks = (imlec + i) % toplam_sorgu
-        secilenler.append(sorgular[indeks])
+    adet = min(MAKS_SORGU, len(sorgular))
 
-    yeni_sayi = 0
-    basarili_sorgu = 0
-    hatali_sorgu = 0
-
-    for sira, (il, kategori, arama) in enumerate(secilenler, start=1):
-        kok = rss_getir(il, kategori, arama)
-
-        if kok is None:
-            hatali_sorgu += 1
-            continue
-
-        basarili_sorgu += 1
-
-        yeni_haberler = rss_haberlerini_oku(
-            kok,
-            il,
-            kategori
+    for i in range(adet):
+        secilenler.append(
+            sorgular[(imlec + i) % len(sorgular)]
         )
 
-        for haber in yeni_haberler:
-            link = haber["link"]
+    yeni = 0
+    basarili = 0
+    hatali = 0
 
-            if link in mevcut_linkler:
+    for sira, sorgu in enumerate(secilenler, start=1):
+        print(
+            f"{sira}/{len(secilenler)} "
+            f"{sorgu['il']} {sorgu['ilce']} "
+            f"{sorgu['kategori']}"
+        )
+
+        kok = rss_getir(sorgu["sorgu"])
+
+        if kok is None:
+            hatali += 1
+            continue
+
+        basarili += 1
+
+        for haber in haberleri_oku(kok, sorgu):
+            kimlik = haber["kimlik"]
+
+            if kimlik in mevcut:
                 continue
 
             haberler.append(haber)
-            mevcut_linkler.add(link)
-            yeni_sayi += 1
-
-        print(
-            f"[{sira}/{len(secilenler)}] "
-            f"{il} - {kategori} tamamlandı."
-        )
+            mevcut.add(kimlik)
+            yeni += 1
 
         time.sleep(BEKLEME)
 
-    # Sonraki çalışmanın başlayacağı sorgu.
     durum["sorgu_imleci"] = (
         imlec + len(secilenler)
-    ) % toplam_sorgu
+    ) % len(sorgular)
 
     durum["son_tarama"] = simdi().isoformat()
-    durum["son_kaynak_kesfi"] = durum.get(
-        "son_kaynak_kesfi",
-        ""
-    )
+    durum["toplam_sorgu"] = len(sorgular)
+    durum["son_calismada_yeni_haber"] = yeni
+    durum["son_calismada_basarili_sorgu"] = basarili
+    durum["son_calismada_hatali_sorgu"] = hatali
 
-    # 24 saatten eski haberleri tekrar temizle.
-    haberler = eski_haberleri_temizle(haberler)
+    haberler = haberleri_temizle(haberler)
 
     haberler.sort(
-        key=lambda haber: haber.get("tarih", ""),
+        key=lambda x: x.get("tarih", ""),
         reverse=True
     )
 
-    json_kaydet(HABER_DOSYASI, haberler)
-    json_kaydet(DURUM_DOSYASI, durum)
+    json_yaz(DOSYALAR["haberler"], haberler)
+    json_yaz(DOSYALAR["durum"], durum)
 
-    sure = round(time.time() - baslangic, 2)
-
-    print("")
-    print("================================")
-    print("MİHVER TÜRKİYE HABER RADARI")
-    print("================================")
-    print("Toplam il:", len(ILLER))
-    print("Haber kategorisi:", len(KATEGORILER))
-    print("Toplam tarama sorgusu:", toplam_sorgu)
-    print("Bu çalışmadaki sorgu:", len(secilenler))
-    print("Başarılı sorgu:", basarili_sorgu)
-    print("Hatalı sorgu:", hatali_sorgu)
-    print("Yeni haber:", yeni_sayi)
-    print("24 saatlik arşiv:", len(haberler))
-    print("Çalışma süresi:", sure, "saniye")
-    print("================================")
+    print("Tarama tamamlandı.")
+    print("İl/ilçe konumu:", len(konumlar))
+    print("Toplam sorgu:", len(sorgular))
+    print("Bu çalışmada taranan:", len(secilenler))
+    print("Başarılı sorgu:", basarili)
+    print("Hatalı sorgu:", hatali)
+    print("Yeni haber:", yeni)
+    print("Arşivdeki haber:", len(haberler))
 
 
 if __name__ == "__main__":
