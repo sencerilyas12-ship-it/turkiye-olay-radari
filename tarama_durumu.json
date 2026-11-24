@@ -1,11 +1,11 @@
 {
   "arama_sirasi": 200,
-  "son_calisma": "2026-11-24T09:56:54.303864+00:00",
-  "son_eklenen_haber": 2906,
-  "toplam_haber": 3464,
+  "son_calisma": "2026-11-24T10:49:11.581435+00:00",
+  "son_eklenen_haber": 774,
+  "toplam_haber": 4110,
   "rss_kaynak_sayisi": 100,
   "otomatik_yayin": true,
-  "ilce_arama_sirasi": 835,
+  "ilce_arama_sirasi": 1135,
   "ilce_sayisi": 922,
   "toplam_ilce_konu_sorgusu": 5532,
   "bu_calisma_sorgu_sayisi": 300,
@@ -15,9 +15,9 @@
   "basarili_sorgu": 300,
   "basarisiz_sorgu": 0,
   "basarisiz_sorgular": [],
-  "rss_basarili": 100,
-  "rss_hata": 0,
+  "rss_basarili": 98,
+  "rss_hata": 2,
   "haber_saklama_suresi_saat": 24,
-  "son_arşiv_temizligi": "2026-11-24T09:56:54.303886+00:00",
-  "temizlikte_silinen_haber": 123
+  "son_arşiv_temizligi": "2026-11-24T10:49:11.581451+00:00",
+  "temizlikte_silinen_haber": 128
 }
