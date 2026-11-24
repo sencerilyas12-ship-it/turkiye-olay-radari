@@ -4,7 +4,7 @@ name: MIHVER Otomatik Haber Toplama
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
@@ -31,11 +31,22 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Python dosyasını kontrol et
-        run: python -m py_compile haber_toplama.py
+      - name: Python dosyalarını kontrol et
+        run: |
+          python -m py_compile haber_toplama.py
+          python -m py_compile kaynak_kesif.py
 
-      - name: Haberleri topla
+      - name: Haberleri topla ve 24 saatlik arşivi temizle
         run: python haber_toplama.py
+
+      - name: Saatlik haber sitesi kaynak keşfi
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ] || [ "$(date -u +%M)" = "00" ]; then
+            echo "Kaynak keşfi başlatılıyor."
+            python kaynak_kesif.py
+          else
+            echo "Saatlik keşif zamanı değil. Bu çalıştırmada atlandı."
+          fi
 
       - name: GitHub verisini kontrol et
         run: |
@@ -46,16 +57,16 @@ jobs:
             exit 1
           fi
 
-      - name: Haberleri kaydet
+      - name: Haberleri ve kaynakları kaydet
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add haberler.json tarama_durumu.json
+          git add haberler.json tarama_durumu.json kaynaklar_ek.json
 
           if git diff --cached --quiet; then
-            echo "Yeni haber bulunamadı."
+            echo "Kaydedilecek yeni değişiklik yok."
           else
-            git commit -m "MIHVER haber arşivi güncellendi"
+            git commit -m "MIHVER haber ve kaynak verileri güncellendi"
             git push origin HEAD:main
           fi
