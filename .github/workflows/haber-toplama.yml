@@ -1,61 +1,97 @@
 
-name: MIHVER Otomatik Haber Toplama
+name: MİHVER Haber Toplama
 
 on:
-  workflow_dispatch:
   schedule:
     - cron: "*/5 * * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: mihver-veri-kayit
+  group: mihver-haber-toplama
   cancel-in-progress: false
 
 jobs:
   haber-topla:
-    name: MIHVER Haberleri Topla
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 15
 
     steps:
       - name: Depoyu indir
         uses: actions/checkout@v4
         with:
           ref: main
-          fetch-depth: 0
 
       - name: Python kur
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Python dosyasını kontrol et
-        run: python -m py_compile haber_toplama.py
-
-      - name: Haberleri topla ve 24 saatlik arşivi temizle
-        run: python haber_toplama.py
-
-      - name: GitHub verisini kontrol et
+      - name: Python dosyalarını kontrol et
         run: |
-          git fetch origin main
+          python -m py_compile haber_toplama.py
 
-          if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
-            echo "Depoda yeni değişiklik var. Güvenli kayıt için işlem durduruldu."
-            exit 1
+      - name: Haberleri topla
+        run: |
+          python haber_toplama.py
+
+      - name: Kaynak keşif zamanını kontrol et
+        id: kesif-zamani
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone, timedelta
+
+          try:
+              with open("tarama_durumu.json", "r", encoding="utf-8") as f:
+                  durum = json.load(f)
+          except Exception:
+              durum = {}
+
+          son = durum.get("son_kaynak_kesfi")
+          calistir = True
+
+          if son:
+              try:
+                  tarih = datetime.fromisoformat(son.replace("Z", "+00:00"))
+                  if tarih.tzinfo is None:
+                      tarih = tarih.replace(tzinfo=timezone.utc)
+                  calistir = datetime.now(timezone.utc) - tarih >= timedelta(hours=1)
+              except Exception:
+                  calistir = True
+
+          print(f"calistir={'true' if calistir else 'false'}")
+          with open(__import__("os").environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"calistir={'true' if calistir else 'false'}\n")
+          PY
+
+      - name: Kaynakları keşfet
+        if: steps.kesif-zamani.outputs.calistir == 'true'
+        run: |
+          if [ -f kaynak_kesif.py ]; then
+            python -m py_compile kaynak_kesif.py
+            python kaynak_kesif.py
+          elif [ -f kesif_motoru.py ]; then
+            python -m py_compile kesif_motoru.py
+            python kesif_motoru.py
+          else
+            echo "Kaynak keşif dosyası bulunamadı; bu adım atlandı."
           fi
 
-      - name: Haberleri kaydet
+      - name: Değişiklikleri kaydet
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add haberler.json tarama_durumu.json
+          git add haberler.json tarama_durumu.json kaynaklar_ek.json
 
           if git diff --cached --quiet; then
-            echo "Kaydedilecek yeni haber veya durum değişikliği yok."
-          else
-            git commit -m "MIHVER haber arşivi güncellendi"
-            git push origin HEAD:main
+            echo "Kaydedilecek değişiklik yok."
+            exit 0
           fi
+
+          git commit -m "MİHVER: haberleri ve kaynakları güncelle"
+
+          git push origin HEAD:main
