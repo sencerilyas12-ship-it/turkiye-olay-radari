@@ -32,50 +32,35 @@ jobs:
       - name: Python dosyasını kontrol et
         run: |
           if [ ! -f haber_toplama.py ]; then
-            echo "::error::haber_toplama.py bulunamadı"
+            echo "HATA: haber_toplama.py dosyası bulunamadı."
+            ls -la
             exit 1
           fi
-
           python -m py_compile haber_toplama.py
 
       - name: Haberleri topla
+        run: python -u haber_toplama.py
         timeout-minutes: 20
-        run: |
-          python -u haber_toplama.py
 
       - name: JSON dosyalarını kontrol et
         run: |
           python - <<'PY'
           import json
-          from pathlib import Path
-
-          for name in [
-              "haberler.json",
-              "tarama_durumu.json"
-          ]:
-              path = Path(name)
-
-              if path.exists():
-                  with path.open(encoding="utf-8") as f:
-                      json.load(f)
-                  print(name, "geçerli")
-              else:
-                  print(name, "henüz oluşturulmamış")
+          for dosya in ["haberler.json", "tarama_durumu.json"]:
+              with open(dosya, "r", encoding="utf-8") as f:
+                  json.load(f)
+              print(dosya, "geçerli")
           PY
 
       - name: Değişiklikleri kaydet
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add -A -- haberler.json tarama_durumu.json
-
+          git add haberler.json tarama_durumu.json
           if git diff --cached --quiet; then
-            echo "Yeni değişiklik yok."
-            exit 0
+            echo "Kaydedilecek yeni değişiklik yok."
+          else
+            git commit -m "Haber verilerini güncelle"
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
-
-          git commit -m "MIHVER haber arşivi güncellendi"
-
-          git pull --rebase origin main
-          git push origin HEAD:main
