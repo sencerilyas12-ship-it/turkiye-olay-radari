@@ -9,7 +9,7 @@
   "ilce_sayisi": 922,
   "toplam_ilce_konu_sorgusu": 5532,
   "bu_calisma_sorgu_sayisi": 300,
-  "toplam_sorgu": 5532,
+  "toplam_sorgu": 2132,
   "bu_calisma_sorgu": 300,
   "tam_tarama_tamamlandi": false,
   "basarili_sorgu": 300,
@@ -19,5 +19,10 @@
   "rss_hata": 1,
   "haber_saklama_suresi_saat": 24,
   "son_arşiv_temizligi": "2026-11-24T13:44:40.104208+00:00",
-  "temizlikte_silinen_haber": 144
+  "temizlikte_silinen_haber": 144,
+  "sorgu_imleci": 80,
+  "son_tarama": "2026-11-24T19:05:24.463912+00:00",
+  "son_calismada_yeni_haber": 146,
+  "son_calismada_basarili_sorgu": 80,
+  "son_calismada_hatali_sorgu": 0
 }
