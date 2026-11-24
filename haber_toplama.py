@@ -9,7 +9,7 @@ import urllib.request
 import urllib.error
 import xml.etree.ElementTree as ET
 
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 from html import unescape
 
@@ -23,20 +23,15 @@ DOSYALAR = {
     "ilceler": os.path.join(BASE, "ilceler.json"),
 }
 
-USER_AGENT = "MIHVER-NewsMonitor/3.0"
+USER_AGENT = "MIHVER-NewsMonitor/4.0"
 TIMEOUT = 20
 
-# Her çalışmada ele alınacak yeni sorgu sayısı.
 MAX_SORGU = 300
-
-# Sorgular arasındaki bekleme.
 BEKLEME = 0.25
-
-# Başarısız sorguların yeniden denenme sayısı.
 TEKRAR_DENEME = 2
-
-# Bir sorgu için en fazla bekleme.
 MAX_BEKLEME = 8
+
+HABER_SURESI_SAAT = 24
 
 KONULAR = [
     '"mahkeme" OR "duruşma" OR "adliye" OR "başsavcılık"',
@@ -57,7 +52,11 @@ HARIC_TERIMLER = [
 
 
 def simdi():
-    return datetime.now(timezone.utc).isoformat()
+    return datetime.now(timezone.utc)
+
+
+def simdi_iso():
+    return simdi().isoformat()
 
 
 def oku(dosya, varsayilan):
@@ -162,9 +161,9 @@ def temizle(metin):
     ).strip()
 
 
-def tarih_duzenle(deger):
+def tarih_oku(deger):
     if not deger:
-        return simdi()
+        return None
 
     try:
         tarih = parsedate_to_datetime(deger)
@@ -174,16 +173,14 @@ def tarih_duzenle(deger):
                 tzinfo=timezone.utc
             )
 
-        return tarih.astimezone(
-            timezone.utc
-        ).isoformat()
+        return tarih.astimezone(timezone.utc)
 
     except Exception:
         pass
 
     try:
         tarih = datetime.fromisoformat(
-            deger.replace("Z", "+00:00")
+            str(deger).replace("Z", "+00:00")
         )
 
         if tarih.tzinfo is None:
@@ -191,12 +188,37 @@ def tarih_duzenle(deger):
                 tzinfo=timezone.utc
             )
 
-        return tarih.astimezone(
-            timezone.utc
-        ).isoformat()
+        return tarih.astimezone(timezone.utc)
 
     except Exception:
-        return simdi()
+        return None
+
+
+def tarih_duzenle(deger):
+    tarih = tarih_oku(deger)
+
+    if tarih is None:
+        return ""
+
+    return tarih.isoformat()
+
+
+def haber_guncel_mi(haber, referans=None):
+    if referans is None:
+        referans = simdi()
+
+    tarih = tarih_oku(
+        haber.get("tarih", "")
+    )
+
+    if tarih is None:
+        return False
+
+    baslangic = referans - timedelta(
+        hours=HABER_SURESI_SAAT
+    )
+
+    return baslangic <= tarih <= referans
 
 
 def kimlik(link, baslik):
@@ -332,15 +354,8 @@ def ilceleri_yukle():
             "İlçe listesi boş."
         )
 
-    print(
-        "Şehir sayısı:",
-        len(sehir_esleme)
-    )
-
-    print(
-        "Okunan benzersiz ilçe sayısı:",
-        len(sonuc)
-    )
+    print("Şehir sayısı:", len(sehir_esleme))
+    print("Okunan benzersiz ilçe sayısı:", len(sonuc))
 
     if len(sonuc) != 922:
         print(
@@ -427,17 +442,18 @@ def rss_coz(veri, il, ilce, kaynak):
         ):
             continue
 
-        bulunan.append(
-            haber_olustur(
-                baslik,
-                link,
-                aciklama,
-                tarih,
-                il,
-                ilce,
-                kaynak
-            )
+        haber = haber_olustur(
+            baslik,
+            link,
+            aciklama,
+            tarih,
+            il,
+            ilce,
+            kaynak
         )
+
+        if haber_guncel_mi(haber):
+            bulunan.append(haber)
 
     ns = {
         "a": "http://www.w3.org/2005/Atom"
@@ -463,10 +479,9 @@ def rss_coz(veri, il, ilce, kaynak):
             )
         )
 
-        tarih = entry.findtext(
-            "a:updated",
-            "",
-            ns
+        tarih = (
+            entry.findtext("a:published", "", ns)
+            or entry.findtext("a:updated", "", ns)
         )
 
         link_elemani = entry.find(
@@ -490,17 +505,18 @@ def rss_coz(veri, il, ilce, kaynak):
         ):
             continue
 
-        bulunan.append(
-            haber_olustur(
-                baslik,
-                link,
-                aciklama,
-                tarih,
-                il,
-                ilce,
-                kaynak
-            )
+        haber = haber_olustur(
+            baslik,
+            link,
+            aciklama,
+            tarih,
+            il,
+            ilce,
+            kaynak
         )
+
+        if haber_guncel_mi(haber):
+            bulunan.append(haber)
 
     return bulunan
 
@@ -619,6 +635,8 @@ def sorgu_coz(sira, ilceler):
 
 
 def ana_islem():
+    referans_zaman = simdi()
+
     envanter = oku(
         DOSYALAR["envanter"],
         {}
@@ -648,6 +666,28 @@ def ana_islem():
     if not isinstance(durum, dict):
         durum = {}
 
+    # Önce eski arşiv temizlenir.
+    onceki_haber_sayisi = len(haberler)
+
+    haberler = [
+        haber for haber in haberler
+        if (
+            isinstance(haber, dict)
+            and haber_guncel_mi(
+                haber,
+                referans_zaman
+            )
+        )
+    ]
+
+    silinen_eski = (
+        onceki_haber_sayisi - len(haberler)
+    )
+
+    print("24 saatlik arşiv temizliği tamamlandı.")
+    print("Eski veya tarihi geçersiz kayıt:", silinen_eski)
+    print("Korunan güncel haber:", len(haberler))
+
     ilceler = ilceleri_yukle()
 
     toplam = (
@@ -661,8 +701,6 @@ def ana_islem():
         )
     ) % toplam
 
-    # Önce önceki çalışmalardan kalan başarısız
-    # sorgular yeniden ele alınır.
     bekleyen = durum.get(
         "basarisiz_sorgular",
         []
@@ -680,7 +718,6 @@ def ana_islem():
 
     secilen = bekleyen[:MAX_SORGU]
 
-    # Kalan kapasite yeni sorgularla doldurulur.
     yeni_sorgu_sayisi = (
         MAX_SORGU - len(secilen)
     )
@@ -704,9 +741,6 @@ def ana_islem():
     kimlikler = set()
 
     for haber in haberler:
-        if not isinstance(haber, dict):
-            continue
-
         haber_id = (
             haber.get("kimlik")
             or kimlik(
@@ -726,7 +760,6 @@ def ana_islem():
     rss_basari = 0
     rss_hata = 0
 
-    # Mevcut RSS kaynakları taranır.
     for kaynak in kaynaklar:
         url = str(
             kaynak.get("rss", "")
@@ -751,7 +784,6 @@ def ana_islem():
         rss_basari += 1
         yeni_haberler.extend(sonuc)
 
-    # Başarısız sorgular sonraki çalışmaya bırakılır.
     basarisiz_yeni = []
     basarili_sorgu = 0
 
@@ -789,10 +821,16 @@ def ana_islem():
 
         time.sleep(BEKLEME)
 
-    # Yeni haberler arşive eklenir.
     eklenen = 0
 
     for haber in yeni_haberler:
+        # Tarama sürerken 24 saat sınırını da koru.
+        if not haber_guncel_mi(
+            haber,
+            referans_zaman
+        ):
+            continue
+
         haber_id = haber.get("kimlik")
 
         if (
@@ -805,18 +843,11 @@ def ana_islem():
         kimlikler.add(haber_id)
         eklenen += 1
 
-    # Eski haberler silinmez ve arşive üst sınır konulmaz.
     haberler.sort(
-        key=lambda x: (
-            x.get("tarih", "")
-            if isinstance(x, dict)
-            else ""
-        ),
+        key=lambda x: x.get("tarih", ""),
         reverse=True
     )
 
-    # Daha önce bekleyen ancak bu çalışmada
-    # yeniden denenmeyen kayıtlar korunur.
     yeniden_bekleyen = [
         x for x in bekleyen
         if x not in secilen
@@ -830,15 +861,13 @@ def ana_islem():
         set(yeniden_bekleyen)
     )
 
-    # Tam tarama yalnızca tüm sorgular
-    # başarılı olduğunda tamamlanmış sayılır.
     tam_tarama = (
         yeni_baslangic == 0
         and len(yeniden_bekleyen) == 0
     )
 
     durum["ilce_arama_sirasi"] = yeni_baslangic
-    durum["son_calisma"] = simdi()
+    durum["son_calisma"] = simdi_iso()
     durum["son_eklenen_haber"] = eklenen
     durum["toplam_haber"] = len(haberler)
     durum["ilce_sayisi"] = len(ilceler)
@@ -854,7 +883,11 @@ def ana_islem():
     durum["rss_hata"] = rss_hata
     durum["otomatik_yayin"] = True
     durum["tam_tarama_tamamlandi"] = tam_tarama
+    durum["haber_saklama_suresi_saat"] = HABER_SURESI_SAAT
+    durum["son_arşiv_temizligi"] = simdi_iso()
+    durum["temizlikte_silinen_haber"] = silinen_eski
 
+    # Haber arşivi ve durum güvenli şekilde kaydedilir.
     yaz(
         DOSYALAR["haberler"],
         haberler
@@ -866,7 +899,9 @@ def ana_islem():
     )
 
     print("--------------------------------")
-    print("MİHVER taraması tamamlandı.")
+    print("MIHVER taraması tamamlandı.")
+    print("24 saatlik arşiv sınırı:", HABER_SURESI_SAAT)
+    print("Temizlikte silinen haber:", silinen_eski)
     print("İlçe sayısı:", len(ilceler))
     print("Bu çalışmadaki sorgu:", len(secilen))
     print("Başarılı sorgu:", basarili_sorgu)
@@ -877,7 +912,7 @@ def ana_islem():
     print("RSS başarılı:", rss_basari)
     print("RSS hatalı:", rss_hata)
     print("Yeni haber:", eklenen)
-    print("Toplam haber:", len(haberler))
+    print("Toplam güncel haber:", len(haberler))
     print("Sonraki tarama sırası:", yeni_baslangic)
     print("Tam tarama tamamlandı:", tam_tarama)
     print("--------------------------------")
