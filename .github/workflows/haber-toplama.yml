@@ -2,9 +2,9 @@
 name: MIHVER Haber Toplama
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "*/15 * * * *"
-  workflow_dispatch:
 
 permissions:
   contents: write
@@ -15,8 +15,9 @@ concurrency:
 
 jobs:
   haber-topla:
+    name: haber-topla
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 25
 
     steps:
       - name: Depoyu indir
@@ -29,27 +30,25 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Python dosyasını kontrol et
+      - name: Dosya adını doğrula
         run: |
-          if [ ! -f haber_toplama.py ]; then
-            echo "HATA: haber_toplama.py dosyası bulunamadı."
-            ls -la
-            exit 1
-          fi
+          echo "Depodaki Python dosyaları:"
+          ls -la *.py
+          test -f haber_toplama.py
           python -m py_compile haber_toplama.py
 
       - name: Haberleri topla
         run: python -u haber_toplama.py
         timeout-minutes: 20
 
-      - name: JSON dosyalarını kontrol et
+      - name: JSON dosyalarını doğrula
         run: |
           python - <<'PY'
           import json
-          for dosya in ["haberler.json", "tarama_durumu.json"]:
-              with open(dosya, "r", encoding="utf-8") as f:
+          for name in ("haberler.json", "tarama_durumu.json"):
+              with open(name, encoding="utf-8") as f:
                   json.load(f)
-              print(dosya, "geçerli")
+              print(name, "OK")
           PY
 
       - name: Değişiklikleri kaydet
@@ -58,9 +57,9 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add haberler.json tarama_durumu.json
           if git diff --cached --quiet; then
-            echo "Kaydedilecek yeni değişiklik yok."
+            echo "Yeni haber verisi yok."
           else
-            git commit -m "Haber verilerini güncelle"
+            git commit -m "MİHVER haber verilerini güncelle"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
