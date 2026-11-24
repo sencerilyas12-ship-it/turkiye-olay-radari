@@ -3,7 +3,7 @@ name: MIHVER Haber Toplama
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -16,7 +16,7 @@ concurrency:
 jobs:
   haber-topla:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
 
     steps:
       - name: Depoyu indir
@@ -29,92 +29,53 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Dosyaları kontrol et
-        shell: bash
+      - name: Python dosyasını kontrol et
         run: |
-          echo "Depodaki Python dosyaları:"
-          find . -maxdepth 2 -name "*.py" -print
-
-          if [ ! -f "haber_toplama.py" ]; then
-            echo "::error::haber_toplama.py dosyası bulunamadı!"
+          if [ ! -f haber_toplama.py ]; then
+            echo "::error::haber_toplama.py bulunamadı"
             exit 1
           fi
 
-          echo "Doğru dosya bulundu."
-
-      - name: Python kodunu kontrol et
-        run: |
           python -m py_compile haber_toplama.py
 
       - name: Haberleri topla
+        timeout-minutes: 20
         run: |
-          python haber_toplama.py
+          python -u haber_toplama.py
 
-      - name: Kaynak keşif zamanını kontrol et
-        id: kesif-zamani
+      - name: JSON dosyalarını kontrol et
         run: |
           python - <<'PY'
           import json
-          import os
-          from datetime import datetime, timezone, timedelta
+          from pathlib import Path
 
-          try:
-              with open("tarama_durumu.json", encoding="utf-8") as f:
-                  durum = json.load(f)
-          except Exception:
-              durum = {}
+          for name in [
+              "haberler.json",
+              "tarama_durumu.json"
+          ]:
+              path = Path(name)
 
-          son = durum.get("son_kaynak_kesfi")
-          calistir = True
-
-          if son:
-              try:
-                  tarih = datetime.fromisoformat(
-                      son.replace("Z", "+00:00")
-                  )
-                  if tarih.tzinfo is None:
-                      tarih = tarih.replace(tzinfo=timezone.utc)
-
-                  calistir = (
-                      datetime.now(timezone.utc) - tarih
-                      >= timedelta(hours=1)
-                  )
-              except Exception:
-                  calistir = True
-
-          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
-              f.write(
-                  "calistir="
-                  + ("true" if calistir else "false")
-                  + "\n"
-              )
+              if path.exists():
+                  with path.open(encoding="utf-8") as f:
+                      json.load(f)
+                  print(name, "geçerli")
+              else:
+                  print(name, "henüz oluşturulmamış")
           PY
-
-      - name: Kaynakları keşfet
-        if: steps.kesif-zamani.outputs.calistir == 'true'
-        run: |
-          if [ -f "kaynak_kesif.py" ]; then
-            python -m py_compile kaynak_kesif.py
-            python kaynak_kesif.py
-          elif [ -f "kesif_motoru.py" ]; then
-            python -m py_compile kesif_motoru.py
-            python kesif_motoru.py
-          else
-            echo "Kaynak keşif dosyası bulunamadı."
-          fi
 
       - name: Değişiklikleri kaydet
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add haberler.json tarama_durumu.json kaynaklar_ek.json
+          git add -A -- haberler.json tarama_durumu.json
 
           if git diff --cached --quiet; then
-            echo "Kaydedilecek değişiklik yok."
+            echo "Yeni değişiklik yok."
             exit 0
           fi
 
-          git commit -m "MIHVER haber ve kaynak güncellemesi"
+          git commit -m "MIHVER haber arşivi güncellendi"
+
           git pull --rebase origin main
           git push origin HEAD:main
