@@ -20,9 +20,9 @@
   "haber_saklama_suresi_saat": 24,
   "son_arşiv_temizligi": "2026-11-24T13:44:40.104208+00:00",
   "temizlikte_silinen_haber": 144,
-  "sorgu_imleci": 720,
-  "son_tarama": "2026-11-25T02:26:13.667231+00:00",
-  "son_calismada_yeni_haber": 187,
-  "son_calismada_basarili_sorgu": 77,
-  "son_calismada_hatali_sorgu": 3
+  "sorgu_imleci": 800,
+  "son_tarama": "2026-11-25T03:32:12.175935+00:00",
+  "son_calismada_yeni_haber": 37,
+  "son_calismada_basarili_sorgu": 75,
+  "son_calismada_hatali_sorgu": 5
 }
